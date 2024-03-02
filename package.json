@@ -4,6 +4,7 @@
   "description": "Pichai is a color picker API that allows you to select color codes and names, find the nearest color and generate palletes.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
