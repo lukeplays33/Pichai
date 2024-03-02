@@ -10,10 +10,12 @@ app.listen(PORT, () => {
   });
 
   app.get("/picker", (request, response) => {
-   console.log(request)
+   console.log(request.query.color)
      const status = {
         "Status": "Running"
      };
      
-     response.send(status);
+     response.send({
+      sourceColor: request.query.color,
+     });
   });
