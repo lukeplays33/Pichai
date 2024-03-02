@@ -1,0 +1,27 @@
+{
+  "name": "pichai",
+  "version": "0.0.1",
+  "description": "Pichai is a color picker API that allows you to select color codes and names, find the nearest color and generate palletes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukeplays33/Pichai.git"
+  },
+  "keywords": [
+    "color_palletes",
+    "color_names",
+    "color_codes"
+  ],
+  "author": "Sketch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukeplays33/Pichai/issues"
+  },
+  "homepage": "https://github.com/lukeplays33/Pichai#readme",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
