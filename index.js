@@ -8,9 +8,9 @@ app.listen(PORT, () => {
   });
 
   response.send(status);
-  app.get(“/status”, (request, response) => {
+  app.get("/status", (request, response) => {
      const status = {
-        “Status”: “Running”
+        "Status": "Running"
      };
      
      response.send(status);
