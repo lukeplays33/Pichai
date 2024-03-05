@@ -4,6 +4,10 @@ const nearestColors = require('./nearestCOlorFInder.js'); // damm im good at typ
 const utils = require('./colorUTils.js');
 const hexToHsl = require('hex-to-hsl');
 
+const ai = require('brain.js');
+
+const brain = require('brain.js');
+
 const express = require("express");
 
 const app = express();
