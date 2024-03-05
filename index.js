@@ -1,3 +1,5 @@
+const ntc = require('ntcjs');
+const customColors = require('./customColors.js');
 const express = require("express");
 
 const app = express();
@@ -10,12 +12,20 @@ app.listen(PORT, () => {
   });
 
   app.get("/picker", (request, response) => {
-   console.log(request.query.color)
+   let source = request.query.sourceColor;
      const status = {
         "Status": "Running"
      };
+
+     let name = ntc.name(source)[1];
+
+     let customNamesKeys = Object.keys(customColors.names)
+     if(customNamesKeys.includes(source)) {
+      name = customColors.names[source];
+     }
      
      response.send({
-      sourceColor: request.query.color,
+      sourceColor: source,
+      colorName: name,
      });
   });
