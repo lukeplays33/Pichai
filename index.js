@@ -4,9 +4,7 @@ const nearestColors = require('./nearestCOlorFInder.js'); // damm im good at typ
 const utils = require('./colorUTils.js');
 const hexToHsl = require('hex-to-hsl');
 
-const ai = require('brain.js');
-
-const brain = require('brain.js');
+const ai = require('./ai.js');
 
 const express = require("express");
 
@@ -43,5 +41,6 @@ app.listen(PORT, () => {
       hsl: hexToHsl(source),
       colorName: name,
       nearestColors: nearest,
+      pallete: ai.generatePallete()
      });
   });
