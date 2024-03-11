@@ -4,7 +4,7 @@ const nearestColors = require('./nearestCOlorFInder.js'); // damm im good at typ
 const utils = require('./colorUTils.js');
 const hexToHsl = require('hex-to-hsl');
 
-const ai = require('./ai.js');
+const gen = require('./palleteGen.js');
 
 const express = require("express");
 
@@ -21,6 +21,7 @@ app.listen(PORT, () => {
    let source = request.query.sourceColor;
    let nearestColorAmount = request.query.nearestColorsAmount ?? 1;
    let allowedColors = request.query.allowedColors ?? ['#008dcd','#0249BA','#027DBA'];
+   let pallete = request.query.pallete ?? source;
 
      const status = {
         "Status": "Running"
@@ -41,6 +42,6 @@ app.listen(PORT, () => {
       hsl: hexToHsl(source),
       colorName: name,
       nearestColors: nearest,
-      pallete: ai.generatePallete()
+      pallete: gen.generatePallete(pallete)
      });
   });
