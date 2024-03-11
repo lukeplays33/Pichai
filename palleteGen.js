@@ -7,11 +7,15 @@ let colorAssociations = {
   'blue': ['calm', 'safe', 'intelligent', 'communicative', 'efficient', 'corporate', 'trustworthy', 'reflective', 'cool'],
   'yellow': ['friendly', 'optimistic', 'confident', 'loyal', 'emotionally', 'strong', 'creative', 'joyfull'],
   'green': ['harmonious', 'balancing', 'natural', 'enduring', 'stable', 'environmental', 'restful', 'peaceful', 'new beginnings'],
-  'purple': ['the man behind the slaughter', 'high quality', 'luxurious',' authentic', 'truthful', 'artistic', 'spiritual', 'serene', 'visionary']
+  'purple': ['the man behind the slaughter', 'high quality', 'luxurious',' authentic', 'truthful', 'artistic', 'spiritual', 'serene', 'visionary'],
+  'pink': ['loving', 'fun','sensual','tranquil', 'soothing', 'warmth', 'feminine', 'nurturing', 'listening', 'emotional'],
+  'brown': ['reliable', 'simplistic', 'supportive', 'natural','traditional', 'trustworthy', 'neutral'],
+  'black': ['sophisticated', 'secure', 'modern', 'clear thinking', 'efficient', 'straight talking', 'uncompromising']
 }
 
 function getBasicColorName(color) {
   let hue = hexToHsl(color)[0];
+  let lighting = hexToHsl(color)[2];
   console.log(hue)
   if(hue >= 0 && hue <= 15 || hue >= 330 && hue <= 360) {
     return 'red';
@@ -29,6 +33,12 @@ function getBasicColorName(color) {
     return 'purple';
   } else if(hue >= 286 && hue <= 330) {
     return 'pink';
+  } else if(lighting >= 21 && lighting <= 65) {
+    return 'brown';
+  } else if( lighting == 0 || ligthing <= 21) {
+    return 'black';
+  } else {
+    return 'white';
   }
 }
 
