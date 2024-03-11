@@ -10,7 +10,8 @@ let colorAssociations = {
   'purple': ['the man behind the slaughter', 'high quality', 'luxurious',' authentic', 'truthful', 'artistic', 'spiritual', 'serene', 'visionary'],
   'pink': ['loving', 'fun','sensual','tranquil', 'soothing', 'warmth', 'feminine', 'nurturing', 'listening', 'emotional'],
   'brown': ['reliable', 'simplistic', 'supportive', 'natural','traditional', 'trustworthy', 'neutral'],
-  'black': ['sophisticated', 'secure', 'modern', 'clear thinking', 'efficient', 'straight talking', 'uncompromising']
+  'black': ['sophisticated', 'secure', 'modern', 'clear thinking', 'efficient', 'straight talking', 'uncompromising'],
+  'white': ['sophisticated', 'secure', 'modern', 'clear thinking', 'efficient', 'straight talking', 'uncompromising']
 }
 
 function getBasicColorName(color) {
