@@ -18,6 +18,15 @@ function getBasicColorName(color) {
   let hue = hexToHsl(color)[0];
   let lighting = hexToHsl(color)[2];
   console.log(hue)
+
+  if((lighting >= 21 && lighting <= 65) && (hue >= 15 && hue <= 42)) {
+    return 'brown';
+  } else if( (lighting == 0 || ligthing <= 21) && hue == 0) {
+    return 'black';
+  } else if (hue == 0) {
+    return 'white';
+  }
+
   if(hue >= 0 && hue <= 15 || hue >= 330 && hue <= 360) {
     return 'red';
   } else if(hue >= 165 && hue <= 199) {
@@ -34,12 +43,6 @@ function getBasicColorName(color) {
     return 'purple';
   } else if(hue >= 286 && hue <= 330) {
     return 'pink';
-  } else if(lighting >= 21 && lighting <= 65) {
-    return 'brown';
-  } else if( lighting == 0 || ligthing <= 21) {
-    return 'black';
-  } else {
-    return 'white';
   }
 }
 
