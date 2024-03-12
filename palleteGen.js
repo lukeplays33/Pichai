@@ -11,7 +11,8 @@ let colorAssociations = {
   'pink': ['loving', 'fun','sensual','tranquil', 'soothing', 'warmth', 'feminine', 'nurturing', 'listening', 'emotional'],
   'brown': ['reliable', 'simplistic', 'supportive', 'natural','traditional', 'trustworthy', 'neutral'],
   'black': ['sophisticated', 'secure', 'modern', 'clear thinking', 'efficient', 'straight talking', 'uncompromising'],
-  'white': ['sophisticated', 'secure', 'modern', 'clear thinking', 'efficient', 'straight talking', 'uncompromising']
+  'white': ['sophisticated', 'secure', 'modern', 'clear thinking', 'efficient', 'straight talking', 'uncompromising'],
+  'gray': ['conformism', 'adaptability', 'emotionless', 'neutral', 'cool', 'steady', 'exquisite formality', 'mature', 'intellect', 'balance']
 }
 
 function getBasicColorName(color) {
@@ -20,10 +21,12 @@ function getBasicColorName(color) {
 
   if((lighting >= 21 && lighting <= 65) && (hue >= 15 && hue <= 42)) {
     return 'brown';
-  } else if( (lighting > 0 || lighting <= 7) && hue == 0) {
+  } else if( (lighting >= 0 || lighting <= 21) && hue == 0) {
     return 'black';
-  } else if ((lighting > 93 || lighting <= 100) && hue == 0) {
+  } else if ((lighting >= 90 || lighting <= 100) && hue == 0) {
     return 'white';
+  } else if ((lighting >= 21 || lighting <= 90) && hue == 0) {
+    return 'gray';
   }
 
   if(hue >= 0 && hue <= 15 || hue >= 330 && hue <= 360) {
@@ -47,12 +50,12 @@ function getBasicColorName(color) {
 
 function generatePallete (pallete) {
   let words = pallete;
-  let pallete = [];
+  let colorPallete = [];
   if(pallete.includes('#')) {
     words = colorAssociations[getBasicColorName(pallete)];
   }
 
-  while(pallete.length <= 4) {
+  while(colorPallete.length <= 4) {
 
   }
   console.log(words)
