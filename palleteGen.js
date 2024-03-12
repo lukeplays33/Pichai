@@ -17,13 +17,12 @@ let colorAssociations = {
 function getBasicColorName(color) {
   let hue = hexToHsl(color)[0];
   let lighting = hexToHsl(color)[2];
-  console.log(hue)
 
   if((lighting >= 21 && lighting <= 65) && (hue >= 15 && hue <= 42)) {
     return 'brown';
-  } else if( (lighting == 0 || ligthing <= 21) && hue == 0) {
+  } else if( (lighting > 0 || lighting <= 7) && hue == 0) {
     return 'black';
-  } else if (hue == 0) {
+  } else if ((lighting > 93 || lighting <= 100) && hue == 0) {
     return 'white';
   }
 
@@ -47,12 +46,16 @@ function getBasicColorName(color) {
 }
 
 function generatePallete (pallete) {
-  let words = [];
+  let words = pallete;
+  let pallete = [];
   if(pallete.includes('#')) {
     words = colorAssociations[getBasicColorName(pallete)];
-    console.log(words)
   }
-  console.log(pallete)
+
+  while(pallete.length <= 4) {
+
+  }
+  console.log(words)
 }
 
   module.exports = { generatePallete };
