@@ -6,6 +6,8 @@ const hexToHsl = require('hex-to-hsl');
 
 const gen = require('./palleteGen.js');
 
+const extract = require('./extractColors.js');
+
 const express = require("express");
 
 const app = express();
@@ -19,7 +21,7 @@ app.listen(PORT, () => {
 
   app.get("/picker", (request, response) => {
    let source = request.query.sourceColor;
-   let nearestColorAmount = request.query.nearestColorsAmount ?? 1;
+   let nearestColorAmount = request.query.colorsAmount ?? 1;
    let allowedColors = request.query.allowedColors ?? ['#008dcd','#0249BA','#027DBA'];
    let pallete = request.query.pallete ?? source;
 
@@ -35,13 +37,16 @@ app.listen(PORT, () => {
      }
 
      let nearest = nearestColors.closestColors(source, allowedColors, nearestColorAmount);
-
-     response.send({
-      sourceColor: source,
-      rgb: utils.hexToRgb(source),
-      hsl: hexToHsl(source),
-      colorName: name,
-      nearestColors: nearest,
-      pallete: gen.generatePallete(pallete)
+     extract.extractColorPallete(request.query.image, allowedColors).then(function (imagePallete) {
+      console.log(imagePallete);
+      response.send({
+         sourceColor: source,
+         rgb: utils.hexToRgb(source),
+         hsl: hexToHsl(source),
+         colorName: name,
+         nearestColors: nearest,
+         imageColoPallete: imagePallete,
+         pallete: gen.generatePallete(pallete)
+        });
      });
   });

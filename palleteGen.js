@@ -21,15 +21,15 @@ function getBasicColorName(color) {
 
   if((lighting >= 21 && lighting <= 65) && (hue >= 15 && hue <= 42)) {
     return 'brown';
-  } else if( (lighting >= 0 || lighting <= 21) && hue == 0) {
-    return 'black';
-  } else if ((lighting >= 90 || lighting <= 100) && hue == 0) {
-    return 'white';
-  } else if ((lighting >= 21 || lighting <= 90) && hue == 0) {
+  } else if ((lighting >= 21 && lighting <= 90) && hue == 0) {
     return 'gray';
+  } else if( (lighting >= 0 && lighting <= 21) && hue == 0) {
+    return 'black';
+  } else if ((lighting >= 90 && lighting <= 100) && hue == 0) {
+    return 'white';
   }
 
-  if(hue >= 0 && hue <= 15 || hue >= 330 && hue <= 360) {
+  if(hue >= 0 && hue <= 15 && hue >= 330 && hue <= 360) {
     return 'red';
   } else if(hue >= 165 && hue <= 199) {
     return 'light blue';
@@ -55,9 +55,9 @@ function generatePallete (pallete) {
     words = colorAssociations[getBasicColorName(pallete)];
   }
 
-  while(colorPallete.length <= 4) {
+  //while(colorPallete.length <= 4) {
 
-  }
+  //}
   console.log(words)
 }
 
