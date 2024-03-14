@@ -57,6 +57,7 @@ function generatePallete (pallete) {
   if(pallete.includes('#')) {
     words = colorAssociations[getBasicColorName(pallete)];
   }
+  words = [... new Set(words)];
 
   //while(colorPallete.length <= 4) {
 
