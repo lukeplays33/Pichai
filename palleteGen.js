@@ -13,7 +13,8 @@ let colorAssociations = {
   'black': ['sophisticated', 'secure', 'modern', 'clear thinking', 'efficient', 'straight talking', 'uncompromising'],
   'white': ['sophisticated', 'secure', 'modern', 'clear thinking', 'efficient', 'straight talking', 'uncompromising'],
   'gray': ['conformism', 'adaptability', 'emotionless', 'neutral', 'cool', 'steady', 'exquisite formality', 'mature', 'intellect', 'balance'],
-  'teal': ['trustworthiness', 'reliability', 'stability', 'endurance', 'calm']
+  'teal': ['trustworthiness', 'reliability', 'stability', 'endurance', 'calm'],
+  'magenta': ['creativity', 'self expression','love', 'compassion', 'friendly','welcomming']
 }
 
 function getBasicColorName(color) {
@@ -46,8 +47,10 @@ function getBasicColorName(color) {
     return 'green';
   } else if(hue >= 244 && hue <= 286) {
     return 'purple';
-  } else if(hue >= 286 && hue <= 330) {
+  } else if(hue >= 299 && hue <= 330) {
     return 'pink';
+  } else if(hue >= 286 && hue <= 299) {
+    return 'magenta';
   }
 }
 
