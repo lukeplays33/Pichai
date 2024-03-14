@@ -12,7 +12,8 @@ let colorAssociations = {
   'brown': ['reliable', 'simplistic', 'supportive', 'natural','traditional', 'trustworthy', 'neutral'],
   'black': ['sophisticated', 'secure', 'modern', 'clear thinking', 'efficient', 'straight talking', 'uncompromising'],
   'white': ['sophisticated', 'secure', 'modern', 'clear thinking', 'efficient', 'straight talking', 'uncompromising'],
-  'gray': ['conformism', 'adaptability', 'emotionless', 'neutral', 'cool', 'steady', 'exquisite formality', 'mature', 'intellect', 'balance']
+  'gray': ['conformism', 'adaptability', 'emotionless', 'neutral', 'cool', 'steady', 'exquisite formality', 'mature', 'intellect', 'balance'],
+  'teal': ['trustworthiness', 'reliability', 'stability', 'endurance', 'calm']
 }
 
 function getBasicColorName(color) {
@@ -31,8 +32,10 @@ function getBasicColorName(color) {
 
   if(hue >= 0 && hue <= 15 && hue >= 330 && hue <= 360) {
     return 'red';
-  } else if(hue >= 165 && hue <= 199) {
+  } else if(hue >= 173 && hue <= 199) {
     return 'light blue';
+  } else if(hue >= 155 && hue <= 173) {
+    return 'teal';
   } else if(hue >= 15 && hue <= 42) {
     return 'orange';
   } else if(hue >= 199 && hue <= 244) {
@@ -50,7 +53,7 @@ function getBasicColorName(color) {
 
 function generatePallete (pallete) {
   let words = pallete;
-  let colorPallete = [];
+  let colorPallete = {};
   if(pallete.includes('#')) {
     words = colorAssociations[getBasicColorName(pallete)];
   }
