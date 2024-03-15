@@ -4,6 +4,7 @@ const nearestColors = require('./nearestCOlorFInder.js'); // damm im good at typ
 const utils = require('./colorUTils.js');
 const hexToHsl = require('hex-to-hsl');
 
+const Classifier = require('./colorClassifier.js');
 const gen = require('./palleteGen.js');
 
 const extract = require('./extractColors.js');
@@ -25,10 +26,6 @@ app.listen(PORT, () => {
    let allowedColors = request.query.allowedColors ?? ['#008dcd','#0249BA','#027DBA'];
    let pallete = request.query.pallete ?? source;
 
-     const status = {
-        "Status": "Running"
-     };
-
      let name = ntc.name(source)[1];
 
      let customNamesKeys = Object.keys(customColors.names)
@@ -44,6 +41,7 @@ app.listen(PORT, () => {
          rgb: utils.hexToRgb(source),
          hsl: hexToHsl(source),
          colorName: name,
+         colorClass: Classifier.classifyColor(source),
          nearestColors: nearest,
          imageColoPallete: imagePallete,
          pallete: gen.generatePallete(pallete)

@@ -1,5 +1,7 @@
 const hexToHsl = require('hex-to-hsl');
 
+const Classifier = require('./colorClassifier.js');
+
 let colorAssociations = {
   'light blue': ['refreshing', 'confident', 'problem-solving', 'intelligent', 'forward-thinking', 'trustworthy', 'reflective', 'efficient', 'communicative'],
   'red': ['energetic', 'courageous', 'warm', 'adventurous', 'strong', 'exciting', 'abundant', 'vital', 'fun'],
