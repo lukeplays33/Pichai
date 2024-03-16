@@ -10,7 +10,7 @@ net.train([
     {input: {'r': 0.255, 'g': 0.0, 'b': 0.155}, output: {'Magenta':1}},
     {input: {'r': 0.129, 'g': 0.198, 'b': 0.240}, output: {'Light Blue':1}},
     {input: {'r': 0.255, 'g': 0.222, 'b': 0.89}, output: {'Yellow':1}},
-    {input: {'r': 0.139, 'g': 0.230, 'b': 0.`39`}, output: {'Light Green':1}},
+    {input: {'r': 0.139, 'g': 0.230, 'b': 0.39}, output: {'Light Green':1}},
     {input: {'r': 0.252, 'g': 0.32, 'b': 0.112}, output: {'Pink':1}},
     {input: {'r': 0.134, 'g': 0.133, 'b': 0.131}, output: {'Grey':1}},
     {input: {'r': 0.206, 'g': 0.106, 'b': 0.206}, output: {'Light Grey':1}},
