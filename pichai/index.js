@@ -25,6 +25,7 @@ app.listen(PORT, () => {
    let nearestColorAmount = request.query.colorsAmount ?? 1;
    let allowedColors = request.query.allowedColors ?? ['#008dcd','#0249BA','#027DBA'];
    let pallete = request.query.pallete ?? source;
+   let palleteLength = request.query.palleteLength ?? 10;
 
      let name = ntc.name(source)[1];
 
@@ -34,7 +35,7 @@ app.listen(PORT, () => {
      }
 
      let nearest = nearestColors.closestColors(source, allowedColors, nearestColorAmount);
-     extract.extractColorPallete(request.query.image, allowedColors).then(function (imagePallete) {
+     extract.extractColorPallete(request.query.image, allowedColors, palleteLength).then(function (imagePallete) {
       console.log(imagePallete);
       response.send({
          sourceColor: source,

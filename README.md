@@ -1,5 +1,5 @@
 # Pichai
-Pichai is an AI based Module that uses the power of AI to gather certain information about colors.
+Pichai is an AI based tool that helps you identify colors, generate color palletes and find similar colors.
 
 # What can it do?
 * Get color name
