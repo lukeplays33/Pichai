@@ -11,6 +11,6 @@ document.body.onload = function () {
         overrideColorsOnScroll: true
     }
 
-    let pichai = new PichaiUX();
+    let pichai = new PichaiUX(options);
     pichai.initialize();
 }
