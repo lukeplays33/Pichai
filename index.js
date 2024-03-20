@@ -1,6 +1,6 @@
 import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
 
-window.onload = function () {
+document.body.onload = function () {
     alert(document.body.style.backgroundImage)
     let image = String(document.body.style.backgroundImage);
     image = image.substring(3, image.length - 1);
