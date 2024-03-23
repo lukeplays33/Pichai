@@ -19,4 +19,4 @@ async function makeThemedfavIcon() {
     link.href = await pichai.generateDynamicIcon(faviconUrl);
 }
 
-window.onload = makeThemedfavIcon();
+makeThemedfavIcon();
