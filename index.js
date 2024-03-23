@@ -6,7 +6,7 @@ pichai.initialize();
 async function makeThemedfavIcon() {
     const root = document.documentElement;
 
-    console.log(window.getComputedStyle(root).getPropertyValue('--primary'))
+    console.log(window.getComputedStyle(root).getPropertyValue('--primary') == '')
     while (window.getComputedStyle(root).getPropertyValue('--primary')) {}
     //update favIcon to match themed one.
     const faviconLink = document.querySelector("link[rel='icon']") || document.querySelector("link[rel='shortcut icon']");
