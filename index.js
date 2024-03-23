@@ -16,7 +16,6 @@ async function makeThemedfavIcon() {
         link.rel = 'icon';
         document.head.appendChild(link);
     }
-    console.log(await pichai.generateDynamicIcon(faviconUrl))
     link.href = await pichai.generateDynamicIcon(faviconUrl);
 }
 makeThemedfavIcon();
