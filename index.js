@@ -18,4 +18,5 @@ async function makeThemedfavIcon() {
     }
     link.href = await pichai.generateDynamicIcon(faviconUrl);
 }
-makeThemedfavIcon();
+
+winbdow.onload = makeThemedfavIcon();
