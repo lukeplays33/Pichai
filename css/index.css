@@ -15,7 +15,9 @@ main {
 main * {
     display:flex;
     flex-direction:column;
+}
 
+article {
     width:100%;
 }
 
