@@ -13,7 +13,7 @@ let rgb = document.getElementById('rgb');
 
     let n_match = ntc.name(window.localStorage.getItem('previousColor') ?? '#008dcd');
 
-    name.value = n_match[1];
+    name.innerHTML = n_match[1];
     rgb.value = hexToRgb(n_match[0]);
     hex.value = window.localStorage.getItem('previousColor') ?? '#008dcd';
 
@@ -33,7 +33,7 @@ picker.onclick = function () {
             //result.sRGBHex to get hex code
             let n_match = ntc.name(result.sRGBHex);
 
-            name.value = n_match[1];
+            name.innerHTML = n_match[1];
             rgb.value = hexToRgb(n_match[0]);
             hex.value = result.sRGBHex;
         })

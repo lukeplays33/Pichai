@@ -41,7 +41,7 @@ main * {
     margin-bottom:8px;
 }
 
-#hex {
+#hex, #hsl {
     margin-right:8px;
 }
 
