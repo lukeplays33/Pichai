@@ -10,13 +10,7 @@ let name = document.getElementById('colorName');
 let hex = document.getElementById('hex');
 let rgb = document.getElementById('rgb');
 
-window.onload = function () {
-    let n_match = ntc.name(window.localStorage.getItem('previousColor') ?? '#008dcd');
 
-    name.innerHTML = n_match[0];
-    rgb.innerHTML = n_match[1];
-    hex.innerHTML = window.localStorage.getItem('previousColor') ?? '#008dcd';
-}
 
 picker.onmouseover = function () {
     if (!window.EyeDropper) {
