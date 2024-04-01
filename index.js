@@ -1,5 +1,6 @@
 import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
 import { ntc } from './js/ntc.js';
+import { hexToRgb } from './js/colorUtils.js';
 
 let pichai = new PichaiUX();
 pichai.initialize();
@@ -13,7 +14,7 @@ let rgb = document.getElementById('rgb');
     let n_match = ntc.name(window.localStorage.getItem('previousColor') ?? '#008dcd');
 
     name.innerHTML = n_match[1];
-    rgb.innerHTML = n_match[0];
+    rgb.innerHTML = hexToRgb(n_match[0]);
     hex.innerHTML = window.localStorage.getItem('previousColor') ?? '#008dcd';
 
 picker.onmouseover = function () {
@@ -33,7 +34,7 @@ picker.onmouseover = function () {
             let n_match = ntc.name(result.sRGBHex);
 
             name.innerHTML = n_match[1];
-            rgb.innerHTML = n_match[0];
+            rgb.innerHTML = hexToRgb(n_match[0]);
             hex.innerHTML = result.sRGBHex;
         })
         .catch((e) => {
