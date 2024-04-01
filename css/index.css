@@ -20,6 +20,8 @@ main * {
 #colorName {
     width:100%;
 
-    color:var(--onPrimaryText);
+    color:var(--onPrimaryTextColor);
     background-color:var(--primary);
+
+    padding:8px;
 }
