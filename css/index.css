@@ -6,3 +6,12 @@ body {
     margin: 32px auto 32px auto;
     height: 50vh;
 }
+
+main {
+    width: 80%;
+}
+
+#colorName {
+    width:100%;
+    color:white;
+}
