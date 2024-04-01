@@ -28,7 +28,7 @@ main * {
     margin-bottom:8px;
 }
 
-#hex,rgb {
+#hex,#rgb {
     width:calc(50% - 4px);
 
     color:var(--primaryTextColor);
@@ -38,6 +38,10 @@ main * {
     margin-bottom:8px;
 }
 
-#hrex {
+#hex {
     margin-right:8px;
+}
+
+.tiles {
+    flex-direction:row !important;
 }
