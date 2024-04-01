@@ -11,7 +11,7 @@ let picker = document.getElementById('colorPicker');
 let name = document.getElementById('colorName');
 let hex = document.getElementById('hex');
 let rgb = document.getElementById('rgb');
-let colorClass = dpcument.getElementById('colorClass');
+let colorClass = document.getElementById('colorClass');
 
     let n_match = ntc.name(window.localStorage.getItem('previousColor') ?? '#008dcd');
 
