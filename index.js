@@ -17,7 +17,7 @@ let rgb = document.getElementById('rgb');
     rgb.innerHTML = hexToRgb(n_match[0]);
     hex.innerHTML = window.localStorage.getItem('previousColor') ?? '#008dcd';
 
-picker.onmouseover = function () {
+picker.onclick = function () {
     if (!window.EyeDropper) {
         resultElement.textContent =
             "Your browser does not support the EyeDropper API";
