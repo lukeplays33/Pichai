@@ -13,19 +13,14 @@ picker.onmouseover = function () {
       }
     
       const eyeDropper = new EyeDropper();
-      const abortController = new AbortController();
     
       eyeDropper
-        .open({ signal: abortController.signal })
+        .open()
         .then((result) => {
             //result.sRGBHex to get hex code
-            console.log(result.sRGBHex);
+          console.log(result.sRGBHex);
         })
         .catch((e) => {
             console.log(e)
         });
-}
-
-picker.onmouseleave = function () {
-    abortController.abort();
 }
