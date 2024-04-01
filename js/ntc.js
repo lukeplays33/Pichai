@@ -30,7 +30,7 @@ Sample Usage:
 
 */
 
-var ntc = {
+let ntc = {
 
     init: function() {
       var color, rgb, hsl;
@@ -1684,3 +1684,5 @@ var ntc = {
   }
   
   ntc.init();
+
+  export { ntc }

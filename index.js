@@ -1,4 +1,5 @@
 import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
+import { ntc } from './js/ntc.js';
 
 let pichai = new PichaiUX();
 pichai.initialize();
@@ -20,7 +21,7 @@ picker.onmouseover = function () {
         .open()
         .then((result) => {
             //result.sRGBHex to get hex code
-            var n_match = ntc.name("#6195ED");
+            let n_match = ntc.name("#6195ED");
             name.innerHTML = n_match
         })
         .catch((e) => {
