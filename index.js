@@ -22,7 +22,6 @@ hex.value = window.localStorage.getItem('previousColor') ?? '#008dcd';
 setColorClass(RGB.substring(4, RGB.length - 1).split(','));
 
 async function setColorClass (r,g,b) {
-    alert()
     colorClass.innerHTML = await findColorClass(r,g,b);
 }
 
