@@ -29,7 +29,7 @@ main * {
     margin-bottom:8px;
 }
 
-#hex,#rgb {
+#hex,#rgb, #hsl, #cmyk {
     width:calc(50% - 4px);
 
     color:var(--primaryTextColor);
