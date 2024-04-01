@@ -15,7 +15,7 @@ window.onload = function () {
 
     name.innerHTML = n_match[0];
     rgb.innerHTML = n_match[1];
-    hex.innerHTML = result.sRGBHex;
+    hex.innerHTML = window.localStorage.getItem('previousColor') ?? '#008dcd';
 }
 
 picker.onmouseover = function () {
