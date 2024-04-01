@@ -17,31 +17,27 @@ main * {
     flex-direction:column;
 }
 
-article {
-    width:100%;
-}
-
 #colorName {
-    width:100%;
+    width:calc(100% - 32px);
 
     color:var(--primaryTextColor);
     background-color:var(--primary);
 
     padding:16px;
 
-    margin-top:8px;
+    margin-top:0px;
     margin-bottom:8px;
 }
 
 #hex,#rgb {
-    width:50%;
+    width:calc(50% - 4px);
 
     color:var(--primaryTextColor);
     background-color:var(--primary);
 
     padding:16px;
-
-    margin-top:8px;
+    
+    margin-top:0px;
     margin-bottom:8px;
 }
 

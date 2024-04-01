@@ -10,6 +10,14 @@ let name = document.getElementById('colorName');
 let hex = document.getElementById('hex');
 let rgb = document.getElementById('rgb');
 
+window.onload = function () {
+    let n_match = ntc.name(window.localStorage.getItem('previousColor'));
+
+    name.innerHTML = n_match[0];
+    rgb.innerHTML = n_match[1];
+    hex.innerHTML = result.sRGBHex;
+}
+
 picker.onmouseover = function () {
     if (!window.EyeDropper) {
         resultElement.textContent =
@@ -22,6 +30,7 @@ picker.onmouseover = function () {
     eyeDropper
         .open()
         .then((result) => {
+            window.localStorage.setItem('lastColor', result.sRGBHex);
             //result.sRGBHex to get hex code
             let n_match = ntc.name(result.sRGBHex);
 
