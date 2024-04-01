@@ -24,4 +24,20 @@ main * {
     background-color:var(--primary);
 
     padding:16px;
+
+    margin-bottom:8px;
+}
+
+#hex,rgb {
+    width:calc(50% - 4px);
+
+    color:var(--primaryTextColor);
+    background-color:var(--primary);
+
+    padding:16px;
+    margin-bottom:8px;
+}
+
+#hrex {
+    margin-right:8px;
 }
