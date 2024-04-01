@@ -1,3 +1,7 @@
 body {
     background-image: url('https://wallpapercave.com/wp/wp7378697.png');
 }
+
+#colorPicker {
+    margin: 32px auto 32px auto;
+}
