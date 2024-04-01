@@ -24,9 +24,9 @@ picker.onmouseover = function () {
         .then((result) => {
             //result.sRGBHex to get hex code
             let n_match = ntc.name(result.sRGBHex);
-            
-            name.innerHTML = n_match[1];
-            rgb.innerHTML = n_match[0];
+
+            name.innerHTML = n_match[0];
+            rgb.innerHTML = n_match[1];
             hex.innerHTML = result.sRGBHex;
         })
         .catch((e) => {
