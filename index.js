@@ -13,13 +13,17 @@ let hex = document.getElementById('hex');
 let rgb = document.getElementById('rgb');
 let colorClass = document.getElementById('colorClass');
 
-    let n_match = ntc.name(window.localStorage.getItem('previousColor') ?? '#008dcd');
+let n_match = ntc.name(window.localStorage.getItem('previousColor') ?? '#008dcd');
 
-    let RGB = hexToRgb(n_match[0]);
-    name.innerHTML = n_match[1];
-    rgb.value = RGB
-    hex.value = window.localStorage.getItem('previousColor') ?? '#008dcd';
-    colorClass.innerHTML = findColorClass(RGB.substring(4, RGB.length - 1).split(','))
+let RGB = hexToRgb(n_match[0]);
+name.innerHTML = n_match[1];
+rgb.value = RGB
+hex.value = window.localStorage.getItem('previousColor') ?? '#008dcd';
+setColorClass(RGB.substring(4, RGB.length - 1).split(','));
+
+async function setColorClass (r,g,b) {
+    colorClass.innerHTML = await findColorClass(r,g,b);
+}
 
 picker.onclick = function () {
     if (!window.EyeDropper) {
@@ -32,7 +36,7 @@ picker.onclick = function () {
 
     eyeDropper
         .open()
-        .then((result) => {
+        .then(async (result) => {
             window.localStorage.setItem('lastColor', result.sRGBHex);
             //result.sRGBHex to get hex code
             let n_match = ntc.name(result.sRGBHex);
@@ -41,7 +45,7 @@ picker.onclick = function () {
             name.innerHTML = n_match[1];
             rgb.value = RGB
             hex.value = result.sRGBHex;
-            colorClass.innerHTML = findColorClass(RGB.substring(4, RGB.length - 1).split(','))
+            setColorClass(RGB.substring(4, RGB.length - 1).split(','));
         })
         .catch((e) => {
             console.log(e)

@@ -17,7 +17,7 @@ main * {
     flex-direction:column;
 }
 
-#colorName {
+#colorName, #colorClass {
     width:calc(100% - 32px);
 
     color:var(--primaryTextColor);
