@@ -29,16 +29,19 @@ article {
 
     padding:16px;
 
+    margin-top:8px;
     margin-bottom:8px;
 }
 
 #hex,#rgb {
-    width:calc(50% - 4px);
+    width:50%;
 
     color:var(--primaryTextColor);
     background-color:var(--primary);
 
     padding:16px;
+
+    margin-top:8px;
     margin-bottom:8px;
 }
 
