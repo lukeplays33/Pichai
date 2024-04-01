@@ -5,6 +5,8 @@ pichai.initialize();
 
 let picker = document.getElementById('colorPicker');
 
+let name = document.getElementById('colorName');
+
 picker.onmouseover = function () {
     if (!window.EyeDropper) {
         resultElement.textContent =
@@ -18,7 +20,8 @@ picker.onmouseover = function () {
         .open()
         .then((result) => {
             //result.sRGBHex to get hex code
-          console.log(result.sRGBHex);
+            var n_match = ntc.name("#6195ED");
+            name.innerHTML = n_match
         })
         .catch((e) => {
             console.log(e)
