@@ -15,7 +15,7 @@ let picker = document.getElementById('colorPicker').onclick = function () {
       eyeDropper
         .open()
         .then((result) => {
-          console.log(result.sRGBHex);
+          console.log(result);
         })
         .catch((e) => {
             console.log(e)
