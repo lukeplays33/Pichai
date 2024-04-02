@@ -17,7 +17,7 @@ let hsl = document.getElementById('hsl');
 let cmyk = document.getElementById('cmyk');
 let colorClass = document.getElementById('colorClass');
 
-let n_match = ntc.name(window.localStorage.getItem('previousColor') ?? '#008dcd');
+let n_match = ntc.name(window.localStorage.getItem('lastColor') ?? '#008dcd');
 
 let RGB = hexToRgb(n_match[0]);
 RGB = RGB.substring(4, RGB.length - 1).split(',');
