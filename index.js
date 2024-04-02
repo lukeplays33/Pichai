@@ -19,6 +19,7 @@ let RGB = hexToRgb(n_match[0]);
 name.innerHTML = n_match[1];
 rgb.value = RGB
 hex.value = window.localStorage.getItem('previousColor') ?? '#008dcd';
+console.log(RGB.substring(4, RGB.length - 1).split(','))
 setColorClass(RGB.substring(4, RGB.length - 1).split(','));
 
 async function setColorClass (r,g,b) {
