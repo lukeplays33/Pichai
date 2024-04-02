@@ -3,7 +3,7 @@ import { findColorClass } from 'https://lukeplays33.github.io/Pichai-UX/AI/color
 import { getTextColor } from 'https://lukeplays33.github.io/Pichai-UX/AI/textColorFInder.js';
 
 import { ntc } from './js/ntc.js';
-import { hexToRgb } from './js/colorUtils.js';
+  import { hexToRgb, RGBToHSL, rgbToCmyk } from './js/colorUtils.js';
 
 let pichai = new PichaiUX();
 pichai.initialize();
@@ -13,6 +13,8 @@ let picker = document.getElementById('colorPicker');
 let name = document.getElementById('colorName');
 let hex = document.getElementById('hex');
 let rgb = document.getElementById('rgb');
+let hsl = document.getElementById('hsl');
+let cmyk = document.getElementById('cmyk');
 let colorClass = document.getElementById('colorClass');
 
 let n_match = ntc.name(window.localStorage.getItem('previousColor') ?? '#008dcd');
@@ -20,7 +22,9 @@ let n_match = ntc.name(window.localStorage.getItem('previousColor') ?? '#008dcd'
 let RGB = hexToRgb(n_match[0]);
 RGB = RGB.substring(4, RGB.length - 1).split(',');
 name.innerHTML = n_match[1];
-rgb.value = RGB
+rgb.value = RGB;
+hsl.value = RGBToHSL(RGB[0], RGB[1], RGB[2]);
+cmyk.value = rgbToCmyk(RGB[0], RGB[1], RGB[2]);
 hex.value = window.localStorage.getItem('previousColor') ?? '#008dcd';
 setColorClass(RGB[0], RGB[1], RGB[2]);
 
@@ -49,7 +53,9 @@ picker.onclick = function () {
             RGB = RGB.substring(4, RGB.length - 1).split(',');
 
             name.innerHTML = n_match[1];
-            rgb.value = RGB
+            rgb.value = RGB;
+            hsl.value = RGBToHSL(RGB[0], RGB[1], RGB[2]);
+            cmyk.value = rgbToCmyk(RGB[0], RGB[1], RGB[2]);
             hex.value = result.sRGBHex;
             setColorClass(RGB[0], RGB[1], RGB[2]);
         })
