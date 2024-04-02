@@ -24,6 +24,7 @@ setColorClass(RGB[0], RGB[1], RGB[2]);
 
 async function setColorClass (r,g,b) {
     colorClass.innerHTML = await findColorClass(r,g,b);
+    colorClass.style.backgroundColor = await findColorClass(r,g,b);
 }
 
 picker.onclick = function () {
