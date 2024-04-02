@@ -16,11 +16,11 @@ let colorClass = document.getElementById('colorClass');
 let n_match = ntc.name(window.localStorage.getItem('previousColor') ?? '#008dcd');
 
 let RGB = hexToRgb(n_match[0]);
+RGB = RGB.substring(4, RGB.length - 1).split(',');
 name.innerHTML = n_match[1];
 rgb.value = RGB
 hex.value = window.localStorage.getItem('previousColor') ?? '#008dcd';
-console.log(RGB.substring(4, RGB.length - 1).split(','))
-setColorClass(RGB.substring(4, RGB.length - 1).split(','));
+setColorClass(RGB[0], RGB[1], RGB[2]);
 
 async function setColorClass (r,g,b) {
     colorClass.innerHTML = await findColorClass(r,g,b);
@@ -42,11 +42,12 @@ picker.onclick = function () {
             //result.sRGBHex to get hex code
             let n_match = ntc.name(result.sRGBHex);
             let RGB = hexToRgb(n_match[0]);
+            RGB = RGB.substring(4, RGB.length - 1).split(',');
 
             name.innerHTML = n_match[1];
             rgb.value = RGB
             hex.value = result.sRGBHex;
-            setColorClass(RGB.substring(4, RGB.length - 1).split(','));
+            setColorClass(RGB[0], RGB[1], RGB[2]);
         })
         .catch((e) => {
             console.log(e)
