@@ -25,7 +25,7 @@ name.innerHTML = n_match[1];
 rgb.value = RGB;
 hsl.value = RGBToHSL(RGB[0], RGB[1], RGB[2]);
 cmyk.value = rgbToCmyk(RGB[0], RGB[1], RGB[2]);
-hex.value = window.localStorage.getItem('previousColor') ?? '#008dcd';
+hex.value = window.localStorage.getItem('lastColor') ?? '#008dcd';
 setColorClass(RGB[0], RGB[1], RGB[2]);
 
 async function setColorClass (r,g,b) {
