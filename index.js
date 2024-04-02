@@ -1,5 +1,7 @@
 import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
 import { findColorClass } from 'https://lukeplays33.github.io/Pichai-UX/AI/colorClassFinder.js';
+import { getTextColor } from 'https://lukeplays33.github.io/Pichai-UX/AI/textColorFInder.js';
+
 import { ntc } from './js/ntc.js';
 import { hexToRgb } from './js/colorUtils.js';
 
@@ -25,6 +27,7 @@ setColorClass(RGB[0], RGB[1], RGB[2]);
 async function setColorClass (r,g,b) {
     colorClass.innerHTML = await findColorClass(r,g,b);
     colorClass.style.backgroundColor = await findColorClass(r,g,b);
+    colorClass. style.color = await getTextColor(r,g,b);
 }
 
 picker.onclick = function () {
