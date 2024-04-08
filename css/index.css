@@ -79,3 +79,7 @@ main * {
 #length {
     width:50px;
 }
+
+.card {
+    border-radius:10px;
+}
