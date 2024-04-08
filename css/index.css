@@ -90,4 +90,10 @@ h2 {
     display:none;
     grid-template-columns: 1fr 1fr;
     grid-gap: 8px;
+
+    padding:8px;
+}
+
+#allowedColorsDialog .card {
+    margin:0px;
 }
