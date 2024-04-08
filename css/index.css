@@ -52,4 +52,9 @@ main * {
 .tabBarHolder {
     position:fixed;
     top:8px;
+
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
 }
