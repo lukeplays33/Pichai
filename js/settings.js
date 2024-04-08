@@ -5,7 +5,7 @@ pichai.initialize();
 
 let lengthInput = document.getElementById('length');
 
-lengthInput.value = window.localStorage.getItem('palleteLength'); //set value back to the one set by the user
+lengthInput.value = window.localStorage.getItem('palleteLength') ?? 10; //set value back to the one set by the user
 
 lengthInput.onchange = function () {
     window.localStorage.setItem('palleteLength', this.value); // save the users selected pallete size
