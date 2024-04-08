@@ -4,7 +4,7 @@ let pichai = new PichaiUX();
 pichai.initialize();
 
 let lengthInput = document.getElementById('length');
-
+alert(window.localStorage.getItem('palleteLength'))
 lengthInput.value = window.localStorage.getItem('palleteLength') == '' ? 10 : window.localStorage.getItem('palleteLength'); //set value back to the one set by the user
 
 lengthInput.onchange = function () {
