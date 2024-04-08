@@ -53,11 +53,11 @@ function addAllowedColor (color) {
 
     holder.children[1].value = '-';
     holder.children[1].id = `remove${color}`;
+    holder.children[1].setAttribute('color', color);
     holder.children[1].onclick = function () {
         this.remove();
 
-        console.log(listOfAllowedColors.indexOf(this.parentNode.children[0].innerHTML));
-        listOfAllowedColors.slice(listOfAllowedColors.indexOf(this.parentNode.children[0].innerHTML,1));
+        listOfAllowedColors.slice(listOfAllowedColors.indexOf(this.getAttribute('color')));
         window.localStorage.setItem('allowedColors', listOfAllowedColors.join(','));
     }
 
