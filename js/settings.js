@@ -7,7 +7,7 @@ let lengthInput = document.getElementById('length');
 let allowedColors = document.getElementById('allowedColors');
 let allowedColorsList = document.getElementById('allowedColorsDialog');
 let add = document.getElementById('add');
-let creteColor = documnet.getElementById('create');
+let creteColor = document.getElementById('create');
 
 lengthInput.value = window.localStorage.getItem('palleteLength') == null ? 10 : window.localStorage.getItem('palleteLength'); //set value back to the one set by the user
 
