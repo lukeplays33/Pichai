@@ -3,6 +3,17 @@ import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
 let pichai = new PichaiUX();
 pichai.initialize();
 
+let i;
+
+let listOfAllowedColors = [];
+if(window.localStorage.getItem('allowedColors') != null) {
+    listOfAllowedColors = window.localStorage.getItem('allowedColors').split(',');
+
+    for(i of listOfAllowedColors) {
+        addAllowedColor(i);
+    }
+}
+
 let lengthInput = document.getElementById('length');
 let allowedColors = document.getElementById('allowedColors');
 let allowedColorsList = document.getElementById('allowedColorsDialog');
@@ -33,13 +44,25 @@ add.onclick = function () {
     }
 
     addAllowedColor(color);
+    listOfAllowedColors.push(color);
+    window.localStorage.setItem('allowedColors', listOfAllowedColors.join(','));
 }
 
 function addAllowedColor (color) {
     let holder = creteColor.cloneNode(true);
+
     holder.children[1].value = '-';
     holder.children[1].id = `remove${color}`;
+    holder.children[1].onclick = function () {
+        this.remove();
+
+        console.log(listOfAllowedColors.indexOf(this.previousSibling.innerHTML));
+        listOfAllowedColors.slice(listOfAllowedColors.indexOf(this.previousSibling.innerHTML),1);
+        window.localStorage.setItem('allowedColors', listOfAllowedColors.join(','));
+    }
+
     holder.children[0].innerHTML = color;
+
     holder.style.backgroundColor = color;
 
     allowedColorsList.appendChild(holder);
