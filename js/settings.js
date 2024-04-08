@@ -36,6 +36,7 @@ add.onclick = function () {
 
 function addAllowedColor (color) {
     let holder = add.cloneNode(true);
+    console.log(holder.children)
     holder.children[1].value = '-';
     holder.children[1].id = `remove${color}`;
     holder.children[0].innerHTML = color;
