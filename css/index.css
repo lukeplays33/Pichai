@@ -69,3 +69,7 @@ main * {
 .card input {
     margin-left:auto;
 }
+
+#length {
+    width:50px;
+}
