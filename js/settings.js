@@ -56,8 +56,8 @@ function addAllowedColor (color) {
     holder.children[1].onclick = function () {
         this.remove();
 
-        console.log(listOfAllowedColors.indexOf(this.previousSibling.innerHTML));
-        listOfAllowedColors.slice(listOfAllowedColors.indexOf(this.previousSibling.innerHTML),1);
+        console.log(listOfAllowedColors.indexOf(this.parentNode.children[0].innerHTML));
+        listOfAllowedColors.slice(listOfAllowedColors.indexOf(this.parentNode.children[0].innerHTML,1));
         window.localStorage.setItem('allowedColors', listOfAllowedColors.join(','));
     }
 
