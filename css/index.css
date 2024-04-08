@@ -58,3 +58,8 @@ main * {
     margin-right: auto;
     margin-left: auto;
 }
+
+.row {
+    display:flex;
+    flex-direction:row;
+}
