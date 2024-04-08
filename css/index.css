@@ -48,3 +48,8 @@ main * {
 .tiles {
     flex-direction:row !important;
 }
+
+.tabBarHolder {
+    position:fixed;
+    top:4px;
+}
