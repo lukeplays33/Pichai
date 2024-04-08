@@ -36,7 +36,7 @@ add.onclick = function () {
 }
 
 function addAllowedColor (color) {
-    let holder = adcreteColor.cloneNode(true);
+    let holder = creteColor.cloneNode(true);
     holder.children[1].value = '-';
     holder.children[1].id = `remove${color}`;
     holder.children[0].innerHTML = color;
