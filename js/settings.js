@@ -59,6 +59,7 @@ function addAllowedColor (color) {
 
         listOfAllowedColors = listOfAllowedColors.slice(listOfAllowedColors.indexOf(this.getAttribute('color')), 1);
         window.localStorage.setItem('allowedColors', listOfAllowedColors.join(','));
+        console.log(listOfAllowedColors.slice(listOfAllowedColors.indexOf(this.getAttribute('color')), 1))
     }
 
     holder.children[0].innerHTML = color;
