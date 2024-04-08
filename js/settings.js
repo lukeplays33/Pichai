@@ -57,10 +57,8 @@ function addAllowedColor (color) {
     holder.children[1].onclick = function () {
         this.parentNode.remove();
 
-        listOfAllowedColors.slice(listOfAllowedColors.indexOf(this.getAttribute('color'), 1));
+        listOfAllowedColors.slice(listOfAllowedColors.indexOf(this.getAttribute('color')), 1);
         window.localStorage.setItem('allowedColors', listOfAllowedColors.join(','));
-
-        console.log(listOfAllowedColors)
     }
 
     holder.children[0].innerHTML = color;
