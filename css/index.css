@@ -64,6 +64,8 @@ main * {
     flex-direction:row !important;
 
     padding:8px;
+
+    margin-top:8px;
 }
 
 .card input {
