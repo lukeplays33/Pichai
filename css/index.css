@@ -86,7 +86,7 @@ h2 {
     margin-bottom:0px;
 }
 
-#allowedColorsDialog {
+.allowedColorsDialog {
     display:none;
     grid-template-columns: 1fr 1fr;
     grid-gap: 8px;
