@@ -41,4 +41,6 @@ function addAllowedColor (color) {
     holder.children[1].id = `remove${color}`;
     holder.children[0].innerHTML = color;
     holder.style.backgroundColor = color;
+
+    allowedColorsList.appendChild(holder);
 }
