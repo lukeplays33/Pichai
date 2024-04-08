@@ -7,6 +7,7 @@ let lengthInput = document.getElementById('length');
 let allowedColors = document.getElementById('allowedColors');
 let allowedColorsList = document.getElementById('allowedColorsDialog');
 let add = document.getElementById('add');
+let creteColor = documnet.getElementById('create');
 
 lengthInput.value = window.localStorage.getItem('palleteLength') == null ? 10 : window.localStorage.getItem('palleteLength'); //set value back to the one set by the user
 
@@ -35,9 +36,9 @@ add.onclick = function () {
 }
 
 function addAllowedColor (color) {
-    let holder = add.cloneNode(true);
-    console.log(add.cloneNode(true).children)
+    let holder = adcreteColor.cloneNode(true);
     holder.children[1].value = '-';
     holder.children[1].id = `remove${color}`;
     holder.children[0].innerHTML = color;
+    holder.style.backgroundColor = color;
 }
