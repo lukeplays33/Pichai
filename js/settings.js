@@ -5,6 +5,12 @@ pichai.initialize();
 
 let i;
 
+let lengthInput = document.getElementById('length');
+let allowedColors = document.getElementById('allowedColors');
+let allowedColorsList = document.getElementById('allowedColorsDialog');
+let add = document.getElementById('add');
+let creteColor = document.getElementById('create');
+
 let listOfAllowedColors = [];
 if(window.localStorage.getItem('allowedColors') != null) {
     listOfAllowedColors = window.localStorage.getItem('allowedColors').split(',');
@@ -13,12 +19,6 @@ if(window.localStorage.getItem('allowedColors') != null) {
         addAllowedColor(i);
     }
 }
-
-let lengthInput = document.getElementById('length');
-let allowedColors = document.getElementById('allowedColors');
-let allowedColorsList = document.getElementById('allowedColorsDialog');
-let add = document.getElementById('add');
-let creteColor = document.getElementById('create');
 
 lengthInput.value = window.localStorage.getItem('palleteLength') == null ? 10 : window.localStorage.getItem('palleteLength'); //set value back to the one set by the user
 
