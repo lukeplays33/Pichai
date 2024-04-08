@@ -62,4 +62,6 @@ main * {
 .row {
     display:flex;
     flex-direction:row !important;
+
+    padding:8px;
 }
