@@ -68,10 +68,6 @@ main * {
     margin-top:8px;
 }
 
-.row:nth-child(1) {
-    margin-top:30px;
-}
-
 .card input {
     margin-left:auto;
 }
