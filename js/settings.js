@@ -12,10 +12,11 @@ let add = document.getElementById('add');
 let creteColor = document.getElementById('create');
 
 let listOfAllowedColors = [];
-if(window.localStorage.getItem('allowedColors') != null) {
+
+if (window.localStorage.getItem('allowedColors') != null || window.localStorage.getItem('allowedColors') == '[]') {
     listOfAllowedColors = window.localStorage.getItem('allowedColors').split(',');
 
-    for(i of listOfAllowedColors) {
+    for (i of listOfAllowedColors) {
         addAllowedColor(i);
     }
 }
@@ -27,7 +28,7 @@ lengthInput.onchange = function () {
 }
 
 allowedColors.onclick = function () {
-    if(this.value == 'V') {
+    if (this.value == 'V') {
         this.value = 'X';
         allowedColorsList.style.display = 'grid';
     } else {
@@ -39,7 +40,7 @@ allowedColors.onclick = function () {
 add.onclick = function () {
     let color = prompt('Enter a hex code to add');
 
-    if(color == '' || color == null) {
+    if (color == '' || color == null) {
         return;
     }
 
@@ -48,7 +49,7 @@ add.onclick = function () {
     window.localStorage.setItem('allowedColors', listOfAllowedColors.join(','));
 }
 
-function addAllowedColor (color) {
+function addAllowedColor(color) {
     let holder = creteColor.cloneNode(true);
 
     holder.children[1].value = '-';
@@ -56,7 +57,7 @@ function addAllowedColor (color) {
     holder.children[1].setAttribute('color', color);
     holder.children[1].onclick = function () {
         this.parentNode.remove();
-        
+
         listOfAllowedColors.splice(listOfAllowedColors.indexOf(this.getAttribute('color')), 1);
         window.localStorage.setItem('allowedColors', listOfAllowedColors.join(','));
         console.log(listOfAllowedColors)
