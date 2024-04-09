@@ -13,6 +13,7 @@ let creteColor = document.getElementById('create');
 
 let listOfAllowedColors = [];
 
+alert(window.localStorage.getItem('allowedColors'))
 if (window.localStorage.getItem('allowedColors') != null || window.localStorage.getItem('allowedColors') == '[]') {
     listOfAllowedColors = window.localStorage.getItem('allowedColors').split(',');
 
