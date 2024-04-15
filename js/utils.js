@@ -1,8 +1,10 @@
 function addTile (element, value) {
     let art = document.createElement('article');
+    art.style.backgroundColor = value;
     art.classList.add('.smallTile');
 
     let text = document.createElement('p');
+    text.innerHTML = value;
 
     art.appendChild(text);
 
