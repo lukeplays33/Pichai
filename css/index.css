@@ -182,3 +182,7 @@ h2 {
     border-top-right-radius:20px;
     border-bottom-right-radius:20px;
 }
+
+.fab:nth-child(2) {
+    bottom: 52px;
+}
