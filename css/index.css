@@ -65,7 +65,7 @@ main * {
 
     padding:8px;
 
-    margin-top:8px;
+    margin-bottom:8px;
 }
 
 .card input {
@@ -83,7 +83,7 @@ main * {
 h2 {
     border-radius:15px;
     margin-top:8px;
-    margin-bottom:0px;
+    margin-bottom:8px;
 }
 
 #allowedColorsDialog {
