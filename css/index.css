@@ -17,7 +17,7 @@ main * {
     flex-direction:column;
 }
 
-#colorName, #colorClass {
+#colorName, #colorName2, #colorClass {
     width:calc(100% - 32px);
 
     color:var(--primaryTextColor);
@@ -29,7 +29,7 @@ main * {
     margin-bottom:8px;
 }
 
-#hex,#rgb, #hsl, #cmyk {
+#hex,#rgb, #hsl, #cmyk, .smallTile {
     width:calc(50% - 4px);
 
     color:var(--primaryTextColor);

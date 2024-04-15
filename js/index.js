@@ -3,10 +3,14 @@ import { findColorClass } from 'https://lukeplays33.github.io/Pichai-UX/AI/color
 import { getTextColor } from 'https://lukeplays33.github.io/Pichai-UX/AI/textColorFInder.js';
 
 import { ntc } from './ntc.js';
-  import { hexToRgb, RGBToHSL, rgbToCmyk } from './colorUtils.js';
+import { hexToRgb, RGBToHSL, rgbToCmyk } from './colorUtils.js';
+
+import { getSimilarColors, addTile } from './utils.js';
 
 let pichai = new PichaiUX();
 pichai.initialize();
+
+let i;
 
 let picker = document.getElementById('colorPicker');
 
@@ -17,6 +21,8 @@ let rgb = document.getElementById('rgb');
 let hsl = document.getElementById('hsl');
 let cmyk = document.getElementById('cmyk');
 let colorClass = document.getElementById('colorClass');
+
+let similarColorHolder = document.getElementById('similarColorHolder');
 
 let n_match = ntc.name(window.localStorage.getItem('lastColor') ?? '#008dcd');
 
@@ -30,10 +36,10 @@ cmyk.value = rgbToCmyk(RGB[0], RGB[1], RGB[2]);
 hex.value = window.localStorage.getItem('lastColor') ?? '#008dcd';
 setColorClass(RGB[0], RGB[1], RGB[2]);
 
-async function setColorClass (r,g,b) {
-    colorClass.innerHTML = await findColorClass(r,g,b);
-    colorClass.style.backgroundColor = await findColorClass(r,g,b);
-    colorClass. style.color = await getTextColor(r,g,b);
+async function setColorClass(r, g, b) {
+    colorClass.innerHTML = await findColorClass(r, g, b);
+    colorClass.style.backgroundColor = await findColorClass(r, g, b);
+    colorClass.style.color = await getTextColor(r, g, b);
 }
 
 picker.onclick = function () {
@@ -61,6 +67,10 @@ picker.onclick = function () {
             cmyk.value = rgbToCmyk(RGB[0], RGB[1], RGB[2]);
             hex.value = result.sRGBHex;
             setColorClass(RGB[0], RGB[1], RGB[2]);
+
+            for (i of getSimilarColors(result.sRGBHex)) {
+                addTile(similarColorHolder,i);
+            }
         })
         .catch((e) => {
             console.log(e)
