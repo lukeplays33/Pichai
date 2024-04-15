@@ -15,7 +15,6 @@ let i;
 let picker = document.getElementById('colorPicker');
 
 let name = document.getElementById('colorName');
-let name2 = document.getElementById('colorName2');
 let hex = document.getElementById('hex');
 let rgb = document.getElementById('rgb');
 let hsl = document.getElementById('hsl');
@@ -35,7 +34,6 @@ function setInnerHTMLs(code) {
     RGB = RGB.substring(4, RGB.length - 1).split(',');
 
     name.innerHTML = n_match[1];
-    name2.innerHTML = n_match[1];
     rgb.value = RGB;
     hsl.value = RGBToHSL(RGB[0], RGB[1], RGB[2]);
     cmyk.value = rgbToCmyk(RGB[0], RGB[1], RGB[2]);
