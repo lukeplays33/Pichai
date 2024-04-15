@@ -42,15 +42,7 @@ function setInnerHTMLs(code) {
     hex.value = code;
     setColorClass(RGB[0], RGB[1], RGB[2]);
 
-    for(i of tones.children) {
-        i.style.backgroundColor = code;
-    }
-
-    for(i of shades.children) {
-        i.style.backgroundColor = code;
-    }
-
-    for(i of tints.children) {
+    for(i of document.getElementsByClassName('colorVariantsItem')) {
         i.style.backgroundColor = code;
     }
 
