@@ -43,13 +43,13 @@ function setInnerHTMLs(code) {
     }
 }
 
-setInnerHTMLs(window.localStorage.getItem('lastColor') ?? '#008dcd');
-
 async function setColorClass(r, g, b) {
     colorClass.innerHTML = await findColorClass(r, g, b);
     colorClass.style.backgroundColor = await findColorClass(r, g, b);
     colorClass.style.color = await getTextColor(r, g, b);
 }
+
+setInnerHTMLs(window.localStorage.getItem('lastColor') ?? '#008dcd');
 
 picker.onclick = function () {
     if (!window.EyeDropper) {
