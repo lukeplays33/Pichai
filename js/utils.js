@@ -6,7 +6,7 @@ function addTile (element, value) {
 
     art.appendChild(text);
 
-    element.appendChild(element)
+    element.appendChild(art)
 }
 
 function getSimilarColors (color) {
