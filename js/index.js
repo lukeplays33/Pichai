@@ -43,6 +43,7 @@ function setInnerHTMLs(code) {
     setColorClass(RGB[0], RGB[1], RGB[2]);
 
     for(i of document.getElementsByClassName('colorVariantsItem')) {
+        console.log(code)
         i.style.backgroundColor = code;
     }
 
