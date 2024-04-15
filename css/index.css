@@ -105,3 +105,23 @@ h2 {
     grid-template-columns:1fr 1fr;
     grid-column-gap:8px;
 }
+
+#shades {
+    background-color:black;
+}
+
+#tints {
+    background-color:white;
+}
+
+#tones {
+    background-color:gray;
+}
+
+.colorVariants {
+    width:100%;
+}
+
+.colorVariantsItem {
+    width:10%;
+}

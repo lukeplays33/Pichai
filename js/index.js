@@ -22,6 +22,10 @@ let hsl = document.getElementById('hsl');
 let cmyk = document.getElementById('cmyk');
 let colorClass = document.getElementById('colorClass');
 
+let shades = document.getElementById('shaded');
+let tints = document.getElementById('tints');
+let tones = document.getElementById('tones');
+
 let similarColorHolder = document.getElementById('similarColorHolder');
 
 function setInnerHTMLs(code) {
@@ -37,6 +41,18 @@ function setInnerHTMLs(code) {
     cmyk.value = rgbToCmyk(RGB[0], RGB[1], RGB[2]);
     hex.value = code;
     setColorClass(RGB[0], RGB[1], RGB[2]);
+
+    for(i in tones.children) {
+        i.style.backgroundColor = code;
+    }
+
+    for(i in shades.children) {
+        i.style.backgroundColor = code;
+    }
+
+    for(i in tints.children) {
+        i.style.backgroundColor = code;
+    }
 
     for (i of getSimilarColors(code)) {
         addTile(similarColorHolder, i);
