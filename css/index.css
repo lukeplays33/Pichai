@@ -121,6 +121,8 @@ h2 {
 .colorVariants {
     width:100%;
 
+    margin-bottom:8px;
+
     display:flex;
     flex-direction:row;
 }
