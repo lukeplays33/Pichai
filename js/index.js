@@ -2,8 +2,8 @@ import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
 import { findColorClass } from 'https://lukeplays33.github.io/Pichai-UX/AI/colorClassFinder.js';
 import { getTextColor } from 'https://lukeplays33.github.io/Pichai-UX/AI/textColorFInder.js';
 
-import { ntc } from './js/ntc.js';
-  import { hexToRgb, RGBToHSL, rgbToCmyk } from './js/colorUtils.js';
+import { ntc } from './ntc.js';
+  import { hexToRgb, RGBToHSL, rgbToCmyk } from './colorUtils.js';
 
 let pichai = new PichaiUX();
 pichai.initialize();
