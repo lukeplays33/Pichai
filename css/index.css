@@ -133,7 +133,9 @@ h2 {
     height:100%;
     width:10%;
 
-    padding:8px;
+    color:TRANSPARENT;
+
+    padding:16px;
 
     border-radius:0px;
 }
