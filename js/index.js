@@ -24,17 +24,26 @@ let colorClass = document.getElementById('colorClass');
 
 let similarColorHolder = document.getElementById('similarColorHolder');
 
-let n_match = ntc.name(window.localStorage.getItem('lastColor') ?? '#008dcd');
+function setInnerHTMLs(code) {
+    //result.sRGBHex to get hex code
+    let n_match = ntc.name(code);
+    let RGB = hexToRgb(n_match[0]);
+    RGB = RGB.substring(4, RGB.length - 1).split(',');
 
-let RGB = hexToRgb(n_match[0]);
-RGB = RGB.substring(4, RGB.length - 1).split(',');
-name.innerHTML = n_match[1];
-name2.innerHTML = n_match[1];
-rgb.value = RGB;
-hsl.value = RGBToHSL(RGB[0], RGB[1], RGB[2]);
-cmyk.value = rgbToCmyk(RGB[0], RGB[1], RGB[2]);
-hex.value = window.localStorage.getItem('lastColor') ?? '#008dcd';
-setColorClass(RGB[0], RGB[1], RGB[2]);
+    name.innerHTML = n_match[1];
+    name2.innerHTML = n_match[1];
+    rgb.value = RGB;
+    hsl.value = RGBToHSL(RGB[0], RGB[1], RGB[2]);
+    cmyk.value = rgbToCmyk(RGB[0], RGB[1], RGB[2]);
+    hex.value = code;
+    setColorClass(RGB[0], RGB[1], RGB[2]);
+
+    for (i of getSimilarColors(code)) {
+        addTile(similarColorHolder, i);
+    }
+}
+
+setInnerHTMLs(window.localStorage.getItem('lastColor') ?? '#008dcd');
 
 async function setColorClass(r, g, b) {
     colorClass.innerHTML = await findColorClass(r, g, b);
@@ -56,21 +65,7 @@ picker.onclick = function () {
         .then(async (result) => {
             window.localStorage.setItem('lastColor', result.sRGBHex);
             //result.sRGBHex to get hex code
-            let n_match = ntc.name(result.sRGBHex);
-            let RGB = hexToRgb(n_match[0]);
-            RGB = RGB.substring(4, RGB.length - 1).split(',');
-
-            name.innerHTML = n_match[1];
-            name2.innerHTML = n_match[1];
-            rgb.value = RGB;
-            hsl.value = RGBToHSL(RGB[0], RGB[1], RGB[2]);
-            cmyk.value = rgbToCmyk(RGB[0], RGB[1], RGB[2]);
-            hex.value = result.sRGBHex;
-            setColorClass(RGB[0], RGB[1], RGB[2]);
-
-            for (i of getSimilarColors(result.sRGBHex)) {
-                addTile(similarColorHolder,i);
-            }
+            setInnerHTMLs(result.sRGBHex);
         })
         .catch((e) => {
             console.log(e)
