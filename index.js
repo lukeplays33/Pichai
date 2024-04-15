@@ -11,6 +11,7 @@ pichai.initialize();
 let picker = document.getElementById('colorPicker');
 
 let name = document.getElementById('colorName');
+let name2 = document.getElementById('colorName2');
 let hex = document.getElementById('hex');
 let rgb = document.getElementById('rgb');
 let hsl = document.getElementById('hsl');
@@ -22,6 +23,7 @@ let n_match = ntc.name(window.localStorage.getItem('lastColor') ?? '#008dcd');
 let RGB = hexToRgb(n_match[0]);
 RGB = RGB.substring(4, RGB.length - 1).split(',');
 name.innerHTML = n_match[1];
+name2.innerHTML = n_match[1];
 rgb.value = RGB;
 hsl.value = RGBToHSL(RGB[0], RGB[1], RGB[2]);
 cmyk.value = rgbToCmyk(RGB[0], RGB[1], RGB[2]);
@@ -53,6 +55,7 @@ picker.onclick = function () {
             RGB = RGB.substring(4, RGB.length - 1).split(',');
 
             name.innerHTML = n_match[1];
+            name2.innerHTML = n_match[1];
             rgb.value = RGB;
             hsl.value = RGBToHSL(RGB[0], RGB[1], RGB[2]);
             cmyk.value = rgbToCmyk(RGB[0], RGB[1], RGB[2]);

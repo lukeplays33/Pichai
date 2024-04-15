@@ -99,3 +99,8 @@ h2 {
 #allowedColorsDialog .card {
     margin:0px;
 }
+
+.grid {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
