@@ -46,6 +46,7 @@ function setInnerHTMLs(code) {
     }
 
     for (i of getSimilarColors(code)) {
+        console.log(i)
         addTile(similarColorHolder, i);
     }
 }
