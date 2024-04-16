@@ -30,7 +30,7 @@ main * {
 }
 
 #hex,#rgb, #hsl, #cmyk, .smallTile {
-    width:calc(50% - 8px);
+    width:calc(50% - 28px);
 
     color:var(--primaryTextColor);
     background-color:var(--primary);
