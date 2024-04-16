@@ -70,14 +70,10 @@ main * {
 
 .card input {
     margin-left:auto;
-
-    padding:8px;
 }
 
 #length {
     width:50px;
-
-    padding:8px;
 }
 
 .card {
