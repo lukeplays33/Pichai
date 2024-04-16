@@ -91,6 +91,10 @@ h3 {
     grid-template-columns: 1fr 1fr;
     grid-gap: 8px;
 
+    overflow-y:auto;
+
+    max-height:400px;
+
     padding:8px;
 }
 
