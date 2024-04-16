@@ -30,7 +30,7 @@ main * {
 }
 
 #hex,#rgb, #hsl, #cmyk, .smallTile {
-    width:calc(50% - 4px);
+    width:calc(50% - 8px);
 
     color:var(--primaryTextColor);
     background-color:var(--primary);
@@ -82,8 +82,7 @@ main * {
 
 h3 {
     border-radius:15px;
-    margin-top:8px;
-    margin-bottom:8px;
+    margin: 8px 0px 8px 0px;
 
     padding:8px;
 }
