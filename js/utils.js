@@ -12,7 +12,6 @@ function addTile (element, value) {
 }
 
 function getSimilarColors (color) {
-    console.log(window.localStorage.getItem('allowedColors').split(','))
     const closestColors = (targetColor, colorArray, count) => {
         const sortedColors = colorArray
             .map((color) => ({
@@ -21,6 +20,7 @@ function getSimilarColors (color) {
             }))
             .sort((a, b) => a.distance - b.distance);
     
+            console.log(sortedColors.slice(0, count).map((entry) => entry.color);)
         return sortedColors.slice(0, count).map((entry) => entry.color);
     };
     
