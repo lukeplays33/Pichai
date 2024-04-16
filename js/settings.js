@@ -11,14 +11,14 @@ let allowedColorsList = document.getElementById('allowedColorsDialog');
 let add = document.getElementById('add');
 let creteColor = document.getElementById('create');
 
-let listOfAllowedColors = [];
+let listOfAllowedColors = ['#FD0100', '#0100FC', '#009901', '#F89909', '#FEFD00', '#FFCAD2', '#980086', '#FD83F2', '#00DECF', '#FCD800', '#07FB00', '#05FBFF', '#010084', '#FF7D4C', '#008083', '#C02428', '#FDFDFD', '#020000', '#A39D97'];
 
 if (window.localStorage.getItem('allowedColors') == null || window.localStorage.getItem('allowedColors') == '') {} else {
-    listOfAllowedColors = window.localStorage.getItem('allowedColors').split(',');
+    listOfAllowedColors = listOfAllowedColors.concat(window.localStorage.getItem('allowedColors').split(','));
+}
 
-    for (i of listOfAllowedColors) {
-        addAllowedColor(i);
-    }
+for (i of listOfAllowedColors) {
+    addAllowedColor(i);
 }
 
 lengthInput.value = window.localStorage.getItem('palleteLength') == null ? 10 : window.localStorage.getItem('palleteLength'); //set value back to the one set by the user
