@@ -82,7 +82,7 @@ main * {
 
 h3 {
     border-radius:15px;
-    margin: 8px 0px 8px 0px;
+    margin: 8px 0px 8px 0px !important;
 
     padding:8px;
 }
