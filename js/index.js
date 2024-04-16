@@ -44,9 +44,9 @@ function setInnerHTMLs(code) {
         i.innerHTML = code;
         i.style.backgroundColor = code;
     }
-
+    
+    similarColorHolder.innerHTML = '';
     for (i of getSimilarColors(code)) {
-        console.log(i)
         addTile(similarColorHolder, i);
     }
 }

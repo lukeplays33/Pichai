@@ -12,7 +12,6 @@ function addTile (element, value) {
 }
 
 function getSimilarColors (color) {
-    console.log(window.localStorage.getItem('palleteLength'))
     const closestColors = (targetColor, colorArray, count) => {
         const sortedColors = colorArray
             .map((color) => ({
