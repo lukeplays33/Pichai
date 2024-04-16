@@ -5,6 +5,7 @@ function addTile (element, value) {
 
     let text = document.createElement('p');
     text.innerHTML = value;
+    text.style.margin = '8px';
 
     art.appendChild(text);
 
