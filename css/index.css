@@ -49,6 +49,10 @@ main * {
     flex-direction:row !important;
 }
 
+.smallTile p {
+    margin:8px;
+}
+
 .tabBarHolder {
     position:absolute;
     top:8px;
