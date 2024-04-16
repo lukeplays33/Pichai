@@ -18,7 +18,7 @@ for (i of listOfAllowedColors) {
     addAllowedColor(i);
 }
 
-lengthInput.value = window.localStorage.getItem('palleteLength') == null ? 10 : window.localStorage.getItem('palleteLength'); //set value back to the one set by the user
+lengthInput.value = window.localStorage.getItem('palleteLength'); //set value back to the one set by the user
 
 lengthInput.onchange = function () {
     window.localStorage.setItem('palleteLength', this.value); // save the users selected pallete size
