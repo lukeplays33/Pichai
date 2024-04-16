@@ -70,10 +70,14 @@ main * {
 
 .card input {
     margin-left:auto;
+
+    padding:8px;
 }
 
 #length {
     width:50px;
+
+    padding:8px;
 }
 
 .card {
@@ -84,6 +88,8 @@ h3 {
     border-radius:15px;
     margin-top:8px;
     margin-bottom:8px;
+
+    padding:8px;
 }
 
 #allowedColorsDialog {

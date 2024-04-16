@@ -5,7 +5,8 @@ pichai.initialize();
 
 let i;
 
-let lengthInput = document.getElementById('length')
+let lengthInput = document.getElementById('length');
+let allowedColors = document.getElementById('allowedColors');
 let allowedColorsList = document.getElementById('allowedColorsDialog');
 let add = document.getElementById('add');
 let creteColor = document.getElementById('create');
