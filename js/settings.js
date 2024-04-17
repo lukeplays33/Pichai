@@ -66,5 +66,5 @@ function addAllowedColor(color) {
 
     allowedColorsList.appendChild(holder);
 
-    pichai.optimiseTextColor(allowedColorsList);
+    pichai.optimizeTextColor(allowedColorsList);
 }
