@@ -50,7 +50,7 @@ function setInnerHTMLs(code) {
         addTile(similarColorHolder, i);
     }
 
-    pichai.optimiseTextColor();
+    pichai.optimiseTextColor(similarColorHolder);
 }
 
 async function setColorClass(r, g, b) {
