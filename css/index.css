@@ -18,7 +18,7 @@ main * {
 }
 
 #colorName, #colorClass {
-    width:calc(100% - 32px);
+    width:calc(100% - 16px);
 
     color:var(--primaryTextColor);
     background-color:var(--primary);
@@ -30,7 +30,7 @@ main * {
 }
 
 #hex,#rgb, #hsl, #cmyk, .smallTile {
-    width:calc(50% - 28px);
+    width:calc(50% - 16px);
 
     color:var(--primaryTextColor);
     background-color:var(--primary);
