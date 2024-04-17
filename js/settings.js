@@ -65,4 +65,6 @@ function addAllowedColor(color) {
     holder.style.backgroundColor = color;
 
     allowedColorsList.appendChild(holder);
+
+    pichai.optimiseTextColor();
 }
