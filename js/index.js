@@ -48,9 +48,8 @@ function setInnerHTMLs(code) {
     similarColorHolder.innerHTML = '';
     for (i of getSimilarColors(code)) {
         addTile(similarColorHolder, i);
+        pichai.optimiseTextColor();
     }
-
-    pichai.optimiseTextColor();
 }
 
 async function setColorClass(r, g, b) {
