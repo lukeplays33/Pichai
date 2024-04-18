@@ -52,6 +52,7 @@ main * {
 
 .tiles {
     flex-direction:row !important;
+    height:max-content;
 }
 
 .tabBarHolder {
