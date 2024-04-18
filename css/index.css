@@ -30,6 +30,8 @@ main * {
 
     margin-top:0px;
     margin-bottom:8px;
+    
+    height:max-content;
 }
 
 #hex,#rgb, #hsl, #cmyk, .smallTile {
