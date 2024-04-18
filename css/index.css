@@ -39,6 +39,8 @@ main * {
     background-color:var(--primary);
 
     padding:8px;
+
+    height:max-content;
     
     margin-top:0px;
     margin-bottom:8px;
