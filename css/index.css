@@ -205,6 +205,6 @@ h3 {
     height:100%;
 }
 
-view-pager article {
+view-pager article, view-pager article h3 {
     width: 100%;
 }
