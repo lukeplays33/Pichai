@@ -1,7 +1,7 @@
 body {
     background-image: url('https://th.bing.com/th/id/OIG4.RJb3jMaXvnnnFC0Go5Dv?pid=ImgGn');
 
-    overflow-y:hidden;
+    overflow-y:hidden !important;
 }
 
 #colorPicker {
