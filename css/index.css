@@ -68,13 +68,14 @@ main * {
 
 .verticlaTabbar {
     position:absolute;
-    
+
     top:0;
     bottom:0;
     left: 8px;
 
-    margin-right: auto;
-    margin-left: auto;
+    margin:0px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .row {
