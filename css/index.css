@@ -216,6 +216,5 @@ view-pager article h3 {
 }
 
 .verticalTabbar a {
-    max-width:12px;
-    height:180px;
+    height:180px !important;
   }
