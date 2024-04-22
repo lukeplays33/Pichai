@@ -18,9 +18,19 @@
         <a href="./pages/settings.html">Settings</a>
     </tab-bar>
     <main>
+        <section>
+            <article>
+                <tab-bar direction="vertical">
+                    <a href="#picker">Picker</a>
+                    <a href="#ai">Additional Information</a>
+                    <a href="#sc">Similar Colors</a>
+                    <a href="#cv">Color Variants</a>
+                </tab-bar>
+            </article>
+        </section>
         <section class="view-pager-holder">
             <view-pager>
-            <article>
+            <article id="picker">
                 <image src="./assets/Screenshot_2024-04-01_160829-removebg-preview.png" id="colorPicker" alt="color picker"></image>
 
                 <p id="colorName">No color selected, press the color picker to select a color.</p>
@@ -35,16 +45,16 @@
                 <p id="colorClass">Magenta</p>
             </article>
 
-            <article>
-                <h3>Additional Info</h3>
+            <article id="ai">
+                <h3>Additional Information</h3>
             </article>
 
-            <article>
+            <article id="sc">
                 <h3>Similar Colors</h3>
                 <article class="grid" id="similarColorHolder"></article>
             </article>
 
-            <article>
+            <article id="cv">
                 <h3>Color Variants</h3>
 
                 <article id="shades" class="colorVariants">
