@@ -214,3 +214,8 @@ view-pager article h3 {
     
     padding:8px 0px 8px 0px;
 }
+
+.verticalTabbar a {
+    max-width:12px;
+    height:180px;
+  }
