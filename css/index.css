@@ -66,6 +66,17 @@ main * {
     margin-left: auto;
 }
 
+.verticlaTabbar {
+    position:absolute;
+    
+    top:0;
+    bottom:0;
+    left: 8px;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .row {
     display:flex;
     flex-direction:row !important;
@@ -216,5 +227,5 @@ view-pager article h3 {
 }
 
 .verticalTabbar a {
-    height:180px !important;
+    height:140px !important;
   }
