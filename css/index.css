@@ -75,7 +75,7 @@ main * {
 
     margin:0px;
     margin-top: auto;
-    margin-bottom: 20px;
+    margin-bottom: auto;
 }
 
 .row {
@@ -214,7 +214,7 @@ h3 {
     bottom: 52px;
 }
 
-.view-pager-holder {
+section {
     width:100%;
     height:100%;
 }
@@ -224,8 +224,6 @@ view-pager article {
 }
 
 view-pager article h3 {
-    width: 100%;
-    
     padding:8px 0px 8px 0px;
 }
 
