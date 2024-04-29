@@ -103,7 +103,7 @@ h3 {
     border-radius:10px;
     margin: 8px 0px 8px 0px !important;
 
-    
+    padding:8px 0px 8px 0px !important;
 
     width:calc(100% - 16px);
 }
@@ -227,4 +227,8 @@ view-pager article {
 
   .settingsItem {
     width:calc(100% - 16px);
+  }
+
+  #create {
+    width:100%;
   }
