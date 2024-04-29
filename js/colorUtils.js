@@ -69,10 +69,10 @@ function hslToHex(value) {
 
 //converts cmyk to hex
 function cmykToHex(value) {
-  let c = value.split(',')[0];
-  let m = value.split(',')[1];
-  let y = value.split(',')[2];
-  let k = value.split(',')[3];
+  let c = value.split(',')[0] / 100;
+  let m = value.split(',')[1] / 100;
+  let y = value.split(',')[2] / 100;
+  let k = value.split(',')[3] / 100;
 
   const red = Math.round(255 * (1 - c) * (1 - k));
   const green = Math.round(255 * (1 - m) * (1 - k));
