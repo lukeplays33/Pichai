@@ -78,6 +78,7 @@ function cmykToHex(value) {
   const green = Math.round(255 * (100 - m) * (100 - k));
   const blue = Math.round(255 * (100 - y) * (100 - k));
   //return hex color format
+  console.log(red)
   return `#${red.toString(16).padStart(2, '0')}${green.toString(16).padStart(2, '0')}${blue.toString(16).padStart(2, '0')}`;
 }
 
