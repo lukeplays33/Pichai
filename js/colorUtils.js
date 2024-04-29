@@ -44,4 +44,8 @@ function hexToRgb(hex) {
     return `${C}, ${M}, ${Y}, ${K}`
 }
 
-  export { hexToRgb, RGBToHSL, rgbToCmyk }
+function rgbToHex(r, g, b) {
+  return "#" + (1 << 24 | r << 16 | g << 8 | b).toString(16).slice(1);
+}
+
+  export { hexToRgb, RGBToHSL, rgbToCmyk,rgbToHex }

@@ -3,7 +3,7 @@ import { findColorClass } from 'https://lukeplays33.github.io/Pichai-UX/AI/color
 import { getTextColor } from 'https://lukeplays33.github.io/Pichai-UX/AI/textColorFInder.js';
 
 import { ntc } from './ntc.js';
-import { hexToRgb, RGBToHSL, rgbToCmyk } from './colorUtils.js';
+import { hexToRgb, RGBToHSL, rgbToCmyk, rgbToHex } from './colorUtils.js';
 
 import { getSimilarColors, addTile } from './utils.js';
 
@@ -80,4 +80,14 @@ picker.onclick = function () {
         .catch((e) => {
             console.log(e)
         });
+}
+
+//change colors when user chages input value
+
+hex.oninput = function () {
+    setInnerHTMLs(hex.value);
+}
+
+rgb.oninput = function () {
+    setInnerHTMLs(rgbToHex(rgb.value.splite(',')));
 }
