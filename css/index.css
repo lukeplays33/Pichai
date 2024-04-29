@@ -103,9 +103,9 @@ h3 {
     border-radius:10px;
     margin: 8px 0px 8px 0px !important;
 
-    padding:8px 0px 8px 0px !important;
+    
 
-    width:100% ;
+    width:calc(100% - 16px);
 }
 
 #allowedColorsDialog {
@@ -155,13 +155,11 @@ h3 {
 .colorVariantsItem {
     margin:0px;
 
-    height:100%;
+    height:42px;
     width:10%;
 
     color:TRANSPARENT;
     font-size:0px;
-
-    padding:24px 0px 24px 0px;
 
     border-radius:0px;
 }
@@ -228,5 +226,5 @@ view-pager article {
   }
 
   .settingsItem {
-    width:calc(100% - 32px);
+    width:calc(100% - 16px);
   }
