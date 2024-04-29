@@ -69,7 +69,7 @@ function hslToHex(value) {
 
 //converts cmyk to hex
 function cmykToHex(value) {
-  alert(value)
+  alert(typeof value)
   let c = value.split(',')[0];
   let m = value.split(',')[1];
   let y = value.split(',')[2];
