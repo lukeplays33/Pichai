@@ -3,7 +3,7 @@ import { findColorClass } from 'https://lukeplays33.github.io/Pichai-UX/AI/color
 import { getTextColor } from 'https://lukeplays33.github.io/Pichai-UX/AI/textColorFInder.js';
 
 import { ntc } from './ntc.js';
-import { hexToRgb, RGBToHSL, rgbToCmyk, rgbToHex } from './colorUtils.js';
+import { hexToRgb, RGBToHSL, rgbToCmyk, rgbToHex, hslToHex } from './colorUtils.js';
 
 import { getSimilarColors, addTile } from './utils.js';
 
@@ -89,6 +89,9 @@ hex.onchange = function () {
 }
 
 rgb.onchange = function () {
-    
     setInnerHTMLs(rgbToHex(rgb.value));
+}
+
+hsl.onchange = function () {
+    setInnerHTMLs(hslToHex(hsl.value));
 }

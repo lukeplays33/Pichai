@@ -52,4 +52,19 @@ function rgbToHex(value) {
   return "#" + (1 << 24 | r << 16 | g << 8 | b).toString(16).slice(1);
 }
 
-  export { hexToRgb, RGBToHSL, rgbToCmyk,rgbToHex }
+function hslToHex(value) {
+  let h = value.split(',')[0];
+  let s = value.split(',')[1];
+  let l = value.split(',')[2];
+
+  l /= 100;
+  const a = s * Math.min(l, 1 - l) / 100;
+  const f = n => {
+    const k = (n + h / 30) % 12;
+    const color = l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
+    return Math.round(255 * color).toString(16).padStart(2, '0');   // convert to Hex and prefix "0" if needed
+  };
+  return `#${f(0)}${f(8)}${f(4)}`;
+}
+
+  export { hexToRgb, RGBToHSL, rgbToCmyk,rgbToHex, hslToHex }
