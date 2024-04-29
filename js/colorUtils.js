@@ -79,9 +79,7 @@ function cmykToHex(value) {
   //convert cmyk to rgb first
   rgb = cmykToRgb(c,m,y,k);
   //then convert rgb to hex
-
-  console.log(`${rgb.r/255}, ${rgb.g/255}, ${rgb.b/255}`)
-  hex = rgbToHex(`${rgb.r}, ${rgb.g}, ${rgb.b}`);
+  hex = rgbToHexForCMYK(rgb.r, rgb.g, rgb.b);
   //return hex color format
   return hex;
 }
@@ -102,6 +100,14 @@ var rgb_r,
   rgb_g = Math.round(255 * rgb_g);
   rgb_b = Math.round(255 * rgb_b);
   return {r: rgb_r, g: rgb_g, b: rgb_b};
+}
+
+function rgbToHexForCMYK(r, g, b) {
+  return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+  function componentToHex(c) {
+      var hex = c.toString(16);
+      return hex.length === 1 ? "0" + hex : hex;
+  }
 }
 
   export { hexToRgb, RGBToHSL, rgbToCmyk,rgbToHex, hslToHex, cmykToHex }
