@@ -84,10 +84,11 @@ picker.onclick = function () {
 
 //change colors when user chages input value
 
-hex.onchange = function () {
+hex.oninput = function () {
     setInnerHTMLs(hex.value);
 }
 
-rgb.onchange = function () {
+rgb.oninput = function () {
+    console.log(rgbToHex(rgb.value.split(',')))
     setInnerHTMLs(rgbToHex(rgb.value.split(',')));
 }
