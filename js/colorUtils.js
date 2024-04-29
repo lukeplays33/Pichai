@@ -69,7 +69,6 @@ function hslToHex(value) {
 
 //converts cmyk to hex
 function cmykToHex(value) {
-  alert(typeof value)
   let c = value.split(',')[0];
   let m = value.split(',')[1];
   let y = value.split(',')[2];
@@ -80,7 +79,7 @@ function cmykToHex(value) {
   //convert cmyk to rgb first
   rgb = cmykToRgb(c,m,y,k);
   //then convert rgb to hex
-  hex = rgbToHex(rgb.r, rgb.g, rgb.b);
+  hex = rgbToHex(String(rgb.r, rgb.g, rgb.b));
   //return hex color format
   return hex;
 }
