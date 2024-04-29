@@ -80,7 +80,7 @@ function cmykToHex(value) {
   rgb = cmykToRgb(c,m,y,k);
   //then convert rgb to hex
 
-  console.log(`${rgb.r}, ${rgb.g}, ${rgb.b}`)
+  console.log(`${rgb.r/255}, ${rgb.g/255}, ${rgb.b/255}`)
   hex = rgbToHex(`${rgb.r}, ${rgb.g}, ${rgb.b}`);
   //return hex color format
   return hex;
