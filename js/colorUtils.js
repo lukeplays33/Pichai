@@ -44,7 +44,11 @@ function hexToRgb(hex) {
     return `${C}, ${M}, ${Y}, ${K}`
 }
 
-function rgbToHex(r, g, b) {
+function rgbToHex(value) {
+  let r = value.split(',')[0];
+  let g = value.split(',')[1];
+  let b = value.split(',')[2];
+
   return "#" + (1 << 24 | r << 16 | g << 8 | b).toString(16).slice(1);
 }
 

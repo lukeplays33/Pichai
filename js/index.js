@@ -89,6 +89,6 @@ hex.oninput = function () {
 }
 
 rgb.oninput = function () {
-    console.log(rgb.value.split(','))
-    setInnerHTMLs(rgbToHex(rgb.value.split(',')));
+    
+    setInnerHTMLs(rgbToHex(rgb.value));
 }
