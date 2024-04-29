@@ -227,6 +227,6 @@ view-pager article {
     width:calc(100% - 16px);
   }
 
-  #create {
+  .create {
     width: calc(100% - 16px);
   }
