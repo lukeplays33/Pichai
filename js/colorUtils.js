@@ -74,9 +74,9 @@ function cmykToHex(value) {
   let y = value.split(',')[2];
   let k = value.split(',')[3];
 
-  const red = Math.round(255 * (1 - c) * (1 - k));
-  const green = Math.round(255 * (1 - m) * (1 - k));
-  const blue = Math.round(255 * (1 - y) * (1 - k));
+  const red = Math.round(255 * (100 - c) * (100 - k));
+  const green = Math.round(255 * (100 - m) * (100 - k));
+  const blue = Math.round(255 * (100 - y) * (100 - k));
   //return hex color format
   return `#${red.toString(16).padStart(2, '0')}${green.toString(16).padStart(2, '0')}${blue.toString(16).padStart(2, '0')}`;
 }
