@@ -79,6 +79,8 @@ function cmykToHex(value) {
   //convert cmyk to rgb first
   rgb = cmykToRgb(c,m,y,k);
   //then convert rgb to hex
+
+  console.log(`${rgb.r}, ${rgb.g}, ${rgb.b}`)
   hex = rgbToHex(`${rgb.r}, ${rgb.g}, ${rgb.b}`);
   //return hex color format
   return hex;
