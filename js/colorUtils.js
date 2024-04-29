@@ -101,13 +101,5 @@ var rgb_r,
   rgb_b = Math.round(255 * rgb_b);
   return {r: rgb_r, g: rgb_g, b: rgb_b};
 }
-//converts rgb to hex
-function rgbToHex(r, g, b) {
-  return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
-  function componentToHex(c) {
-      var hex = c.toString(16);
-      return hex.length === 1 ? "0" + hex : hex;
-  }
-}
 
   export { hexToRgb, RGBToHSL, rgbToCmyk,rgbToHex, hslToHex, cmykToHex }
