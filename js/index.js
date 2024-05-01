@@ -100,7 +100,7 @@ cmyk.onchange = function () {
     setInnerHTMLs(cmykToHex(cmyk.value))
 }
 
-document.getElementById('viewPagerTabBar').addEventListener('pageChange', (e) => {
+document.getElementById('viewPager').addEventListener('pageChange', (e) => {
     const eventData = e; // Access the custom data
     console.log(eventData);
   });
