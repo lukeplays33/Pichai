@@ -77,7 +77,8 @@ main * {
 
     top: 0;
     bottom: 0;
-    right: 8px;
+    right: 8px !important;
+    left: initial !important;
 
     margin: 0px;
     margin-top: auto;
