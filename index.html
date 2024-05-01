@@ -18,15 +18,8 @@
         <a href="./pages/settings.html">Settings</a>
     </tab-bar>
     <main>
-        <section class="view-pager-holder" for="viewPagerTabBar">
-            <article>
-                <tab-bar class="verticlaTabbar" id="viewPagerTabBar" direction="vertical">
-                    <a href="#picker">Picker</a>
-                    <a href="#ai">More Information</a>
-                    <a href="#sc">Similar Colors</a>
-                    <a href="#cv">Color Variants</a>
-                </tab-bar>
-            </article>
+        <section class="view-pager-holder">
+
 
             <view-pager id="viewPager">
             <article id="picker">
@@ -94,6 +87,15 @@
                 </article>
             </article>
         </view-pager>
+
+        <article>
+            <tab-bar class="verticlaTabbar" id="viewPagerTabBar" direction="vertical">
+                <a href="#picker">Picker</a>
+                <a href="#ai">More Information</a>
+                <a href="#sc">Similar Colors</a>
+                <a href="#cv">Color Variants</a>
+            </tab-bar>
+        </article>
         </section>
 
         <button class="fab" id="genUx"> Generate UX/UI Pallete</button>
