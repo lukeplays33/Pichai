@@ -1,7 +1,14 @@
 function hexToRgb(hex) {
-  let r = parseInt(hex.slice(1, 3), 16),
-  g = parseInt(hex.slice(3, 5), 16),
-  b = parseInt(hex.slice(5, 7), 16);
+  // Remove the hash sign if it's included
+  hex = hex.replace(/^#/, '');
+ 
+  // Parse the hex values
+  let bigint = parseInt(hex, 16);
+ 
+  // Extract RGB components
+  let r = (bigint >> 16) & 255;
+  let g = (bigint >> 8) & 255;
+  let b = bigint & 255;
 return "rgb(" + r + ", " + g + ", " + b + ")";
 }
 
