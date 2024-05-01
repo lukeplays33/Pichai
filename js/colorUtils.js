@@ -1,6 +1,8 @@
 function hexToRgb(hex) {
-  var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-  return result ? `rgb(${parseInt(result[1], 16)}, ${parseInt(result[2], 16)}, ${parseInt(result[3], 16)})` : null;
+  let r = parseInt(hex.slice(1, 3), 16),
+  g = parseInt(hex.slice(3, 5), 16),
+  b = parseInt(hex.slice(5, 7), 16);
+return "rgb(" + r + ", " + g + ", " + b + ")";
 }
 
 function RGBToHSL(r,g,b) {
