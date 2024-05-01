@@ -99,3 +99,8 @@ hsl.onchange = function () {
 cmyk.onchange = function () {
     setInnerHTMLs(cmykToHex(cmyk.value))
 }
+
+document.getElementById('viewPagerTabBar').addEventListener('pageChange', (e) => {
+    const eventData = e; // Access the custom data
+    console.log(eventData);
+  });

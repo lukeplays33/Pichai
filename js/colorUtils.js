@@ -1,18 +1,18 @@
 function hexToRgb(hex) {
   // Remove the hash sign if it's included
   hex = hex.replace(/^#/, '');
- 
+
   // Parse the hex values
   let bigint = parseInt(hex, 16);
- 
+
   // Extract RGB components
   let r = (bigint >> 16) & 255;
   let g = (bigint >> 8) & 255;
   let b = bigint & 255;
-return "rgb(" + r + ", " + g + ", " + b + ")";
+  return "rgb(" + r + ", " + g + ", " + b + ")";
 }
 
-function RGBToHSL(r,g,b) {
+function RGBToHSL(r, g, b) {
   // Make r, g, and b fractions of 1
   r = r / 255;
   g = g / 255;
@@ -29,18 +29,18 @@ function RGBToHSL(r,g,b) {
 
   // Calculate hue
   if (delta === 0) {
-      h = 0; // No difference
+    h = 0; // No difference
   } else if (cmax === r) {
-      h = ((g - b) / delta) % 6;
+    h = ((g - b) / delta) % 6;
   } else if (cmax === g) {
-      h = (b - r) / delta + 2;
+    h = (b - r) / delta + 2;
   } else {
-      h = (r - g) / delta + 4;
+    h = (r - g) / delta + 4;
   }
 
   h = Math.round(h * 60);
   if (h < 0) {
-      h += 360;
+    h += 360;
   }
 
   // Calculate saturation
@@ -50,7 +50,7 @@ function RGBToHSL(r,g,b) {
   s = Math.round(s * 100);
   l = Math.round(l * 100);
 
-return `${h}, ${s}, ${l}`;
+  return `${h}, ${s}, ${l}`;
 }
 
 function rgbToCmyk(R, G, B) {
