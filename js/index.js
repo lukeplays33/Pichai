@@ -28,6 +28,7 @@ let tones = document.getElementById('tones');
 let similarColorHolder = document.getElementById('similarColorHolder');
 
 function setInnerHTMLs(code) {
+    window.localStorage.setItem('lastColor', code);
     //result.sRGBHex to get hex code
     let n_match = ntc.name(code);
     let RGB = hexToRgb(n_match[0]);
@@ -73,7 +74,6 @@ picker.onclick = function () {
     eyeDropper
         .open()
         .then(async (result) => {
-            window.localStorage.setItem('lastColor', result.sRGBHex);
             //result.sRGBHex to get hex code
             setInnerHTMLs(result.sRGBHex);
         })
