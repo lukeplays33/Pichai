@@ -250,11 +250,11 @@ view-pager article {
     margin-bottom:8px;
 }
 
-#associations {
+#association {
     align-items:center;
 }
 
-#associations ul {
+#association ul {
     align-items:center;
 
     display: grid;
