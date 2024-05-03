@@ -254,11 +254,11 @@ view-pager article {
     margin-bottom:8px;
 }
 
-#association {
+#associtation {
     align-items:center;
 }
 
-#association ul {
+#associtation ul {
     align-items:center;
 
     display: grid;
