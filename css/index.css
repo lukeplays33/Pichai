@@ -117,6 +117,10 @@ h5, .information p {
     padding: 8px 0px 8px 0px !important;
 }
 
+.information p {
+    margin-top:0px !important;
+}
+
 #allowedColorsDialog {
     display: none;
     grid-template-columns: 1fr 1fr;
