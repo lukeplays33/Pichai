@@ -114,12 +114,13 @@ h3, h5, p {
 }
 
 h5, .information p {
-    padding: 8px 0px 0px 0px !important;
+    padding: 8px 0px 8px 0px !important;
 }
 
 .information p {
     margin-top:0px !important;
     padding-top:0px !important;
+    padding-bottom:0px;
 }
 
 #allowedColorsDialog {
