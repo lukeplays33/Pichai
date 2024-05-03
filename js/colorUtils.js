@@ -92,7 +92,7 @@ function rgbToCmyk(r,g,b) {
   computedY = Math.round((computedY - minCMY) / (1 - minCMY) * 100 );
   computedK = Math.round(minCMY * 100);
  
-  return {c: computedC,m: computedM,y: computedY,k: computedK};
+  return `${CcomputedC}, ${computedM}, ${computedY}, ${computedK}`
  }
 
 function rgbToHex(value) {
