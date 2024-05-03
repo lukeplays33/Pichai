@@ -60,9 +60,9 @@ function rgbToCmyk(r,g,b) {
   let computedK = 0;
  
   //remove spaces from input RGB values, convert to int
-  let r = parseInt( (''+r).replace(/\s/g,''),10 ); 
-  let g = parseInt( (''+g).replace(/\s/g,''),10 ); 
-  let b = parseInt( (''+b).replace(/\s/g,''),10 ); 
+ r = parseInt( (''+r).replace(/\s/g,''),10 ); 
+ g = parseInt( (''+g).replace(/\s/g,''),10 ); 
+ b = parseInt( (''+b).replace(/\s/g,''),10 ); 
  
   if ( r==null || g==null || b==null ||
       isNaN(r) || isNaN(g)|| isNaN(b) )
