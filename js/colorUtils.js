@@ -111,7 +111,7 @@ function cmykToHex(value) {
 
 let colorAssociations = {
   red: ['Action', 'Strength', 'Energy', 'Passion', 'Attention', 'Motivates', 'Stimulates', 'Cautions', 'Sexuality', 'Courage', 'Desire', 'Confidence', 'Anger', 'Danger', 'Revenge', 'Aggresion'],
-  
+
 };
 
-export { hexToRgb, RGBToHSL, rgbToCmyk, rgbToHex, hslToHex, cmykToHex, colorrrAssociations }
+export { hexToRgb, RGBToHSL, rgbToCmyk, rgbToHex, hslToHex, cmykToHex, colorAssociations }
