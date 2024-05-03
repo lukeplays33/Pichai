@@ -30,6 +30,8 @@ function getColorAssociation (name) {
     let className = colorClass.innerHTML;
     let association = [];
 
+    console.log(className)
+    console.log(colorAssociations[className])
     for(i of colorAssociations[className]) {
         association.push(`<li>${i}</li>`);
     }
