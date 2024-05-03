@@ -54,10 +54,10 @@ function RGBToHSL(r, g, b) {
 }
 
 function rgbToCmyk(r, g, b) {
-  const c = 1 - r / 255;
-  const m = 1 - g / 255;
-  const y = 1 - b / 255;
-  const k = Math.min(c, Math.min(m, y));
+  let c = 1 - r / 255;
+  let m = 1 - g / 255;
+  let y = 1 - b / 255;
+  let k = Math.min(c, Math.min(m, y));
 
   c = (c - k) / (1 - k);
   m = (m - k) / (1 - k);
