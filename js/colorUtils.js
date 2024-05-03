@@ -69,7 +69,7 @@ function rgbToCmyk(r, g, b) {
   y = Math.round(y * 100);
   k = Math.round(k * 100);
 
-  return { c, m, y, k };
+  return `${c}, ${m}, ${y}, ${k}`;
 }
 
 function rgbToHex(value) {
