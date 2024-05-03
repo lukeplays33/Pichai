@@ -264,5 +264,5 @@ view-pager article {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 8px;
-    grid-row-gap:32px;
+    grid-column-gap:32px;
 }
