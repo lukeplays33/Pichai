@@ -34,7 +34,7 @@ let similarColorHolder = document.getElementById('similarColorHolder');
 
 function getColorAssociation (name) {
     let className = colorClass.innerHTML;
-    let association;
+    let association = '';
 
     for(i of colorAssociations[className]) {
         association = association + (`<li>${i}</li>`);
