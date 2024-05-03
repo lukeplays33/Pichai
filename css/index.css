@@ -244,7 +244,7 @@ view-pager article {
 
 .information {
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
 
     margin-bottom:8px;
 }
