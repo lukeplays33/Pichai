@@ -40,7 +40,7 @@ function getColorAssociation (name) {
         association = association + (`<li>${i}</li>`);
     }
 
-    return `${name} is a ${className}-ish color.<br> These colors are often associated with: <br> <ul>${association}</ul>`
+    return `${name} is a ${className}-ish color that is often associated with: <br> <ul>${association}</ul>`
 
 }
 
