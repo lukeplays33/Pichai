@@ -17,7 +17,7 @@ let picker = document.getElementById('colorPicker');
 
 let making = document.getElementById('making');
 let howTo = document.getElementById('howTo');
-let associated = document.getElementById('association');
+let associated = document.getElementById('associtation');
 
 let name = document.getElementById('colorName');
 let hex = document.getElementById('hex');
