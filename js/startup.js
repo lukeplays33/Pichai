@@ -1,3 +1,8 @@
+import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
+
+let pichai = new PichaiUX();
+pichai.initialize();
+
 if (window.localStorage.getItem('allowedColors') == null || window.localStorage.getItem('allowedColors') == '') {
     window.localStorage.setItem('allowedColors', ['#866f85', '#C8102E', '#9500FF', '#5F76A8', '#FF10F0', ' #EBB6CB', '#9400D3', '##FADADD', '#B598A3', '#000000',
         '#E4C798', '#367588', '#00a4b4', '#A0D6B4', '#003153', '#ADD8E6', '#312C6A', '#429e9d', '#ACD5F3', '#0981D1', '#0047AB', '#87CEFA', '#989EB0', '#D9D9D6', '#6699CC', '#00FF7F', '#00334F',
