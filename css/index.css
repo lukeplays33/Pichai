@@ -262,6 +262,7 @@ view-pager article {
     align-items:center;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 8px;
+    grid-row-gap:32px;
 }
