@@ -113,7 +113,7 @@ h3, h5, p {
     width: calc(100% - 16px);
 }
 
-h5, p {
+h5, .information p {
     padding: 8px 0px 8px 0px !important;
 }
 
