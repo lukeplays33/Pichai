@@ -17,6 +17,7 @@ let picker = document.getElementById('colorPicker');
 
 let making = document.getElementById('making');
 let howTo = document.getElementById('howTo');
+let associated = document.getElementById('association');
 
 let name = document.getElementById('colorName');
 let hex = document.getElementById('hex');
@@ -81,7 +82,7 @@ async function setColorClass(r, g, b) {
     colorClass.style.backgroundColor = await findColorClass(r, g, b);
     colorClass.style.color = await getTextColor(r, g, b);
 
-    howTo.innerHTML = await getColorAssociation(name.innerHTML);
+    associated.innerHTML = await getColorAssociation(name.innerHTML);
 }
 
 setInnerHTMLs(window.localStorage.getItem('lastColor') ?? '#008dcd');
