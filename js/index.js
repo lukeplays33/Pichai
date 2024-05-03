@@ -6,6 +6,11 @@ import { hexToRgb, RGBToHSL, rgbToCmyk, rgbToHex, hslToHex, cmykToHex, colorAsso
 
 import { getSimilarColors, addTile } from './utils.js';
 
+import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
+
+let pichai = new PichaiUX();
+pichai.initialize();
+
 let i;
 
 let picker = document.getElementById('colorPicker');
@@ -76,7 +81,7 @@ async function setColorClass(r, g, b) {
     colorClass.style.backgroundColor = await findColorClass(r, g, b);
     colorClass.style.color = await getTextColor(r, g, b);
 
-    howTo.innerHTML = await getColorAssociation(n_match[1]);
+    howTo.innerHTML = await getColorAssociation(name.innerHTML);
 }
 
 setInnerHTMLs(window.localStorage.getItem('lastColor') ?? '#008dcd');
