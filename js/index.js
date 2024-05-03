@@ -37,10 +37,10 @@ function getColorAssociation (name) {
     let association;
 
     for(i of colorAssociations[className]) {
-        association = association + (`<li>${i}</li><br>`);
+        association = association + (`<li>${i}</li>`);
     }
 
-    return `${name} is a ${className}-ish color.<br> These colors are often associated with: <br> <ol>${association}</ol>`
+    return `${name} is a ${className}-ish color.<br> These colors are often associated with: <br> <ul>${association}</ul>`
 
 }
 
