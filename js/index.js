@@ -56,7 +56,6 @@ async function setInnerHTMLs(code) {
     hex.value = code;
 
     setColorClass(RGB[0], RGB[1], RGB[2]);
-    howTo.innerHTML = await getColorAssociation(n_match[1]);
 
     for(i of document.getElementsByClassName('colorVariantsItem')) {
         i.innerHTML = code;
@@ -76,6 +75,8 @@ async function setColorClass(r, g, b) {
     colorClass.innerHTML = await findColorClass(r, g, b);
     colorClass.style.backgroundColor = await findColorClass(r, g, b);
     colorClass.style.color = await getTextColor(r, g, b);
+
+    howTo.innerHTML = await getColorAssociation(n_match[1]);
 }
 
 setInnerHTMLs(window.localStorage.getItem('lastColor') ?? '#008dcd');
