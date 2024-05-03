@@ -106,7 +106,7 @@ main * {
     border-radius: 10px;
 }
 
-h3, h5, p {
+h3, h5, .information p {
     border-radius: 10px;
     margin: 8px 0px 8px 0px !important;
 
