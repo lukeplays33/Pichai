@@ -15,6 +15,8 @@ let i;
 let picker = document.getElementById('colorPicker');
 
 let making = document.getElementById('making');
+let howTo = document.getElementById('howTo');
+
 let name = document.getElementById('colorName');
 let hex = document.getElementById('hex');
 let rgb = document.getElementById('rgb');
