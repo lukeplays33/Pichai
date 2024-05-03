@@ -95,6 +95,14 @@ function rgbToCmyk(r,g,b) {
   return {c: computedC,m: computedM,y: computedY,k: computedK};
  }
 
+function rgbToHex(value) {
+  let r = value.split(',')[0];
+  let g = value.split(',')[1];
+  let b = value.split(',')[2];
+
+  return "#" + (1 << 24 | r << 16 | g << 8 | b).toString(16).slice(1);
+}
+
 function hslToHex(value) {
   let h = value.split(',')[0];
   let s = value.split(',')[1];
