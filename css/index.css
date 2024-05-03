@@ -106,11 +106,15 @@ main * {
     border-radius: 10px;
 }
 
-h3, h5 {
+h3, h5, p {
     border-radius: 10px;
     margin: 8px 0px 8px 0px !important;
 
     width: calc(100% - 16px);
+}
+
+h5, p {
+    padding: 8px 0px 8px 0px;
 }
 
 #allowedColorsDialog {

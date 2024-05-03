@@ -34,11 +34,10 @@ let similarColorHolder = document.getElementById('similarColorHolder');
 
 function getColorAssociation (name) {
     let className = colorClass.innerHTML;
-    let association = [];
+    let association;
 
     for(i of colorAssociations[className]) {
-        console.log(i)
-        association.push(`<li>${i}</li>`);
+        association = association + (`<li>${i}</li><br>`);
     }
 
     return `${name} is a ${className}-ish color.<br> These colors are often associated with: <br> <ol>${association}</ol>`
