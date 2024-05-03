@@ -54,15 +54,15 @@ function RGBToHSL(r, g, b) {
 }
 
 function rgbToCmyk(r,g,b) {
-  var computedC = 0;
-  var computedM = 0;
-  var computedY = 0;
-  var computedK = 0;
+  let computedC = 0;
+  let computedM = 0;
+  let computedY = 0;
+  let computedK = 0;
  
   //remove spaces from input RGB values, convert to int
-  var r = parseInt( (''+r).replace(/\s/g,''),10 ); 
-  var g = parseInt( (''+g).replace(/\s/g,''),10 ); 
-  var b = parseInt( (''+b).replace(/\s/g,''),10 ); 
+  let r = parseInt( (''+r).replace(/\s/g,''),10 ); 
+  let g = parseInt( (''+g).replace(/\s/g,''),10 ); 
+  let b = parseInt( (''+b).replace(/\s/g,''),10 ); 
  
   if ( r==null || g==null || b==null ||
       isNaN(r) || isNaN(g)|| isNaN(b) )
@@ -92,7 +92,7 @@ function rgbToCmyk(r,g,b) {
   computedY = Math.round((computedY - minCMY) / (1 - minCMY) * 100 );
   computedK = Math.round(minCMY * 100);
  
-  return `${CcomputedC}, ${computedM}, ${computedY}, ${computedK}`
+  return `${computedC}, ${computedM}, ${computedY}, ${computedK}`
  }
 
 function rgbToHex(value) {
