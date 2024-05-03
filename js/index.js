@@ -1,14 +1,10 @@
-import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
 import { findColorClass } from 'https://lukeplays33.github.io/Pichai-UX/AI/colorClassFinder.js';
 import { getTextColor } from 'https://lukeplays33.github.io/Pichai-UX/AI/textColorFInder.js';
 
 import { ntc } from './ntc.js';
-import { hexToRgb, RGBToHSL, rgbToCmyk, rgbToHex, hslToHex, cmykToHex } from './colorUtils.js';
+import { hexToRgb, RGBToHSL, rgbToCmyk, rgbToHex, hslToHex, cmykToHex, colorAssociations } from './colorUtils.js';
 
 import { getSimilarColors, addTile } from './utils.js';
-
-let pichai = new PichaiUX();
-pichai.initialize();
 
 let i;
 
@@ -30,7 +26,19 @@ let tones = document.getElementById('tones');
 
 let similarColorHolder = document.getElementById('similarColorHolder');
 
-function setInnerHTMLs(code) {
+function getColorAssociation (name) {
+    let className = colorClass.innerHTML;
+    let association = [];
+
+    for(i of colorAssociations[className]) {
+        association.push(`<li>${i}</li>`);
+    }
+
+    return `${name} is a ${className}-ish color.<br> These colors are often associated with: <br> <ol>${association}</ol>`
+
+}
+
+async function setInnerHTMLs(code) {
     window.localStorage.setItem('lastColor', code);
     //result.sRGBHex to get hex code
     let n_match = ntc.name(code);
@@ -39,11 +47,14 @@ function setInnerHTMLs(code) {
 
     name.innerHTML = n_match[1];
     making.innerHTML = `Making ${n_match[1]}`;
+
     rgb.value = RGB;
     hsl.value = RGBToHSL(RGB[0], RGB[1], RGB[2]);
     cmyk.value = rgbToCmyk(RGB[0], RGB[1], RGB[2]);
     hex.value = code;
+
     setColorClass(RGB[0], RGB[1], RGB[2]);
+    howTo.innerHTML = await getColorAssociation(n_match[1]);
 
     for(i of document.getElementsByClassName('colorVariantsItem')) {
         i.innerHTML = code;

@@ -109,4 +109,9 @@ function cmykToHex(value) {
   return `#${red.toString(16).padStart(2, '0')}${green.toString(16).padStart(2, '0')}${blue.toString(16).padStart(2, '0')}`;
 }
 
-export { hexToRgb, RGBToHSL, rgbToCmyk, rgbToHex, hslToHex, cmykToHex }
+let colorAssociations = {
+  red: ['Action', 'Strength', 'Energy', 'Passion', 'Attention', 'Motivates', 'Stimulates', 'Cautions', 'Sexuality', 'Courage', 'Desire', 'Confidence', 'Anger', 'Danger', 'Revenge', 'Aggresion'],
+  
+};
+
+export { hexToRgb, RGBToHSL, rgbToCmyk, rgbToHex, hslToHex, cmykToHex, colorrrAssociations }
