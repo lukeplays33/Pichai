@@ -122,8 +122,9 @@ let colorAssociations = {
   lime: ['Harmony', 'Safety', 'Growth', 'Health', 'Revitalizes', 'Balances', 'Relaxes', 'Encourages', 'Generosity', 'Hope', 'Prosperity', 'Luck', 'Judge mental', 'Envy', 'Materialism', 'Inexperience'],
 
   lightblue: ['Compassion', 'Calmness', 'Clarity', 'Communicate', 'Balances', 'Clarifies', 'Calms', "Stablilizes", 'Concetrate', 'Growth', 'Peace', 'Empathy', 'Narcissism', 'Stress', 'Secrecy', 'Boastfullness'],
+  blue: ['Security', 'Trust', 'Loyality', 'Responsible', 'Protects', 'Calms', 'Relaxes', 'Supports', 'Confidence', 'Peace', 'Honesty', 'Reliability', 'Conservative', 'Passive', 'Depressed', 'Predictable'],
 
-
+  
 };
 
 export { hexToRgb, RGBToHSL, rgbToCmyk, rgbToHex, hslToHex, cmykToHex, colorAssociations }
