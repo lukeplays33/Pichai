@@ -115,6 +115,10 @@ let colorAssociations = {
   orange: ['Emotion', 'Youth', 'Optimism', 'Enthusiasm', 'Encourages', 'Uplifts', 'Stimulates', 'Communicate', 'Spontaneity', 'Creativity', 'Warmth', 'Positivity', 'Exhibitionsism', 'Superficial', 'Impatient', 'Domination'],
   coral: ['Emotion', 'Youth', 'Optimism', 'Enthusiasm', 'Encourages', 'Uplifts', 'Stimulates', 'Communicate', 'Spontaneity', 'Creativity', 'Warmth', 'Positivity', 'Exhibitionsism', 'Superficial', 'Impatient', 'Domination'],
   brown: ['Emotion', 'Youth', 'Optimism', 'Enthusiasm', 'Encourages', 'Uplifts', 'Stimulates', 'Communicate', 'Spontaneity', 'Creativity', 'Warmth', 'Positivity', 'Exhibitionsism', 'Superficial', 'Impatient', 'Domination'],
+
+  yellow: ['Happiness', 'Optimism', 'Positivity', 'Intellect', 'Clarifies', 'Inspires', 'Amuses', 'Energizes', 'Creativity', 'Perception', 'Warmth', 'Mentality', 'Cowardice', 'Deception', 'Egotism', 'Caution'],
+
+  
 };
 
 export { hexToRgb, RGBToHSL, rgbToCmyk, rgbToHex, hslToHex, cmykToHex, colorAssociations }
