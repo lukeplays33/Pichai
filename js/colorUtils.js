@@ -114,7 +114,8 @@ let colorAssociations = {
 
   orange: ['Emotion', 'Youth', 'Optimism', 'Enthusiasm', 'Encourages', 'Uplifts', 'Stimulates', 'Communicate', 'Spontaneity', 'Creativity', 'Warmth', 'Positivity', 'Exhibitionsism', 'Superficial', 'Impatient', 'Domination'],
   coral: ['Emotion', 'Youth', 'Optimism', 'Enthusiasm', 'Encourages', 'Uplifts', 'Stimulates', 'Communicate', 'Spontaneity', 'Creativity', 'Warmth', 'Positivity', 'Exhibitionsism', 'Superficial', 'Impatient', 'Domination'],
-  brown: ['Emotion', 'Youth', 'Optimism', 'Enthusiasm', 'Encourages', 'Uplifts', 'Stimulates', 'Communicate', 'Spontaneity', 'Creativity', 'Warmth', 'Positivity', 'Exhibitionsism', 'Superficial', 'Impatient', 'Domination'],
+
+  brown: ['Reliability', 'Stability', 'Honesty', 'Comfort', 'Simplifies', 'Protects', 'Grounds', 'Stabilizes', 'Appreciation', 'Support', 'Wisdom', 'Dependable', 'Boring', 'Dull', 'Timid', 'Predicatble'],
 
   yellow: ['Happiness', 'Optimism', 'Positivity', 'Intellect', 'Clarifies', 'Inspires', 'Amuses', 'Energizes', 'Creativity', 'Perception', 'Warmth', 'Mentality', 'Cowardice', 'Deception', 'Egotism', 'Caution'],
 
@@ -124,7 +125,13 @@ let colorAssociations = {
   lightblue: ['Compassion', 'Calmness', 'Clarity', 'Communicate', 'Balances', 'Clarifies', 'Calms', "Stablilizes", 'Concetrate', 'Growth', 'Peace', 'Empathy', 'Narcissism', 'Stress', 'Secrecy', 'Boastfullness'],
   blue: ['Security', 'Trust', 'Loyality', 'Responsible', 'Protects', 'Calms', 'Relaxes', 'Supports', 'Confidence', 'Peace', 'Honesty', 'Reliability', 'Conservative', 'Passive', 'Depressed', 'Predictable'],
 
-  
+  purple: ['Spirituality', 'Mystery', 'Royality', 'Imagination', 'Enlightens', 'Inspires', 'Uplifts', 'Encourages', 'Compassion', 'Fantasy', 'Wisdom', 'Creativity', 'Sensitive', 'Vigilant', 'Immature', 'Emotional'],
+
+  pink : ['Compassion', 'Love', 'Feminity', 'Playfullness', 'Sympathizes', 'Calms', 'Nurtures', 'Comforts', 'Kindness', 'Warmth', 'Romance', 'Intuition', 'Emotional', 'Timid', 'Immature', 'Unconfident'],
+
+  black: ['Protection', 'Power', 'Ellegance', 'Sophisticated', 'Mysifies', 'Seduces', 'Secures', 'Intimidates', 'Formality', 'Strength', 'Prestige', 'Authority', 'Depression', 'Sadness', 'Pessimism', 'Dominance'],
+
+  white: ['Cleanliness', 'Purity', 'Innocence', 'Perfection', 'Refreshes', 'Balances', 'Purifies', 'Simplifies', 'Goodness', 'Hope', 'Clarity', 'Openness', 'Boring', 'Cold', 'Empty', 'Distance']
 };
 
 export { hexToRgb, RGBToHSL, rgbToCmyk, rgbToHex, hslToHex, cmykToHex, colorAssociations }
