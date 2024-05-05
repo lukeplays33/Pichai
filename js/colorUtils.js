@@ -119,8 +119,11 @@ let colorAssociations = {
   yellow: ['Happiness', 'Optimism', 'Positivity', 'Intellect', 'Clarifies', 'Inspires', 'Amuses', 'Energizes', 'Creativity', 'Perception', 'Warmth', 'Mentality', 'Cowardice', 'Deception', 'Egotism', 'Caution'],
 
   green: ['Harmony', 'Safety', 'Growth', 'Health', 'Revitalizes', 'Balances', 'Relaxes', 'Encourages', 'Generosity', 'Hope', 'Prosperity', 'Luck', 'Judge mental', 'Envy', 'Materialism', 'Inexperience'],
+  lime: ['Harmony', 'Safety', 'Growth', 'Health', 'Revitalizes', 'Balances', 'Relaxes', 'Encourages', 'Generosity', 'Hope', 'Prosperity', 'Luck', 'Judge mental', 'Envy', 'Materialism', 'Inexperience'],
 
-  
+  lightblue: ['Compassion', 'Calmness', 'Clarity', 'Communicate', 'Balances', 'Clarifies', 'Calms', "Stablilizes", 'Concetrate', 'Growth', 'Peace', 'Empathy', 'Narcissism', 'Stress', 'Secrecy', 'Boastfullness'],
+
+
 };
 
 export { hexToRgb, RGBToHSL, rgbToCmyk, rgbToHex, hslToHex, cmykToHex, colorAssociations }
