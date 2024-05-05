@@ -52,7 +52,7 @@ async function setInnerHTMLs(code) {
     RGB = RGB.substring(4, RGB.length - 1).split(',');
 
     name.innerHTML = n_match[1];
-    making.innerHTML = `Making ${n_match[1]}`;
+    making.innerHTML = `How to make ${n_match[1]}`;
 
     rgb.value = RGB;
     hsl.value = RGBToHSL(RGB[0], RGB[1], RGB[2]);
