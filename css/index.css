@@ -310,8 +310,3 @@ view-pager article {
 #howTo {
     text-align:left;
 }
-
-#pre {
-    display:grid !important;
-    grid-template-columns: auto auto;
-}
