@@ -62,11 +62,13 @@ async function setInnerHTMLs(code) {
     cmyk.value = CMYK;
     hex.value = code;
 
+    console.log(CMYK[4])
+
     howTo.innerHTML = `To make the color ${name.innerHTML} well be using the CMYK system this system is often used for printers but can also be used for mixing paint.
-    <br>
+    <br><br>
 
     To start grab a bucket and use a syringe or measuring cup and add ${CMYK[0]}% of cyan, ${CMYK[2]}% of magenta and ${CMYK[3]}% of yellow paint to to the bucket.
-    <br>
+    <br><br>
     
     Now mix it till you got the desired color, additionally you can add ${CMYK[4]}% of black (k) to change its contrast.
     `
