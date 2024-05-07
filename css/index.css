@@ -276,6 +276,8 @@ view-pager article {
 
     display:flex;
     flex-direction:row;
+
+    margin-top:8px !important;
 }
 
 .chipIcon {
