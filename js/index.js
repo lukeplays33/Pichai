@@ -50,9 +50,9 @@ async function setInnerHTMLs(code) {
     let n_match = ntc.name(code);
 
     let RGB = hexToRgb(n_match[0]);
-    let CMYK = rgbToCmyk(RGB[0], RGB[1], RGB[2]);
-
     RGB = RGB.substring(4, RGB.length - 1).split(',');
+    
+    let CMYK = rgbToCmyk(RGB[0], RGB[1], RGB[2]);
 
     name.innerHTML = n_match[1];
     making.innerHTML = `How to make ${n_match[1]}`;
