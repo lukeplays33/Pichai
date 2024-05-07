@@ -278,6 +278,8 @@ view-pager article {
     flex-direction:row;
 
     margin-top:8px !important;
+
+    padding:8px !important;
 }
 
 .chipIcon {
