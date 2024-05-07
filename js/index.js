@@ -70,7 +70,7 @@ async function setInnerHTMLs(code) {
     To start grab a bucket and use a syringe or measuring cup and add ${CMYK[0]}% of cyan, ${CMYK[1]}% of magenta and ${CMYK[2]}% of yellow paint to to the bucket.
     <br><br>
     
-    Now mix it till you got the desired color, additionally you can add ${CMYK[3]}% of black (k) to change its contrast.
+    Now mix it till you got the desired color, additionally you can add black (k) or white to change its contrast.
     `
 
     setColorClass(RGB[0], RGB[1], RGB[2]);
