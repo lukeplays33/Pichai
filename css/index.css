@@ -282,12 +282,14 @@ view-pager article {
     padding:8px !important;
 }
 
-.chip h5 {
+.chip h4 {
     background-color:TRANSPARENT !important;
 
     margin:0px !important;
 
     text-align:left !important;
+
+    padding-left:8px;
 }
 
 .chipIcon {
