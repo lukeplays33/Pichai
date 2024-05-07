@@ -270,7 +270,7 @@ view-pager article {
 }
 
 .chip {
-    width:100%;
+    width:calc(100% 16px);
 
     background-color:var(--primaryContainer);
 
