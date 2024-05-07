@@ -51,7 +51,7 @@ async function setInnerHTMLs(code) {
 
     let RGB = hexToRgb(n_match[0]);
     RGB = RGB.substring(4, RGB.length - 1).split(',');
-    
+
     let CMYK = rgbToCmyk(RGB[0], RGB[1], RGB[2]);
 
     name.innerHTML = n_match[1];
@@ -67,7 +67,7 @@ async function setInnerHTMLs(code) {
 
     howTo.innerHTMl = `To make the color ${name.innerHTML} well be using the CMYK system this system is often used for printers but can also be used for mixing paint.
 
-    To start grab a bucket and use a syringe or measuring cup and add  of cyan, x% of magenta and x% of yellow paint to to the bucket.
+    To start grab a bucket and use a syringe or measuring cup and add ${CMYK[0]}% of cyan, x% of magenta and x% of yellow paint to to the bucket.
     
     Now mix it till you got the desired color, additionally you can add x% of black (k) to change its contrast.
     `
