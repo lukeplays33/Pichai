@@ -62,7 +62,7 @@ async function setInnerHTMLs(code) {
     cmyk.value = CMYK;
     hex.value = code;
 
-    console.log(typeof CMYK)
+    console.log(typeof CMYK.split(','))
 
     howTo.innerHTMl = `To make the color ${name.innerHTML} well be using the CMYK system this system is often used for printers but can also be used for mixing paint.
 
