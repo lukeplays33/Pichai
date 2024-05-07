@@ -288,5 +288,7 @@ view-pager article {
     background-color:var(--primary);
 
     color:var(--priamryTextColor);
-    font-size:30px;
+    font-size:30px !important;
+
+    padding:8px;
 }
