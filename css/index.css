@@ -293,7 +293,7 @@ view-pager article {
 }
 
 .chip ul {
-    padding-left:24px;
+    padding-left:24px !important;
 }
 
 .chipIcon {
