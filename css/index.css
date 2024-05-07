@@ -270,7 +270,7 @@ view-pager article {
 }
 
 .chip {
-    width:calc(100% 16px);
+    width:calc(100% - 16px);
 
     background-color:var(--primaryContainer);
 
@@ -283,12 +283,10 @@ view-pager article {
 }
 
 .chipIcon {
-    width:50px;
-    height:50px;
-
     border-radius:200px;
 
     background-color:var(--primary);
 
     color:var(--priamryTextColor);
+    font-size:30px;
 }
