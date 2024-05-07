@@ -292,6 +292,10 @@ view-pager article {
     padding-left:8px;
 }
 
+.chip ul {
+    padding-left:24px;
+}
+
 .chipIcon {
     border-radius:200px;
 
