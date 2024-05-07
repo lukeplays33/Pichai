@@ -127,6 +127,7 @@ let colorAssociations = {
 
   purple: ['Spirituality', 'Mystery', 'Royality', 'Imagination', 'Enlightens', 'Inspires', 'Uplifts', 'Encourages', 'Compassion', 'Fantasy', 'Wisdom', 'Creativity', 'Sensitive', 'Vigilant', 'Immature', 'Emotional'],
 
+  violet : ['Compassion', 'Love', 'Feminity', 'Playfullness', 'Sympathizes', 'Calms', 'Nurtures', 'Comforts', 'Kindness', 'Warmth', 'Romance', 'Intuition', 'Emotional', 'Timid', 'Immature', 'Unconfident'],
   pink : ['Compassion', 'Love', 'Feminity', 'Playfullness', 'Sympathizes', 'Calms', 'Nurtures', 'Comforts', 'Kindness', 'Warmth', 'Romance', 'Intuition', 'Emotional', 'Timid', 'Immature', 'Unconfident'],
 
   black: ['Protection', 'Power', 'Ellegance', 'Sophisticated', 'Mysifies', 'Seduces', 'Secures', 'Intimidates', 'Formality', 'Strength', 'Prestige', 'Authority', 'Depression', 'Sadness', 'Pessimism', 'Dominance'],
