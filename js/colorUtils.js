@@ -118,6 +118,7 @@ let colorAssociations = {
   brown: ['Reliability', 'Stability', 'Honesty', 'Comfort', 'Simplifies', 'Protects', 'Grounds', 'Stabilizes', 'Appreciation', 'Support', 'Wisdom', 'Dependable', 'Boring', 'Dull', 'Timid', 'Predicatble'],
 
   yellow: ['Happiness', 'Optimism', 'Positivity', 'Intellect', 'Clarifies', 'Inspires', 'Amuses', 'Energizes', 'Creativity', 'Perception', 'Warmth', 'Mentality', 'Cowardice', 'Deception', 'Egotism', 'Caution'],
+  gold: ['Happiness', 'Optimism', 'Positivity', 'Intellect', 'Clarifies', 'Inspires', 'Amuses', 'Energizes', 'Creativity', 'Perception', 'Warmth', 'Mentality', 'Cowardice', 'Deception', 'Egotism', 'Caution'],
 
   green: ['Harmony', 'Safety', 'Growth', 'Health', 'Revitalizes', 'Balances', 'Relaxes', 'Encourages', 'Generosity', 'Hope', 'Prosperity', 'Luck', 'Judge mental', 'Envy', 'Materialism', 'Inexperience'],
   lime: ['Harmony', 'Safety', 'Growth', 'Health', 'Revitalizes', 'Balances', 'Relaxes', 'Encourages', 'Generosity', 'Hope', 'Prosperity', 'Luck', 'Judge mental', 'Envy', 'Materialism', 'Inexperience'],
