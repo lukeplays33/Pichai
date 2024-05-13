@@ -4,7 +4,7 @@ if (window.localStorage.getItem('allowedColors') == null || window.localStorage.
         '#08FF08', '#8DB600', '#FFDF00', '#FF9C00', '#98FB98', '#FFFF00', '#B5EAAA', '#FFA500', '#EAA221',
         '#6D712E', '#013220', '#F6E4C5', '#154734', '#507D2A', '#A0A0A0', '#4DA403', '#40826D',
         '#F29E8E', '#FF00FF', '#FFFFFF', '#C8C9C7', '#DE5D83', '#FFA500',
-        '#AB4E52', '#675B58', '#853435', '#7C0D0E', '#AB4B52', '#AB4E52', '#AB4E52', '#AB4E52', '#850101'
+        '#AB4E52', '#675B58', '#853435', '#7C0D0E', '#AB4B52', '#850101'
     ].join(','));
     window.localStorage.setItem('palleteLength', 10);
 }
