@@ -125,6 +125,7 @@ let colorAssociations = {
 
   lightblue: ['Compassion', 'Calmness', 'Clarity', 'Communicate', 'Balances', 'Clarifies', 'Calms', "Stablilizes", 'Concetrate', 'Growth', 'Peace', 'Empathy', 'Narcissism', 'Stress', 'Secrecy', 'Boastfullness'],
   blue: ['Security', 'Trust', 'Loyality', 'Responsible', 'Protects', 'Calms', 'Relaxes', 'Supports', 'Confidence', 'Peace', 'Honesty', 'Reliability', 'Conservative', 'Passive', 'Depressed', 'Predictable'],
+  navy: ['Security', 'Trust', 'Loyality', 'Responsible', 'Protects', 'Calms', 'Relaxes', 'Supports', 'Confidence', 'Peace', 'Honesty', 'Reliability', 'Conservative', 'Passive', 'Depressed', 'Predictable'],
 
   purple: ['Spirituality', 'Mystery', 'Royality', 'Imagination', 'Enlightens', 'Inspires', 'Uplifts', 'Encourages', 'Compassion', 'Fantasy', 'Wisdom', 'Creativity', 'Sensitive', 'Vigilant', 'Immature', 'Emotional'],
 
