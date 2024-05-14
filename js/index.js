@@ -45,7 +45,7 @@ function getColorAssociation(name) {
 }
 
 async function setInnerHTMLs(code) {
-    localStorage.setItem('lastColor', code);
+    localforage.setItem('lastColor', code);
     //result.sRGBHex to get hex code
     let n_match = ntc.name(code);
 
@@ -97,7 +97,7 @@ async function setColorClass(r, g, b) {
     associated.innerHTML = await getColorAssociation(name.innerHTML);
 }
 
-setInnerHTMLs(localStorage.getItem('lastColor') ?? '#008dcd');
+setInnerHTMLs(localforage.getItem('lastColor') ?? '#008dcd');
 
 picker.onclick = function () {
     if (!window.EyeDropper) {
