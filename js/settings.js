@@ -12,16 +12,16 @@ let add = document.getElementById('add');
 let creteColor = document.getElementById('create');
 
 let listOfAllowedColors = [];
-listOfAllowedColors = window.localStorage.getItem('allowedColors').split(',');
+listOfAllowedColors = localStorage.getItem('allowedColors').split(',');
 
 for (i of listOfAllowedColors) {
     addAllowedColor(i);
 }
 
-lengthInput.value = window.localStorage.getItem('palleteLength'); //set value back to the one set by the user
+lengthInput.value = localStorage.getItem('palleteLength'); //set value back to the one set by the user
 
 lengthInput.onchange = function () {
-    window.localStorage.setItem('palleteLength', this.value); // save the users selected pallete size
+    localStorage.setItem('palleteLength', this.value); // save the users selected pallete size
 }
 
 allowedColors.onclick = function () {
@@ -43,7 +43,7 @@ add.onclick = function () {
 
     addAllowedColor(color);
     listOfAllowedColors.push(color);
-    window.localStorage.setItem('allowedColors', listOfAllowedColors.join(','));
+    localStorage.setItem('allowedColors', listOfAllowedColors.join(','));
 }
 
 function addAllowedColor(color) {
@@ -56,7 +56,7 @@ function addAllowedColor(color) {
         this.parentNode.remove();
 
         listOfAllowedColors.splice(listOfAllowedColors.indexOf(this.getAttribute('color')), 1);
-        window.localStorage.setItem('allowedColors', listOfAllowedColors.join(','));
+        localStorage.setItem('allowedColors', listOfAllowedColors.join(','));
         console.log(listOfAllowedColors)
     }
 
