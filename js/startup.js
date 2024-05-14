@@ -1,7 +1,8 @@
 import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
 
-console.log(localforage.getItem('allowedColors'))
-if (localforage.getItem('allowedColors') == null || localforage.getItem('allowedColors') == '') {
+window.onload = async function () {
+console.log(await localforage.getItem('allowedColors'))
+if (await localforage.getItem('allowedColors') == null || await localforage.getItem('allowedColors') == '') {
     localforage.setItem('allowedColors', ['#866f85', '#C8102E', '#9500FF', '#5F76A8', '#FF10F0', ' #EBB6CB', '#9400D3', '#FADADD', '#B598A3', '#000000',
         '#E4C798', '#367588', '#00a4b4', '#A0D6B4', '#003153', '#ADD8E6', '#312C6A', '#429e9d', '#ACD5F3', '#0981D1', '#0047AB', '#87CEFA', '#989EB0', '#D9D9D6', '#6699CC', '#00FF7F', '#00334F',
         '#08FF08', '#8DB600', '#FFDF00', '#FF9C00', '#98FB98', '#FFFF00', '#B5EAAA', '#FFA500', '#EAA221',
@@ -10,4 +11,5 @@ if (localforage.getItem('allowedColors') == null || localforage.getItem('allowed
         '#AB4E52', '#675B58', '#853435', '#7C0D0E', '#AB4B52', '#850101'
     ].join(','));
     localforage.setItem('palleteLength', 10);
+}
 }
