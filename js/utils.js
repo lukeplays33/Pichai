@@ -40,7 +40,10 @@ async function getSimilarColors (color) {
         return [r, g, b];
     };
 
-    return closestColors(color, await     localforage.getItem('allowedColors').split(','), await localforage.getItem('palleteLength'));
+    value1 = await localforage.getItem('allowedColors');
+    value2 = await localforage.getItem('palleteLength');
+
+    return closestColors(color, value1.split(','), value2);
 }
 
 export { getSimilarColors,addTile }
