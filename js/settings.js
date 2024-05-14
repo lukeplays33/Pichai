@@ -16,8 +16,8 @@ localforage.getItem('allowedColors').then(function(value) {
     // This code runs once the value has been loaded
     // from the offline store.
     listOfAllowedColors = value.split(',');
+    console.log(listOfAllowedColors)
 }); //set value back to the one set by the user
-console.log(listOfAllowedColors)
 
 for (i of listOfAllowedColors) {
     addAllowedColor(i);
