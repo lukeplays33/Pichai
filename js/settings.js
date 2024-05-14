@@ -12,7 +12,7 @@ let add = document.getElementById('add');
 let creteColor = document.getElementById('create');
 
 let listOfAllowedColors = [];
-listOfAllowedColors = localforage.getItem('allowedColors').then(function(value) {
+localforage.getItem('allowedColors').then(function(value) {
     // This code runs once the value has been loaded
     // from the offline store.
     console.log(value);
