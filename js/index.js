@@ -96,8 +96,9 @@ async function setColorClass(r, g, b) {
 
     associated.innerHTML = await getColorAssociation(name.innerHTML);
 }
-
-setInnerHTMLs(localforage.getItem('lastColor') ?? '#008dcd');
+localforage.getItem('lastColor').then(function(value) {
+    setInnerHTMLs(value ?? '#008dcd');
+}); //set value back to the one set 
 
 picker.onclick = function () {
     if (!window.EyeDropper) {

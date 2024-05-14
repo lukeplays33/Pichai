@@ -15,18 +15,16 @@ let listOfAllowedColors = [];
 localforage.getItem('allowedColors').then(function(value) {
     // This code runs once the value has been loaded
     // from the offline store.
-    console.log(value);
-}); //set value back to the one set by the usersplit(',');
+    listOfAllowedColors = value.split(',');
+}); //set value back to the one set by the user
 
 for (i of listOfAllowedColors) {
     addAllowedColor(i);
 }
 
-lengthInput.value = localforage.getItem('palleteLength').then(function(value) {
-    // This code runs once the value has been loaded
-    // from the offline store.
-    console.log(value);
-}); //set value back to the one set by the user
+localforage.getItem('palleteLength').then(function(value) {
+    lengthInput.value = value;
+});
 
 lengthInput.onchange = function () {
     localforage.setItem('palleteLength', this.value); // save the users selected pallete size
