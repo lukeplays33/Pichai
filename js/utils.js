@@ -1,3 +1,5 @@
+let value1, value2;
+
 function addTile (element, value) {
     let art = document.createElement('article');
     art.style.backgroundColor = value;
@@ -12,7 +14,7 @@ function addTile (element, value) {
     element.appendChild(art)
 }
 
-function getSimilarColors (color) {
+async function getSimilarColors (color) {
     const closestColors = (targetColor, colorArray, count) => {
         const sortedColors = colorArray
             .map((color) => ({
@@ -38,7 +40,7 @@ function getSimilarColors (color) {
         return [r, g, b];
     };
 
-    return closestColors(color, window.localStorage.getItem('allowedColors').split(','), window.localStorage.getItem('palleteLength'));
+    return closestColors(color, await     localforage.getItem('allowedColors').split(','), await localforage.getItem('palleteLength'));
 }
 
 export { getSimilarColors,addTile }

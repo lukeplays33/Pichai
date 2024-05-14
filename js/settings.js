@@ -16,12 +16,11 @@ localforage.getItem('allowedColors').then(function(value) {
     // This code runs once the value has been loaded
     // from the offline store.
     listOfAllowedColors = value.split(',');
-    console.log(listOfAllowedColors)
-}); //set value back to the one set by the user
-
-for (i of listOfAllowedColors) {
-    addAllowedColor(i);
-}
+    
+    for (i of listOfAllowedColors) {
+        addAllowedColor(i);
+    }
+});
 
 localforage.getItem('palleteLength').then(function(value) {
     lengthInput.value = value;
