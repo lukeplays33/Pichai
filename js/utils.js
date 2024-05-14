@@ -15,6 +15,7 @@ function addTile (element, value) {
 }
 
 async function getSimilarColors (color) {
+    return new Promise(async (resolve) => {
     const closestColors = (targetColor, colorArray, count) => {
         const sortedColors = colorArray
             .map((color) => ({
@@ -43,8 +44,8 @@ async function getSimilarColors (color) {
     value1 = await localforage.getItem('allowedColors');
     value2 = await localforage.getItem('palleteLength');
 
-    console.log(closestColors(color, value1.split(','), value2))
-    return closestColors(color, value1.split(','), value2);
+    resolve(closestColors(color, value1.split(','), value2))
+});
 }
 
 export { getSimilarColors,addTile }
