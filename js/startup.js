@@ -1,10 +1,5 @@
 import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
 
-window.onload = async function () {
-console.log(await localforage.getItem('allowedColors'))
-
-}
-
 localforage.getItem('allowedColors').then(function(value) {
     console.log(value)
     if (value == null || value == '') {
