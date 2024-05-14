@@ -11,15 +11,18 @@ let allowedColorsList = document.getElementById('allowedColorsDialog');
 let add = document.getElementById('add');
 let creteColor = document.getElementById('create');
 
-window.onload = async function () {
 let listOfAllowedColors = [];
-listOfAllowedColors = await localforage.getItem('allowedColors').split(',');
+listOfAllowedColors = localforage.getItem('allowedColors').split(',');
 
 for (i of listOfAllowedColors) {
     addAllowedColor(i);
 }
 
-lengthInput.value = await localforage.getItem('palleteLength'); //set value back to the one set by the user
+lengthInput.value = localforage.getItem('palleteLength').then(function(value) {
+    // This code runs once the value has been loaded
+    // from the offline store.
+    console.log(value);
+}); //set value back to the one set by the user
 
 lengthInput.onchange = function () {
     localforage.setItem('palleteLength', this.value); // save the users selected pallete size
@@ -45,7 +48,6 @@ add.onclick = function () {
     addAllowedColor(color);
     listOfAllowedColors.push(color);
     localforage.setItem('allowedColors', listOfAllowedColors.join(','));
-}
 }
 
 function addAllowedColor(color) {
