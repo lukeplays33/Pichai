@@ -81,7 +81,7 @@ async function setInnerHTMLs(code) {
     }
 
     similarColorHolder.innerHTML = '';
-    for (i of getSimilarColors(code)) {
+    for (i of await getSimilarColors(code)) {
         addTile(similarColorHolder, i);
     }
 
