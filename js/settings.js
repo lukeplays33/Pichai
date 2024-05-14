@@ -12,7 +12,11 @@ let add = document.getElementById('add');
 let creteColor = document.getElementById('create');
 
 let listOfAllowedColors = [];
-listOfAllowedColors = localforage.getItem('allowedColors').split(',');
+listOfAllowedColors = localforage.getItem('allowedColors').then(function(value) {
+    // This code runs once the value has been loaded
+    // from the offline store.
+    console.log(value);
+}); //set value back to the one set by the usersplit(',');
 
 for (i of listOfAllowedColors) {
     addAllowedColor(i);
