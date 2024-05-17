@@ -321,7 +321,7 @@ nav {
     padding-top:0px;
 }
 
-nav a {
+#downlaod, #docs {
     border-radius:200px;
 
     background-color:var(--primary);
