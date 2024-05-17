@@ -333,6 +333,9 @@ nav a {
     align-items: center;
 
     color:var(--priamryTextColor);
+
+    width:26px;
+    height:26px;
 }
 
 nav {
