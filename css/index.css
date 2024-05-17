@@ -315,6 +315,9 @@ view-pager article {
 nav {
     display:flex;
     flex-direction:row;
+    row-gap: 8px;
+
+    padding:8px;
 }
 
 nav a {
@@ -328,4 +331,6 @@ nav a {
 
     justify-content: center;
     align-items: center;
+
+    color:var(--priamryTextColor);
 }
