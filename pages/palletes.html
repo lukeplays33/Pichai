@@ -13,8 +13,16 @@
 <body> 
     <template-header></template-header>
     <main>
-        <nav><a id='download'> <i class="material-symbols-outlined">download</i> <a id='docs' href='https://lukehoogenboom.gitbook.io/pichai-ux/'> <i class="material-symbols-outlined">menu_book</i> </a></nav>
+        <nav>
+            <a id='download'> <i class="material-symbols-outlined">download</i></a>
+             <a id='docs' href='https://lukehoogenboom.gitbook.io/pichai-ux/'> <i class="material-symbols-outlined">menu_book</i> </a> 
+             <tab-bar id='palleteChoice' for="palletePager">
+                <a href="./pages/iamge.html">Art</a>
+                <a href="./pages/settings.html">UI/UX</a>
+             </tab-bar>
+        </nav>
         
+        <view-pager id="palletePager"></view-pager>
     </main>
     <template-footer></template-footer>
 
