@@ -311,3 +311,21 @@ view-pager article {
 #howTo {
     text-align:left;
 }
+
+nav {
+    display:flex;
+    flex-direction:row;
+}
+
+nav a {
+    border-radius:200px;
+
+    background-color:var(--primary);
+
+    padding:8px;
+
+    display:flex;
+
+    justify-content: center;
+    align-items: center;
+}
