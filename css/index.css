@@ -335,6 +335,16 @@ nav a {
     color:var(--priamryTextColor);
 }
 
+nav {
+    position: absolute;
+    top: 8px;
+
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 #palleteChoice {
-    margin-right:auto;
+    position:static;
 }
