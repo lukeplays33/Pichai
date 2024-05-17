@@ -19,14 +19,17 @@
         <nav>
             <a id='download' title="Download your pallete as a png."> <i class="material-symbols-outlined">download</i></a>
             <tab-bar id='palleteChoice' for="palletePager">
-                <a href="./pages/iamge.html">Art</a>
-                <a href="./pages/settings.html">UI/UX</a>
+                <a href="#art">Art</a>
+                <a href="#ui">UI/UX</a>
             </tab-bar>
             <a title="Vied Pichai-UX documentation" id='docs' href='https://lukehoogenboom.gitbook.io/pichai-ux/'> <i
                     class="material-symbols-outlined">menu_book</i> </a>
         </nav>
 
-        <view-pager id="palletePager"></view-pager>
+        <view-pager id="palletePager">
+            <article id="art"></article>
+            <article id="UI"></article>
+        </view-pager>
     </main>
     <template-footer></template-footer>
 
