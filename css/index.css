@@ -328,6 +328,8 @@ nav a {
 
     padding:8px;
 
+    margin-top:5px;
+
     display:flex;
 
     justify-content: center;
@@ -335,8 +337,8 @@ nav a {
 
     color:var(--priamryTextColor);
 
-    width:10px;
-    height:10px;
+    width:13px;
+    height:13px;
 }
 
 nav {
