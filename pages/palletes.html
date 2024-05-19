@@ -17,13 +17,20 @@
     <template-header></template-header>
     <main>
         <nav>
-            <a id='download' title="Download your pallete as a png."> <i class="material-symbols-outlined">download</i></a>
+            <a id='preview' title="Preview how the selected colors will look."> <i
+                    class="material-symbols-outlined">preview</i></a>
+            <a id='download' title="Download your pallete as a png."> <i
+                    class="material-symbols-outlined">download</i></a>
+
             <tab-bar id='palleteChoice' for="palletePager">
                 <a href="#art">Art</a>
                 <a href="#ui">UI/UX</a>
             </tab-bar>
+            
             <a title="Vied Pichai-UX documentation" id='docs' href='https://lukehoogenboom.gitbook.io/pichai-ux/'> <i
                     class="material-symbols-outlined">menu_book</i> </a>
+            <a id='settings' href="./settings.html" title="Go to settings"> <i
+                    class="material-symbols-outlined">settings</i></a>
         </nav>
 
         <view-pager id="palletePager">
