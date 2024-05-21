@@ -22,6 +22,10 @@ main * {
     flex-direction: column;
 }
 
+.fullMain {
+    width:100% !important;
+}
+
 #colorName,
 #colorClass {
     width: calc(100% - 16px);
