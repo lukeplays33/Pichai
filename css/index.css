@@ -358,3 +358,10 @@ nav {
 #palleteChoice {
     position:static;
 }
+
+#art {
+    height:100%;
+
+    display:flex;
+    flex-direction:column;
+}
