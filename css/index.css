@@ -374,6 +374,8 @@ nav {
     flex-direction:column;
 
     height:100%;
+
+    margin-top:8px;
 }
 
 accordion-dropdown {
@@ -382,5 +384,5 @@ accordion-dropdown {
 }
 
 accordion-dropdown h5 {
-    margin-top:0px;
+    margin-top:0px !important;
 }
