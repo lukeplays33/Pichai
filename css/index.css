@@ -374,10 +374,13 @@ nav {
     flex-direction:column;
 
     height:100%;
-
-    
+}
 
 accordion-dropdown {
     width:calc(100% - 16px) !important;
     height:45%;
+}
+
+accordion-dropdown h5 {
+    margin-top:0px;
 }
