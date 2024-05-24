@@ -23,7 +23,7 @@ main * {
 }
 
 .fullMain {
-    width:100% !important;
+    width:calc(100% - 16px) !important;
 }
 
 #colorName,
