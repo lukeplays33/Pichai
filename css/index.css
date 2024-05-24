@@ -361,6 +361,17 @@ nav {
 
 #art {
     height:100%;
+
+    display:flex;
+
+    flex-direction:row;
+
+    gap:8px;
+}
+
+.column {
+    display:flex;
+    flex-direction:column;
 }
 
 accordion-dropdown {
