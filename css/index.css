@@ -365,12 +365,5 @@ nav {
 
 accordion-dropdown {
     width:45% !important;
-}
-
-accordion-dropdown h5 {
-    width:calc(100% - 12px) !important;
-}
-
-accordion-dropdown article {
-    height:45% !important;
+    height:45%;
 }
