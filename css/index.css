@@ -375,6 +375,6 @@ nav {
 }
 
 accordion-dropdown {
-    width:45% !important;
+    width:calc(100% - 16px) !important;
     height:45%;
 }
