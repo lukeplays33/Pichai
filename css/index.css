@@ -366,7 +366,3 @@ nav {
 accordion-dropdown {
     width:45% !important;
 }
-
-accordion-dropdown * {
-    width:45% !important;
-}
