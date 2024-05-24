@@ -369,6 +369,17 @@ nav {
     gap:8px;
 }
 
+.column:nth-child(1) {
+    display:flex;
+    flex-direction:column;
+    align-items: flex-end;
+
+    height:100%;
+    width:50%;
+
+    margin-top:8px;
+}
+
 .column {
     display:flex;
     flex-direction:column;
@@ -382,8 +393,6 @@ nav {
 accordion-dropdown {
     width:calc(100% - 16px) !important;
     height:30%;
-
-    width:30%;
 
     margin-bottom:8px;
 }
