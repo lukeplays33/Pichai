@@ -22,8 +22,8 @@ main * {
     flex-direction: column;
 }
 
-.fullMain {
-    width:calc(100% - 16px) !important;
+.mediumMain {
+    width:calc(700% - 16px) !important;
 }
 
 #colorName,
@@ -380,7 +380,7 @@ nav {
 
 accordion-dropdown {
     width:calc(100% - 16px) !important;
-    height:44%;
+    height:30%;
 
     margin-bottom:8px;
 }
