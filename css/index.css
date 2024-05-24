@@ -375,14 +375,9 @@ nav {
 
     height:100%;
 
-    margin-top:8px;
-}
+    
 
 accordion-dropdown {
     width:calc(100% - 16px) !important;
     height:45%;
-}
-
-accordion-dropdown h5 {
-    margin-top:0px;
 }
