@@ -23,7 +23,7 @@ main * {
 }
 
 .mediumMain {
-    width:calc(700% - 16px) !important;
+    width:calc(70% - 16px) !important;
 }
 
 #colorName,
