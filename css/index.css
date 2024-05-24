@@ -380,7 +380,7 @@ nav {
 
 accordion-dropdown {
     width:calc(100% - 16px) !important;
-    height:45%;
+    height:43%;
 
     margin-bottom:8px;
 }
