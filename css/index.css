@@ -407,6 +407,10 @@ accordion-dropdown article input {
     width:max-content !important;
 }
 
+accordion-dropdown article label {
+    height:max-content !important;
+}
+
 accordion-dropdown h5 {
     margin-top:0px !important;
 }
