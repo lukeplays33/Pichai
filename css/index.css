@@ -411,6 +411,8 @@ accordion-dropdown article textarea {
 accordion-dropdown article input {
     width:max-content !important;
     height:max-content !important;
+    margin:0px;
+    margin-right:4px;
 }
 
 accordion-dropdown article label {
