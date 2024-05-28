@@ -377,7 +377,7 @@ nav {
     flex-direction:column;
 
     height:100%;
-    width:calc(30% + 12px);
+    width:30%;
 
     margin-top:8px;
 }
@@ -393,7 +393,7 @@ nav {
 }
 
 accordion-dropdown {
-    width:calc(100% - 4px) !important;
+    width:calc(100% - 16px) !important;
     height:30%;
 
     margin-bottom:8px;
