@@ -405,6 +405,7 @@ accordion-dropdown article textarea {
 
 accordion-dropdown article input {
     width:max-content !important;
+    height:max-content !important;
 }
 
 accordion-dropdown article label {
