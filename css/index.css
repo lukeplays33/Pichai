@@ -366,6 +366,9 @@ nav {
 
     flex-direction:row;
 
+    align-items:center;
+    justify-content:center;
+
     gap:8px;
 }
 
@@ -383,7 +386,8 @@ nav {
     display:flex;
     flex-direction:column;
 
-    height:50%;
+    height:100%;
+    width:50%;
 
     margin-top:8px;
 }
