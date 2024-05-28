@@ -41,14 +41,17 @@
                         <textarea id="associationText"
                             placeholder="Enter here words(seperated by komma's) you want your art to be associated with. e.g. love, peace"></textarea>
                     </accordion-dropdown>
+
                     <accordion-dropdown id="themes" titleText="Themes" visible="true">
                         <textarea id="themeText"
                             placeholder="Enter the themes(seperated by komma's) of your art masterpiece here. e.g. tech, love, games"></textarea>
                     </accordion-dropdown>
 
-                    <select id="style">
-                        <option value="Fnia">Anime Bright Colors</option>
-                    </select>
+                    <accordion-dropdown id="Style" titleText="Style">
+                        <input type="radio" name="style" value="Anime: Bright Colors">
+                        <input type="radio" name="style" value="Anime: Old">
+                    </accordion-dropdown>
+
                 </article>
 
                 <article class="column">
