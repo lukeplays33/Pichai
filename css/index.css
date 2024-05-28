@@ -94,12 +94,13 @@ main * {
     display: flex;
     flex-direction: row !important;
 
-    justify-content: center;
     align-items: center;
 
     padding: 8px;
 
     margin-bottom: 8px;
+
+    height:max-content !important;
 }
 
 .card input {
