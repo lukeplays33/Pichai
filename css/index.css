@@ -395,6 +395,8 @@ nav {
 accordion-dropdown {
     width:calc(100% - 16px) !important;
     height:30%;
+
+    margin-bottom:8px;
 }
 
 accordion-dropdown article textarea {
