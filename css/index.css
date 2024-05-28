@@ -94,7 +94,9 @@ main * {
     display: flex;
     flex-direction: row !important;
 
-    padding: 8px;
+    align-items:center;
+
+    padding: 4px;
 
     margin-bottom: 8px;
 }
