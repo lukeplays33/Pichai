@@ -409,6 +409,7 @@ accordion-dropdown article input {
 
 accordion-dropdown article label {
     height:max-content !important;
+    width:max-content !important;
 }
 
 accordion-dropdown h5 {
