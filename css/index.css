@@ -433,3 +433,8 @@ accordion-dropdown article label {
 accordion-dropdown h5 {
     margin-top:0px !important;
 }
+
+#allowedColors {
+    width:28px;
+    height:28px;
+}
