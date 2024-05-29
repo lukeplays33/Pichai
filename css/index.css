@@ -434,7 +434,7 @@ accordion-dropdown h5 {
     margin-top:0px !important;
 }
 
-#allowedColors, #remove {
+#allowedColors, .remove {
     width:28px;
     height:28px;
 
