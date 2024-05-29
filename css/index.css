@@ -441,6 +441,6 @@ accordion-dropdown h5 {
     text-align:center;
 }
 
-#add {
+#add, #reemove {
     margin-left:auto;
 }
