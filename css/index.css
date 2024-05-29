@@ -434,13 +434,13 @@ accordion-dropdown h5 {
     margin-top:0px !important;
 }
 
-#allowedColors {
+#allowedColors, #remove {
     width:28px;
     height:28px;
 
     text-align:center;
 }
 
-#add, #remove {
+#add {
     margin-left:auto;
 }
