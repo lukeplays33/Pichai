@@ -57,7 +57,7 @@ function addAllowedColor(color) {
 
     holder.children[1].value = '-';
     holder.children[1].id = `remove${color}`;
-    holder.children[1].class = `remove`;
+    holder.children[1].classList.add('remove');
     holder.children[1].setAttribute('color', color);
     holder.children[1].onclick = function () {
         this.parentNode.remove();
