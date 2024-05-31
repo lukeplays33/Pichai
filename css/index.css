@@ -44,7 +44,7 @@ main * {
 #hsl,
 #cmyk,
 .smallTile {
-    width: calc(50% - 16px);
+    width: calc(100% - 16px);
 
     color: var(--primaryTextColor);
     background-color: var(--primary);
