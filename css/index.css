@@ -36,6 +36,7 @@ main * {
     padding: 8px;
 
     margin-top: 0px !important;
+    margin-bottom: 8px;
 }
 
 #hex,
@@ -53,7 +54,6 @@ main * {
     height: max-content;
 
     margin-top: 0px;
-    margin-bottom: 8px;
 }
 
 #hex,
