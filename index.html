@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pichai is the number 1 color tool for your company, Pichai can get you color names, classes conversion and even use AI to generate a whole new color pallete for you!">
+    <meta name="description"
+        content="Pichai is the number 1 color tool for your company, Pichai can get you color names, classes conversion and even use AI to generate a whole new color pallete for you!">
     <meta name="keywords" content="AI, Color picker, palletes, images, image color palletes">
     <meta name="author" content="Sketch">
     <link rel="icon" type="image/x-icon" href="./assets/54947833 (1).png">
     <link rel="stylesheet" href="./css/index.css">
     <title>Color picker and info</title>
 </head>
-<body> 
+
+<body>
     <template-header></template-header>
     <tab-bar>
         <a href="">Picker</a>
@@ -22,102 +25,117 @@
 
 
             <view-pager id="viewPager">
-            <article id="picker">
-                <image src="./assets/Screenshot_2024-04-01_160829-removebg-preview.png" id="colorPicker" alt="color picker"></image>
+                <article id="picker">
+                    <image src="./assets/Screenshot_2024-04-01_160829-removebg-preview.png" id="colorPicker"
+                        alt="color picker"></image>
 
-                <p id="colorName">No color selected, press the color picker to select a color.</p>
-                <article class="tiles">
-                    <input id="hex" title="Hex color code"></input>
-                    <input id="rgb" title="RGB olor code"></input>
-                </article>
-                <article class="tiles">
-                    <input id="hsl" title="HSL color code"></input>
-                    <input id="cmyk" title="CMYK color code"></input>
-                </article>
-                <p id="colorClass">Magenta</p>
-            </article>
+                    <p id="colorName">No color selected, press the color picker to select a color.</p>
+                    <article class="tiles">
+                        <div class="row2">
+                            <label class='colorIndicators' id='hexLabel' for="hex">Hex</label>
+                            <input id="hex" title="Hex color code"></input>
+                        </div>
 
-            <article id="ai">
-                <h3>More Information</h3>
-                <article class="card information">
-                    <h5> Color Associtation</h5>
-                    <p id="associtation"></p>
-                </article>
-
-                <article class="card information">
-                    <h5 id="making"></h5>
-                    
-                    <article class="chip">
-                        <i class="material-icons chipIcon">construction</i>
-
-                        <article>
-                            <h4>Prerequisites:</h4>
-                            <ul>
-                                <li>Bucket to store result.</li>
-                                <li>Syringe or measuring cup to measure amounts</li>
-                                <li>Cyan, magenta and yellow paints</li>
-                            </ul>
-                        </article>
+                        <div class="row2">
+                            <label class='colorIndicators' id='rgbLabel' for="rgb">RGB</label>
+                            <input id="rgb" title="RGB olor code"></input>
+                        </div>
                     </article>
-                    <p id="howTo"></p>
+                    <article class="tiles">
+                        <div class="row2">
+                            <label class='colorIndicators' id='hslLabel' for="hsl">HSL</label>
+                            <input id="hsl" title="HSL color co>de"></input>
+                        </div>
+
+                        <div class="row2">
+                            <label class='colorIndicators' id='cmykLabel' for="rgb">CMYK</label>
+                            <input id="cmyk" title="CMYK color code"></input>
+                        </div>
+                    </article>
+                    <p id="colorClass">Magenta</p>
                 </article>
+
+                <article id="ai">
+                    <h3>More Information</h3>
+                    <article class="card information">
+                        <h5> Color Associtation</h5>
+                        <p id="associtation"></p>
+                    </article>
+
+                    <article class="card information">
+                        <h5 id="making"></h5>
+
+                        <article class="chip">
+                            <i class="material-icons chipIcon">construction</i>
+
+                            <article>
+                                <h4>Prerequisites:</h4>
+                                <ul>
+                                    <li>Bucket to store result.</li>
+                                    <li>Syringe or measuring cup to measure amounts</li>
+                                    <li>Cyan, magenta and yellow paints</li>
+                                </ul>
+                            </article>
+                        </article>
+                        <p id="howTo"></p>
+                    </article>
+                </article>
+
+                <article id="sc">
+                    <h3>Similar Colors</h3>
+                    <article class="grid" id="similarColorHolder"></article>
+                </article>
+
+                <article id="cv">
+                    <h3>Color Variants</h3>
+
+                    <article id="shades" class="colorVariants">
+                        <p class="colorVariantsItem"></p>
+                        <p class="colorVariantsItem"></p>
+                        <p class="colorVariantsItem"></p>
+                        <p class="colorVariantsItem"></p>
+                        <p class="colorVariantsItem"></p>
+                        <p class="colorVariantsItem"></p>
+                        <p class="colorVariantsItem"></p>
+                        <p class="colorVariantsItem"></p>
+                        <p class="colorVariantsItem"></p>
+                        <p class="colorVariantsItem"></p>
+                    </article>
+                    <article id="tints" class="colorVariants">
+                        <p class="colorVariantsItem"></p>
+                        <p class="colorVariantsItem"></p>
+                        <p class="colorVariantsItem"></p>
+                        <p class="colorVariantsItem"></p>
+                        <p class="colorVariantsItem"></p>
+                        <p class="colorVariantsItem"></p>
+                        <p class="colorVariantsItem"></p>
+                        <p class="colorVariantsItem"></p>
+                        <p class="colorVariantsItem"></p>
+                        <p class="colorVariantsItem"></p>
+                    </article>
+                    <article id="tones" class="colorVariants">
+                        <p class="colorVariantsItem"></p>
+                        <p class="colorVariantsItem"></p>
+                        <p class="colorVariantsItem"></p>
+                        <p class="colorVariantsItem"></p>
+                        <p class="colorVariantsItem"></p>
+                        <p class="colorVariantsItem"></p>
+                        <p class="colorVariantsItem"></p>
+                        <p class="colorVariantsItem"></p>
+                        <p class="colorVariantsItem"></p>
+                        <p class="colorVariantsItem"></p>
+                    </article>
+                </article>
+            </view-pager>
+
+            <article>
+                <tab-bar class="verticlaTabbar" id="viewPagerTabBar" for="viewPager" direction="vertical">
+                    <a href="#picker">Picker</a>
+                    <a href="#ai">More Information</a>
+                    <a href="#sc">Similar Colors</a>
+                    <a href="#cv">Color Variants</a>
+                </tab-bar>
             </article>
-
-            <article id="sc">
-                <h3>Similar Colors</h3>
-                <article class="grid" id="similarColorHolder"></article>
-            </article>
-
-            <article id="cv">
-                <h3>Color Variants</h3>
-
-                <article id="shades" class="colorVariants">
-                    <p class="colorVariantsItem"></p>
-                    <p class="colorVariantsItem"></p>
-                    <p class="colorVariantsItem"></p>
-                    <p class="colorVariantsItem"></p>
-                    <p class="colorVariantsItem"></p>
-                    <p class="colorVariantsItem"></p>
-                    <p class="colorVariantsItem"></p>
-                    <p class="colorVariantsItem"></p>
-                    <p class="colorVariantsItem"></p>
-                    <p class="colorVariantsItem"></p>
-                </article>
-                <article id="tints" class="colorVariants">
-                    <p class="colorVariantsItem"></p>
-                    <p class="colorVariantsItem"></p>
-                    <p class="colorVariantsItem"></p>
-                    <p class="colorVariantsItem"></p>
-                    <p class="colorVariantsItem"></p>
-                    <p class="colorVariantsItem"></p>
-                    <p class="colorVariantsItem"></p>
-                    <p class="colorVariantsItem"></p>
-                    <p class="colorVariantsItem"></p>
-                    <p class="colorVariantsItem"></p>
-                </article>
-                <article id="tones" class="colorVariants">
-                    <p class="colorVariantsItem"></p>
-                    <p class="colorVariantsItem"></p>
-                    <p class="colorVariantsItem"></p>
-                    <p class="colorVariantsItem"></p>
-                    <p class="colorVariantsItem"></p>
-                    <p class="colorVariantsItem"></p>
-                    <p class="colorVariantsItem"></p>
-                    <p class="colorVariantsItem"></p>
-                    <p class="colorVariantsItem"></p>
-                    <p class="colorVariantsItem"></p>
-                </article>
-            </article>
-        </view-pager>
-
-        <article>
-            <tab-bar class="verticlaTabbar" id="viewPagerTabBar" for="viewPager" direction="vertical">
-                <a href="#picker">Picker</a>
-                <a href="#ai">More Information</a>
-                <a href="#sc">Similar Colors</a>
-                <a href="#cv">Color Variants</a>
-            </tab-bar>
-        </article>
         </section>
 
         <a class="fab" href="./pages/palletes.html" id="genUx"> Generate UX/UI Pallete</a>
@@ -127,4 +145,5 @@
     <script type='module' src="./js/startup.js" defer></script>
     <script type='module' src="./js/index.js" defer></script>
 </body>
+
 </html>

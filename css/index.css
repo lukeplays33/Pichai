@@ -449,3 +449,16 @@ accordion-dropdown h5 {
 
     text-align:center;
 }
+
+.colorIndicators {
+    text-align:left;
+
+    padding:4px;
+
+    width:max-content;
+
+    margin-right:8px;
+
+    background-color:var(--tertiary);
+    color:var(--tertiaryTextColor);
+}
