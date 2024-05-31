@@ -463,6 +463,6 @@ accordion-dropdown h5 {
     border-top-right-radius:0px;
     border-bottom-right-radius:0px;
 
-    background-color:var(--secondary);
+    background-color:var(--secondairy);
     color:var(--secondairyTextColor);
 }
