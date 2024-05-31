@@ -465,4 +465,8 @@ accordion-dropdown h5 {
 
     background-color:var(--tertiary);
     color:var(--tertiaryTextColor);
+
+    width:66px;
+
+    text-align:center;
 }
