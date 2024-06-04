@@ -111,6 +111,7 @@ function cmykToHex(value) {
 
 let colorAssociations = {
   red: ['Action', 'Strength', 'Energy', 'Passion', 'Attention', 'Motivates', 'Stimulates', 'Cautions', 'Sexuality', 'Courage', 'Desire', 'Confidence', 'Anger', 'Danger', 'Revenge', 'Aggresion'],
+  lightred: ['Action', 'Strength', 'Energy', 'Passion', 'Attention', 'Motivates', 'Stimulates', 'Cautions', 'Sexuality', 'Courage', 'Desire', 'Confidence', 'Anger', 'Danger', 'Revenge', 'Aggresion'],
 
   orange: ['Emotion', 'Youth', 'Optimism', 'Enthusiasm', 'Encourages', 'Uplifts', 'Stimulates', 'Communicate', 'Spontaneity', 'Creativity', 'Warmth', 'Positivity', 'Exhibitionsism', 'Superficial', 'Impatient', 'Domination'],
   coral: ['Emotion', 'Youth', 'Optimism', 'Enthusiasm', 'Encourages', 'Uplifts', 'Stimulates', 'Communicate', 'Spontaneity', 'Creativity', 'Warmth', 'Positivity', 'Exhibitionsism', 'Superficial', 'Impatient', 'Domination'],
