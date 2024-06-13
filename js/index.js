@@ -141,11 +141,5 @@ cmyk.onchange = function () {
 }
 
 colorPicker.addEventListener('change', function () {
-    console.log(colorPicker.getAttribute('value'))
-    let hex = rgbToHex(colorPicker.getAttribute('value'));
-    console.log(hex)
-    hex = hex.substring(hex.indexOf('('), hex.indexOf(')'));
-
-    console.log(hex)
-    setInnerHTMLs(hex);
+    setInnerHTMLs(colorPicker.getAttribute('value'));
 });
