@@ -15,7 +15,7 @@ console.log(pichai.getListOfElements());
 let i;
 
 let picker = document.getElementById('colorPicker');
-let colorPicker = document.getElementById('colorPicker');
+let colorPicker = document.getElementById('colorpicker');
 
 let making = document.getElementById('making');
 let howTo = document.getElementById('howTo');
