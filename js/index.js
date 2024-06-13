@@ -15,6 +15,7 @@ console.log(pichai.getListOfElements());
 let i;
 
 let picker = document.getElementById('colorPicker');
+let colorPicker = document.getElementById('colorPicker');
 
 let making = document.getElementById('making');
 let howTo = document.getElementById('howTo');
@@ -138,3 +139,7 @@ hsl.onchange = function () {
 cmyk.onchange = function () {
     setInnerHTMLs(cmykToHex(cmyk.value))
 }
+
+colorPicker.addEventListener('change', function () {
+    setInnerHTMLs(colorPicker.getAttribute('value'));
+});
