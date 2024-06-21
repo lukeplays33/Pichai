@@ -473,4 +473,7 @@ accordion-dropdown h5 {
 
 color-picker {
     width:100% !important;
+
+    margin-bottom:8px;
+    margin-left:4px;
 }
