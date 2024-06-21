@@ -14,7 +14,6 @@ console.log(pichai.getListOfElements());
 
 let i;
 
-let picker = document.getElementById('colorPicker');
 let colorPicker = document.getElementById('colorpicker');
 
 let making = document.getElementById('making');
@@ -101,26 +100,6 @@ async function setColorClass(r, g, b) {
 localforage.getItem('lastColor').then(function(value) {
     setInnerHTMLs(value ?? '#008dcd');
 }); //set value back to the one set 
-
-picker.onclick = function () {
-    if (!window.EyeDropper) {
-        resultElement.textContent =
-            "Your browser does not support the EyeDropper API";
-        return;
-    }
-
-    const eyeDropper = new EyeDropper();
-
-    eyeDropper
-        .open()
-        .then(async (result) => {
-            //result.sRGBHex to get hex code
-            setInnerHTMLs(result.sRGBHex);
-        })
-        .catch((e) => {
-            console.log(e)
-        });
-}
 
 //change colors when user chages input value
 
