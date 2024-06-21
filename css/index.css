@@ -477,4 +477,6 @@ color-picker {
     margin-bottom:8px;
     margin-left:4px;
     margin-top:8px;
+
+    overflow:visible;
 }
