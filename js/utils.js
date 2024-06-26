@@ -42,7 +42,6 @@ async function getSimilarColors (color) {
     };
 
     value1 = await localforage.getItem('allowedColors');
-    console.log(value1);
     value2 = await localforage.getItem('palleteLength');
 
     resolve(closestColors(color, value1.split(','), value2))
