@@ -120,5 +120,6 @@ cmyk.onchange = function () {
 }
 
 colorPicker.addEventListener('change', function () {
+    console.log('test')
     setInnerHTMLs(colorPicker.getAttribute('value'));
 });

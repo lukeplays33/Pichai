@@ -24,7 +24,6 @@ async function getSimilarColors (color) {
             }))
             .sort((a, b) => a.distance - b.distance);
     
-            console.log(sortedColors.slice(0, count).map((entry) => entry.color))
         return sortedColors.slice(0, count).map((entry) => entry.color);
     };
     
