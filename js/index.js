@@ -82,6 +82,7 @@ async function setInnerHTMLs(code) {
     }
 
     similarColorHolder.innerHTML = '';
+    console.log('test')
     for (i of await getSimilarColors(code)) {
         addTile(similarColorHolder, i);
     }
@@ -120,6 +121,5 @@ cmyk.onchange = function () {
 }
 
 colorPicker.addEventListener('change', function () {
-    console.log('test')
     setInnerHTMLs(colorPicker.getAttribute('value'));
 });
