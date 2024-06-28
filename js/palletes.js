@@ -13,7 +13,6 @@ function getTypeFromUrl(name){
  }
 
  if(getTypeFromUrl('type') == "'ux'") {
-   alert()
     viewPager.setAttribute('pageindex', '1');
  } else {
    docs.style.display = 'none';
