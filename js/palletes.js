@@ -8,6 +8,7 @@ function getTypeFromUrl(name){
        return decodeURIComponent(name[1]);
  }
 
+ console.log(getTypeFromUrl('type'))
  if(getTypeFromUrl('type') == 'ux') {
     document.getElementById('palletePager').setAttribute('pageindex', '1');
  }
