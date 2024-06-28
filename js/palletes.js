@@ -22,7 +22,7 @@ function getTypeFromUrl(name){
       docs.style.display = 'none';
       preview.style.display = 'none';
     } else {
-      docs.style.display = 'block';
-      preview.style.display = 'block';
+      docs.style.display = 'flex';
+      preview.style.display = 'flex';
     }
  });
