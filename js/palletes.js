@@ -21,8 +21,7 @@ function getTypeFromUrl(name){
  }
 
  viewPager.addEventListener('pageChange', function (e) {
-   console.log(e);
-    if(e.pageIndex == 0) {
+    if(e.detail.pageIndex == 0) {
       docs.style.display = 'none';
       preview.style.display = 'none';
     } else {
