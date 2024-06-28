@@ -9,5 +9,5 @@ function getTypeFromUrl(name){
  }
 
  if(getTypeFromUrl() == 'ux') {
-    document.getElementById('palletePager').setAttribute('pageIndex', 1);
+    document.getElementById('palletePager').setAttribute('pageindex', '1');
  }
