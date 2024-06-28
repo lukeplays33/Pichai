@@ -15,9 +15,13 @@ function getTypeFromUrl(name){
  if(getTypeFromUrl('type') == "'ux'") {
    alert()
     viewPager.setAttribute('pageindex', '1');
+ } else {
+   docs.style.display = 'none';
+   preview.style.display = 'none';
  }
 
  viewPager.addEventListener('pageChange', function (e) {
+   console.log(e);
     if(e.pageIndex == 0) {
       docs.style.display = 'none';
       preview.style.display = 'none';
