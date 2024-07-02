@@ -4,7 +4,7 @@ import { getTextColor } from 'https://lukeplays33.github.io/Pichai-UX/AI/textCol
 import { ntc } from './ntc.js';
 import { hexToRgb, RGBToHSL, rgbToCmyk, rgbToHex, hslToHex, cmykToHex, colorAssociations } from './colorUtils.js';
 
-import { getSimilarColors, addTile } from './utils.js';
+import { getSimilarColors, addTile, colourBlend } from './utils.js';
 
 import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
 
