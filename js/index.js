@@ -105,18 +105,22 @@ localforage.getItem('lastColor').then(function(value) {
 
 hex.onchange = function () {
     setInnerHTMLs(hex.value);
+    colorPicker.setAttribute('value', hex.value);
 }
 
 rgb.onchange = function () {
     setInnerHTMLs(rgbToHex(rgb.value));
+    colorPicker.setAttribute('value', rgb.value);
 }
 
 hsl.onchange = function () {
     setInnerHTMLs(hslToHex(hsl.value));
+    colorPicker.setAttribute('value', hsl.value);
 }
 
 cmyk.onchange = function () {
-    setInnerHTMLs(cmykToHex(cmyk.value))
+    setInnerHTMLs(cmykToHex(cmyk.value));
+    colorPicker.setAttribute('value', cmyk.value);
 }
 
 colorPicker.addEventListener('change', function () {
