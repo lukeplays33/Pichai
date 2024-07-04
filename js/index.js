@@ -110,17 +110,17 @@ hex.onchange = function () {
 
 rgb.onchange = function () {
     setInnerHTMLs(rgbToHex(rgb.value));
-    colorPicker.setAttribute('value', `rgba(${rgb.value})`);
+    colorPicker.setAttribute('value', rgbToHex(rgb.value));
 }
 
 hsl.onchange = function () {
     setInnerHTMLs(hslToHex(hsl.value));
-    colorPicker.setAttribute('value', `hal(${hsl.value})`);
+    colorPicker.setAttribute('value', hslToHex(hsl.value));
 }
 
 cmyk.onchange = function () {
     setInnerHTMLs(cmykToHex(cmyk.value));
-    colorPicker.setAttribute('value', `cmyk(${cmyk.value})`);
+    colorPicker.setAttribute('value', cmykToHex(cmyk.value));
 }
 
 colorPicker.addEventListener('change', function () {
