@@ -4,7 +4,9 @@ let viewPager = document.getElementById('palletePager');
 let docs = document.getElementById('docs');
 let preview = document.getElementById('preview');
 
-let pichai = new PichaiUX();
+let options = {homeLink: 'https://lukeplays33.github.io/Pichai/index.html'}
+
+let pichai = new PichaiUX(options);
 pichai.initialize();
 
 function getTypeFromUrl(name){
