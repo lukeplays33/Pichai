@@ -511,3 +511,7 @@ color-picker {
     align-items:center;
     justify-content: center;
 }
+
+#trainingData {
+    margin-top:8x;
+}
