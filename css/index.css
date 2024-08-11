@@ -494,3 +494,11 @@ color-picker {
 
     margin-right:8px;
 }
+
+#settingsSection {
+    padding-top:8px;
+}
+
+#settingsSection h3 {
+    margin:0px;
+}
