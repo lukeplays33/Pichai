@@ -518,4 +518,6 @@ color-picker {
 
 #trainingData {
     margin-top:8px;
+
+    min-height:20px;
 }
