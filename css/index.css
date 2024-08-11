@@ -512,10 +512,6 @@ color-picker {
     justify-content: center;
 }
 
-#images input {
-    margin:0px !important;
-}
-
 #trainingData {
     margin-top:8px;
 }
