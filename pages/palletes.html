@@ -37,68 +37,19 @@
         <view-pager id="palletePager">
             <article id="art">
                 <article class="column">
-                    <accordion-dropdown id="association" titleText="Art Association" title='Tells the Ai with what you want your art to be associated with.'>
-                        <textarea id="associationText"
-                            placeholder="Enter here words(seperated by komma's) you want your art to be associated with. e.g. love, peace"></textarea>
-                    </accordion-dropdown>
+                    <div id="images">
+                        <input type="file">
+                    </div>
 
-                    <accordion-dropdown id="themes" titleText="Themes" title="Tells the ai what themes the drawing must contain.">
-                        <textarea id="themeText"
-                            placeholder="Enter the themes(seperated by komma's) of your art masterpiece here. e.g. tech, love, games"></textarea>
-                    </accordion-dropdown>
+                    <div id="results">
 
-                    <accordion-dropdown id="Style" titleText="Scheme" title="Decides how the ai should generate the colors and the amount of generated colors.">
-                            <div class="row2">
-                                <input type="radio" id="mono" name="style">
-                                <label for="mono">Monoschromatic</label>
-                            </div>
+                    </div>
 
-                            <div class="row2">
-                                <input type="radio" id="ana" name="style">
-                                <label for="ana">Analogous</label>
-                            </div>
+                    <div id="generatedPallete">
+                        
+                    </div>
 
-                            <div class="row2">
-                                <input type="radio" id="comp" name="style">
-                                <label for="comp">Complementary</label>
-                            </div>
-
-                            <div class="row2">
-                                <input type="radio" id="sc" name="style">
-                                <label for="sc">Split Complementary</label>
-                            </div>
-
-                            <div class="row2">
-                                <input type="radio" id="triadic" name="style">
-                                <label for="triadic">Triadic</label>
-                            </div>
-
-                            <div class="row2">
-                                <input type="radio" id="square" name="style">
-                                <label for="square">Square</label>
-                            </div>
-
-                            <div class="row2">
-                                <input type="radio" id="rectangle" name="style">
-                                <label for="rectangle">Rectangle</label>
-                            </div>
-
-                            <div class="row2">
-                                <input type="radio" id="tetradic" name="style">
-                                <label for="tetradic">Tetradic</label>
-                            </div>
-
-                            <div class="row2">
-                                <input type="radio" id="Greyscale" name="style">
-                                <label for="Greyscale">Greyscale</label>
-                            </div>
-
-                            <div class="row2">
-                                <input type="radio" id="Sepia" name="style">
-                                <label for="Sepia">Sepia</label>
-                            </div>
-                    </accordion-dropdown>
-
+                </article>
                 </article>
 
                 <article class="column">
