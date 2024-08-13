@@ -28,12 +28,12 @@ function getLighting (file) {
 
             img.addEventListener('load', () => {
                 let colors = colorThief.getPalette(img);
+                let lighting;
 
                 for(i of colors) {
-                    let lighting = RGBToHSL(i[0], i[1], i[2]).split(',')[2];
-                    console.log(lighting)
+                    lighting = RGBToHSL(i[0], i[1], i[2]).split(',')[2];
                 }
-                resolve(colorThief.getPalette(img));
+                resolve(lighting);
             });
 
             img.crossOrigin = 'Anonymous';

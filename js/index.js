@@ -48,7 +48,8 @@ function getColorAssociation(name) {
 }
 
 async function setInnerHTMLs(code) {
-    localforage.setItem('lastColor', code);
+    
+localforage.setItem('lastColor', code).then(function (value) {}).catch(function(err) {});
     //result.sRGBHex to get hex code
     let n_match = ntc.name(code);
 
@@ -99,7 +100,9 @@ async function setColorClass(r, g, b) {
 
     associated.innerHTML = await getColorAssociation(name.innerHTML);
 }
+
 localforage.getItem('lastColor').then(function(value) {
+    alert(value)
     setInnerHTMLs(value ?? '#008dcd');
 }); //set value back to the one set 
 
