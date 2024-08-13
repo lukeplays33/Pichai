@@ -19,7 +19,7 @@ upload.addEventListener('change', function () {
     reader.readAsDataURL(file);
 });
 
-function getLighting (img) {
+function getLighting (file) {
     let i;
 
     return new Promise((resolve) => {
@@ -37,6 +37,6 @@ function getLighting (img) {
             });
 
             img.crossOrigin = 'Anonymous';
-            img.src = img;
+            img.src = file;
     });
 }
