@@ -155,6 +155,8 @@ h5, .information p {
     max-height: 400px;
 
     padding: 8px;
+
+    margin-bottom:8px;
 }
 
 #allowedColorsDialog .card {
