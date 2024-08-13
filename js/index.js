@@ -102,7 +102,6 @@ async function setColorClass(r, g, b) {
 }
 
 localforage.getItem('lastColor').then(function(value) {
-    alert(value)
     setInnerHTMLs(value ?? '#008dcd');
 }); //set value back to the one set 
 
