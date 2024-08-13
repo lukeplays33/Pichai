@@ -103,6 +103,7 @@ async function setColorClass(r, g, b) {
 
 localforage.getItem('lastColor').then(function(value) {
     setInnerHTMLs(value ?? '#008dcd');
+    colorPicker.setAttribute('value', value ?? '#008dcd');
 }); //set value back to the one set 
 
 //change colors when user chages input value
