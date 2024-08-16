@@ -51,7 +51,7 @@ function getColorAssociation(name) {
 }
 
 async function setInnerHTMLs(code) { // updates all elements to match the selected color or show it's info
-    let repeatingColors, n_match, RGB, CMYK;
+    let n_match, RGB, CMYK;
 
     localforage.setItem('lastColor', code).then(function (value) { }).catch(function (err) { });
 
@@ -90,12 +90,8 @@ async function setInnerHTMLs(code) { // updates all elements to match the select
     }
 
     similarColorHolder.innerHTML = '';
-    repeatingColors = [];
     for (i of await getSimilarColors(code)) {
-        console.log(repeatingColors, repeatingColors.includes(i), i)
-        if (repeatingColors.includes(i)) { } else {
             addTile(similarColorHolder, i);
-            repeatingColors.push(i);
         }
     }
 
