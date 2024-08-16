@@ -92,7 +92,7 @@ async function setInnerHTMLs(code) { // updates all elements to match the select
     similarColorHolder.innerHTML = '';
     repeatingColors = [];
     for (i of await getSimilarColors(code)) {
-        console.log(typeof i)
+        console.log(repeatingColors, repeatingColors.includes(i), i)
         if (repeatingColors.includes(i)) { } else {
             addTile(similarColorHolder, i);
             repeatingColors.push(i);
