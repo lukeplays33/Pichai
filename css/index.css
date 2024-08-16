@@ -547,4 +547,6 @@ color-picker {
     display: unset !important;
     
     width:100% !important;
+
+    font-size:40px;
 }
