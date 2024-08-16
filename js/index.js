@@ -89,16 +89,16 @@ async function setInnerHTMLs(code) { // updates all elements to match the select
         i.style.backgroundColor = code;
     }
 
-    console.log(repeatingColors)
     similarColorHolder.innerHTML = '';
     repeatingColors = [];
     for (i of await getSimilarColors(code)) {
         if (repeatingColors.includes(i)) { } else {
-            console.log(i)
             addTile(similarColorHolder, i);
             repeatingColors.push(i);
+            console.log(repeatingColors)
         }
     }
+    console.log(repeatingColors)
 
     contrastBg.style.backgroundColor = code;
 
