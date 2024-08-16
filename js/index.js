@@ -33,6 +33,8 @@ let shades = document.getElementById('shaded');
 let tints = document.getElementById('tints');
 let tones = document.getElementById('tones');
 
+let contrastBg = document.getElementById('bgColor');
+
 let similarColorHolder = document.getElementById('similarColorHolder');
 
 function getColorAssociation(name) {
@@ -47,7 +49,7 @@ function getColorAssociation(name) {
 
 }
 
-async function setInnerHTMLs(code) {
+async function setInnerHTMLs(code) { // updates all elements to match the selected color or show it's info
     
 localforage.setItem('lastColor', code).then(function (value) {}).catch(function(err) {});
     //result.sRGBHex to get hex code
@@ -88,6 +90,8 @@ localforage.setItem('lastColor', code).then(function (value) {}).catch(function(
     for (i of await getSimilarColors(code)) {
         addTile(similarColorHolder, i);
     }
+
+    contrastBg.style.backgroundColor = code;
 
     pichai.optimizeTextColor(similarColorHolder);
     pichai.optimizeTextColor(name);
