@@ -542,3 +542,8 @@ color-picker {
 
     margin-top:0px !important;
 }
+
+#contrastChecking {
+    width:100% !important;
+    height:100% !important;
+}
