@@ -89,6 +89,7 @@ async function setInnerHTMLs(code) { // updates all elements to match the select
         i.style.backgroundColor = code;
     }
 
+    console.log(repeatingColors)
     similarColorHolder.innerHTML = '';
     repeatingColors = [];
     for (i of await getSimilarColors(code)) {
