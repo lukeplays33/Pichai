@@ -536,3 +536,7 @@ color-picker {
     justify-content: center;
     align-items: center;
 }
+
+.w100 {
+    width:100%;
+}
