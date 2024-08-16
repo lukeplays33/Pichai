@@ -541,7 +541,7 @@ color-picker {
 }
 
 #bgColor {
-    width:100%;
+    width:calc(100% - 16px);
     height:200px;
 
     display:flex;
