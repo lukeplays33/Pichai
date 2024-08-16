@@ -548,13 +548,14 @@ color-picker {
     flex-direction:row;
     justify-content: center;
     align-items: center;
+
+    margin-bottom:8px !important;
 }
 
 .w100 {
     width:100% !important;
 
     margin-top:0px !important;
-    margin-bottom:8px !important;
 }
 
 #contrastChecking {

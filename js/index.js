@@ -8,7 +8,7 @@ import { getSimilarColors, addTile, colourBlend } from './utils.js';
 
 import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
 
-let options = {homeLink: 'https://lukeplays33.github.io/Pichai/index.html'}
+let options = { homeLink: 'https://lukeplays33.github.io/Pichai/index.html' }
 
 let pichai = new PichaiUX(options);
 pichai.initialize();
@@ -51,15 +51,17 @@ function getColorAssociation(name) {
 }
 
 async function setInnerHTMLs(code) { // updates all elements to match the selected color or show it's info
-    
-localforage.setItem('lastColor', code).then(function (value) {}).catch(function(err) {});
-    //result.sRGBHex to get hex code
-    let n_match = ntc.name(code);
+    let repeatingColors, n_match, RGB, CMYK;
 
-    let RGB = hexToRgb(n_match[0]);
+    localforage.setItem('lastColor', code).then(function (value) { }).catch(function (err) { });
+
+    //result.sRGBHex to get hex code
+    n_match = ntc.name(code);
+
+    RGB = hexToRgb(n_match[0]);
     RGB = RGB.substring(4, RGB.length - 1).split(',');
 
-    let CMYK = rgbToCmyk(RGB[0], RGB[1], RGB[2]);
+    CMYK = rgbToCmyk(RGB[0], RGB[1], RGB[2]);
 
     name.innerHTML = n_match[1];
     making.innerHTML = `How to make ${n_match[1]}`;
@@ -88,8 +90,12 @@ localforage.setItem('lastColor', code).then(function (value) {}).catch(function(
     }
 
     similarColorHolder.innerHTML = '';
+    repeatingColors = [];
     for (i of await getSimilarColors(code)) {
-        addTile(similarColorHolder, i);
+        if (repeatingColors.includes(i)) { } else {
+            addTile(similarColorHolder, i);
+            repeatingColors.push(i);
+        }
     }
 
     contrastBg.style.backgroundColor = code;
@@ -107,7 +113,7 @@ async function setColorClass(r, g, b) {
     associated.innerHTML = await getColorAssociation(name.innerHTML);
 }
 
-localforage.getItem('lastColor').then(function(value) {
+localforage.getItem('lastColor').then(function (value) {
     setInnerHTMLs(value ?? '#008dcd');
     colorPicker.setAttribute('value', value ?? '#008dcd');
 }); //set value back to the one set 
