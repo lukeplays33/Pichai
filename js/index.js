@@ -92,7 +92,6 @@ async function setInnerHTMLs(code) { // updates all elements to match the select
     similarColorHolder.innerHTML = '';
     for (i of await getSimilarColors(code)) {
             addTile(similarColorHolder, i);
-        }
     }
 
     contrastBg.style.backgroundColor = code;
