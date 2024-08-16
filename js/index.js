@@ -34,6 +34,7 @@ let tints = document.getElementById('tints');
 let tones = document.getElementById('tones');
 
 let contrastBg = document.getElementById('bgColor');
+let contrastText = document.getElementById('contrastChecking');
 
 let similarColorHolder = document.getElementById('similarColorHolder');
 
@@ -93,6 +94,7 @@ localforage.setItem('lastColor', code).then(function (value) {}).catch(function(
 
     contrastBg.style.backgroundColor = code;
 
+    pichai.optimizeTextColor(contrastBg);
     pichai.optimizeTextColor(similarColorHolder);
     pichai.optimizeTextColor(name);
 }
