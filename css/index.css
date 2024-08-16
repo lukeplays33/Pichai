@@ -541,6 +541,7 @@ color-picker {
     width:100% !important;
 
     margin-top:0px !important;
+    margin-bottom:8px !important;
 }
 
 #contrastChecking {
@@ -548,5 +549,5 @@ color-picker {
     
     width:100% !important;
 
-    font-size:40px;
+    font-size:30px;
 }
