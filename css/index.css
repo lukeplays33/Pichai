@@ -305,6 +305,8 @@ view-pager article {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 8px;
     grid-column-gap:32px;
+
+    margin-top:8px;
 }
 
 .chip {
