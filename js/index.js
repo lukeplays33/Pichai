@@ -37,6 +37,7 @@ let contrastBg = document.getElementById('bgColor');
 let contrastText = document.getElementById('contrastChecking');
 
 let quoteRefresh = document.getElementById('refresh');
+let inversedMode = document.getElementById('inversed');
 
 let similarColorHolder = document.getElementById('similarColorHolder');
 
@@ -159,4 +160,11 @@ colorPicker.addEventListener('change', function () {
 
 quoteRefresh.addEventListener('click', function () {
     randomQoute();
+});
+
+inversedMode.addEventListener('change', function () {
+    let txtColor = contrastText.style.color;
+
+    contrastText.style.color = contrastBg.style.backgroundColor
+    contrastBg.style.backgroundColor = txtColor;
 });
