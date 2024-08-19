@@ -600,3 +600,8 @@ color-picker {
 #refresh, #scoreCheck {
     font-size:18px;
 }
+
+#contrastsItemHolder {
+    display:flex;
+    flex-direction:row;
+}
