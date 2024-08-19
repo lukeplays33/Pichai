@@ -555,7 +555,7 @@ color-picker {
     flex-direction:column;
     align-items: center;
 
-    margin:8px !important;
+    padding:8px !important;
 }
 
 .w100 {
