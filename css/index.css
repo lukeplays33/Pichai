@@ -563,11 +563,13 @@ color-picker {
     
     width:100% !important;
 
-    font-size:18px;
+    font-size:14px;
 }
 
 #contrastChecking b {
     width:100% !important;
 
-    font-size:30px;
+    font-size:25px;
+
+    color:var(--priamryTextColor)
 }
