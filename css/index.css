@@ -564,7 +564,7 @@ color-picker {
     
     width:100% !important;
 
-    font-size:14px;
+    font-size:18px;
 }
 
 #contrastChecking b {
@@ -573,4 +573,6 @@ color-picker {
     font-size:25px;
 
     color:inherit;
+
+    margin-bottom:8px;
 }
