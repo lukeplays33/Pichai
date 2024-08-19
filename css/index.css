@@ -606,3 +606,7 @@ color-picker {
     grid-template-columns: 1fr 1fr;
     gap:8px;
 }
+
+#contrastsItemHolder .settingsItem {
+    margin-top:0px;
+}
