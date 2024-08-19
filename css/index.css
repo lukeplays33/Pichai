@@ -455,7 +455,7 @@ accordion-dropdown h5 {
     margin-top:0px !important;
 }
 
-#allowedColors {
+#allowedColors, #cc {
     width:28px;
     height:28px;
 
@@ -563,7 +563,7 @@ color-picker {
 
 #contrastChecking {
     padding:8px;
-    
+
     display: unset !important;
     
     width:100% !important;
