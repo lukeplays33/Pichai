@@ -37,6 +37,7 @@ let contrastBg = document.getElementById('bgColor');
 let contrastText = document.getElementById('contrastChecking');
 
 let quoteRefresh = document.getElementById('refresh');
+let scoreCheck = document.getElementById('scoreCheck');
 let inversedMode = document.getElementById('inversed');
 
 let similarColorHolder = document.getElementById('similarColorHolder');
@@ -164,7 +165,10 @@ quoteRefresh.addEventListener('click', function () {
 
 inversedMode.addEventListener('change', function () {
     let txtColor = contrastText.style.color;
+    let bgColor =  contrastBg.style.backgroundColor;
 
-    contrastText.style.color = contrastBg.style.backgroundColor
+    contrastText.style.color = bgColor;
+    quoteRefresh.style.color = bgColor;
+    scoreCheck.style.color = bgColor;
     contrastBg.style.backgroundColor = txtColor;
 });
