@@ -115,6 +115,7 @@ function randomQoute () { // gives the contrast checker a random qoute.
     .then(response => response.json())
     .then(data => {
       // Handle the retrieved quote
+      contrastText.innerHTMl = data.qoute + ' - ' + data.author;
       console.log(data);
     })
     .catch(error => {
