@@ -111,25 +111,16 @@ async function setColorClass(r, g, b) {
 }
 
 function randomQoute () { // gives the contrast checker a random qoute.
-    const url = 'https://andruxnet-random-famous-quotes.p.rapidapi.com/?count=1';
-    const options = {
-        method: 'POST',
-        headers: {
-            'x-rapidapi-key': 'Sign Up for Key',
-            'x-rapidapi-host': 'andruxnet-random-famous-quotes.p.rapidapi.com',
-            'Content-Type': 'application/json'
-        },
-        body: {}
-    };
-    
-    try {
-        const response = await fetch(url, options);
-        const result = await response.text();
-        console.log(result);
-    } catch (error) {
-        console.error(error);
-    }
-});
+    fetch('https://quotes-api-self.vercel.app/quote')
+    .then(response => response.json())
+    .then(data => {
+      // Handle the retrieved quote
+      console.log(data);
+    })
+    .catch(error => {
+      // Handle any errors
+      console.error(error);
+    });
 
 }
 
