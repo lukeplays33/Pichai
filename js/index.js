@@ -36,6 +36,8 @@ let tones = document.getElementById('tones');
 let contrastBg = document.getElementById('bgColor');
 let contrastText = document.getElementById('contrastChecking');
 
+let quoteRefresh = document.getElementById('refresh');
+
 let similarColorHolder = document.getElementById('similarColorHolder');
 
 function getColorAssociation(name) {
@@ -153,4 +155,8 @@ cmyk.onchange = function () {
 
 colorPicker.addEventListener('change', function () {
     setInnerHTMLs(colorPicker.getAttribute('value'));
+});
+
+quoteRefresh.addEventListener('click', function () {
+    randomQoute();
 });
