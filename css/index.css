@@ -573,7 +573,7 @@ color-picker {
 
     display: unset !important;
     
-    width:100% !important;
+    width:calc(100% - 16px) !important;
 }
 
 #quoteRating {
