@@ -571,5 +571,5 @@ color-picker {
 
     font-size:25px;
 
-    color:var(--priamryTextColor)
+    color:inherit;
 }
