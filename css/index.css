@@ -597,10 +597,6 @@ color-picker {
     margin-bottom:8px;
 }
 
-#refresh, #scoreCheck {
+#refresh, #scoreCheck, #aiContrast {
     font-size:18px;
-}
-
-#comapredContrastItem:nth-child(1) {
-    background-color:
 }
