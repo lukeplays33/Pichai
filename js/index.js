@@ -111,16 +111,16 @@ async function setColorClass(r, g, b) {
 }
 
 function randomQoute () { // gives the contrast checker a random qoute.
-    $.ajax({
-    method: 'GET',
-    url: 'https://api.api-ninjas.com/v1/quotes',
-    headers: { 'X-Api-Key': 'YOUR_API_KEY'},
-    contentType: 'application/json',
-    success: function(result) {
-        console.log(result);
-    },
-    error: function ajaxError(jqXHR) {
-        console.error('Error: ', jqXHR.responseText);
+    const response = await fetch("https://api.quotable.io/random");
+    const data = await response.json();
+    if (response.ok) {
+      // Update DOM elements
+      console.log(data.content)
+      //quote.textContent = data.content;
+      //cite.textContent = data.author;
+    } else {
+      quote.textContent = "An error occured";
+      console.log(data);
     }
 });
 
