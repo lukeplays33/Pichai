@@ -574,8 +574,6 @@ color-picker {
     display: unset !important;
     
     width:100% !important;
-
-    font-size:18px;
 }
 
 #quoteRating {
@@ -597,4 +595,8 @@ color-picker {
     color:inherit;
 
     margin-bottom:8px;
+}
+
+#refresh, #scoreRating {
+    font-size:18px;
 }
