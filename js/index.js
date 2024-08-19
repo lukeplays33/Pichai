@@ -95,6 +95,7 @@ async function setInnerHTMLs(code) { // updates all elements to match the select
     }
 
     contrastBg.style.backgroundColor = code;
+    randomQoute();
 
     pichai.optimizeTextColor(contrastBg);
     pichai.optimizeTextColor(similarColorHolder);
@@ -107,6 +108,22 @@ async function setColorClass(r, g, b) {
     colorClass.style.color = await getTextColor(r, g, b);
 
     associated.innerHTML = await getColorAssociation(name.innerHTML);
+}
+
+function randomQoute () { // gives the contrast checker a random qoute.
+    $.ajax({
+    method: 'GET',
+    url: 'https://api.api-ninjas.com/v1/quotes',
+    headers: { 'X-Api-Key': 'YOUR_API_KEY'},
+    contentType: 'application/json',
+    success: function(result) {
+        console.log(result);
+    },
+    error: function ajaxError(jqXHR) {
+        console.error('Error: ', jqXHR.responseText);
+    }
+});
+
 }
 
 localforage.getItem('lastColor').then(function (value) {
