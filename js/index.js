@@ -111,7 +111,7 @@ async function setColorClass(r, g, b) {
 }
 
 function randomQoute () { // gives the contrast checker a random qoute.
-    const response = await fetch("https://api.quotable.io/random");
+    const response = await fetch("https://api.quotable.io/quotes/random");
     const data = await response.json();
     if (response.ok) {
       // Update DOM elements
