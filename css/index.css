@@ -552,8 +552,7 @@ color-picker {
     height:200px;
 
     display:flex;
-    flex-direction:row;
-    justify-content: center;
+    flex-direction:column;
     align-items: center;
 
     margin:8px !important;
@@ -567,8 +566,7 @@ color-picker {
 }
 
 #contrastChecking {
-    flex-direction:column;
-    
+    margin:auto;
     padding:8px;
 
     display: unset !important;
@@ -576,6 +574,14 @@ color-picker {
     width:100% !important;
 
     font-size:18px;
+}
+
+#quoteRating {
+    margin-top:8px;
+    margin-right:8px;
+    margin-left:auto;
+
+    font-size:20px;
 }
 
 #contrastChecking b {
