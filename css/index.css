@@ -577,11 +577,9 @@ color-picker {
 }
 
 #quoteRating {
-    margin-top:8px;
-    margin-right:8px;
     margin-left:auto;
 
-    font-size:20px;
+    font-size:16px;
 }
 
 #contrastChecking b {
