@@ -600,3 +600,7 @@ color-picker {
 #refresh, #scoreCheck {
     font-size:18px;
 }
+
+#comapredContrastItem:nth-child(1) {
+    background-color:
+}
