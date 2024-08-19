@@ -120,6 +120,11 @@ main * {
     margin-left: auto !important;
 }
 
+.card  input[type="checkbox"]:checked {
+    background-color:var(--secondairy);
+    border: 0.15em solid var(--secondairy);
+}
+
 #length {
     width: 50px;
 }
