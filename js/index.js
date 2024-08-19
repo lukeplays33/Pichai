@@ -111,16 +111,23 @@ async function setColorClass(r, g, b) {
 }
 
 function randomQoute () { // gives the contrast checker a random qoute.
-    const response = await fetch("https://api.quotable.io/quotes/random");
-    const data = await response.json();
-    if (response.ok) {
-      // Update DOM elements
-      console.log(data.content)
-      //quote.textContent = data.content;
-      //cite.textContent = data.author;
-    } else {
-      quote.textContent = "An error occured";
-      console.log(data);
+    const url = 'https://andruxnet-random-famous-quotes.p.rapidapi.com/?count=1';
+    const options = {
+        method: 'POST',
+        headers: {
+            'x-rapidapi-key': 'Sign Up for Key',
+            'x-rapidapi-host': 'andruxnet-random-famous-quotes.p.rapidapi.com',
+            'Content-Type': 'application/json'
+        },
+        body: {}
+    };
+    
+    try {
+        const response = await fetch(url, options);
+        const result = await response.text();
+        console.log(result);
+    } catch (error) {
+        console.error(error);
     }
 });
 
