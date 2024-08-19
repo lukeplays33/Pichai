@@ -567,6 +567,8 @@ color-picker {
 }
 
 #contrastChecking {
+    flex-direction:column;
+    
     padding:8px;
 
     display: unset !important;
