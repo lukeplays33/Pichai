@@ -633,13 +633,17 @@ color-picker {
     border-radius:10px !important;
 }
 
-.accordionItems:first-child {
+.accordionItems * {
     display:flex;
     flex-direction:column;
 
     gap:8px;
 
     margin-top:8px;
+}
+
+.accordionItems .settingsItem {
+    width: calc(100% - 8px) !important;
 }
 
 #tb, #tBG {
