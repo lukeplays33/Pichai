@@ -629,4 +629,13 @@ color-picker {
 
 #contrastColors h5 i {
     width:30px !important;
+
+    border-radius:10px !important;
+}
+
+.accordionItems {
+    display:flex;
+    flex-direction:column;
+    
+    gap:8px;
 }
