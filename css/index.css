@@ -125,7 +125,7 @@ main * {
     border: 0.15em solid var(--secondairy);
 }
 
-#length {
+#length, #bw {
     width: 50px;
 }
 
@@ -460,7 +460,7 @@ accordion-dropdown h5 {
     margin-top:0px !important;
 }
 
-#allowedColors, #colorChanger, #inversed, #bw {
+#allowedColors, #colorChanger, #inversed {
     width:28px !important;
     height:28px !important;
 
