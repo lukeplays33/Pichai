@@ -633,7 +633,7 @@ color-picker {
     border-radius:10px !important;
 }
 
-.accordionItems:first-child {
+.accordionItems article {
     flex-direction:column !important;
 
     gap:8px !important;
