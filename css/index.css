@@ -654,3 +654,7 @@ color-picker {
 #tb, #tBG, #tc, #mc {
     margin-right:0px !important;
 }
+
+.note {
+    background-color:var(--note);
+}
