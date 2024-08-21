@@ -575,7 +575,7 @@ color-picker {
     
     width:calc(100% - 16px) !important;
 
-    -webkit-text-stroke-color: blueviolet;
+    -webkit-text-stroke-color: #008dcd;
 }
 
 #quoteRating {
