@@ -641,3 +641,7 @@ color-picker {
 
     margin-top:8px;
 }
+
+#tb, #tBG {
+    margin-right:0px !important;
+}
