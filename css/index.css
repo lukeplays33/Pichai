@@ -645,6 +645,6 @@ color-picker {
     width: calc(100% - 8px) !important;
 }
 
-#tb, #tBG {
+#tb, #tBG, #tc, #mc {
     margin-right:0px !important;
 }
