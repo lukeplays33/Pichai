@@ -633,9 +633,11 @@ color-picker {
     border-radius:10px !important;
 }
 
-.accordionItems {
+.accordionItems:first-child {
     display:flex;
     flex-direction:column;
-    
+
     gap:8px;
+
+    margin-top:8px;
 }
