@@ -39,6 +39,7 @@ let contrastText = document.getElementById('contrastChecking');
 let quoteRefresh = document.getElementById('refresh');
 let scoreCheck = document.getElementById('scoreCheck');
 let inversedMode = document.getElementById('inversed');
+let textBorderWidth = document.getElementById('bw');
 
 let similarColorHolder = document.getElementById('similarColorHolder');
 
@@ -171,4 +172,8 @@ inversedMode.addEventListener('change', function () {
     quoteRefresh.style.color = bgColor;
     scoreCheck.style.color = bgColor;
     contrastBg.style.backgroundColor = txtColor;
+});
+
+textBorderWidth.addEventListener('change', function () {
+    contrastText.style.webkitTextStrokeWidth = `${this.value}px`;
 });
