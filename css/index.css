@@ -658,3 +658,7 @@ color-picker {
 .note {
     background-color:var(--note) !important;
 }
+
+.note label {
+    color:var(--noteTextColor);
+}
