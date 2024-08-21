@@ -634,12 +634,11 @@ color-picker {
 }
 
 .accordionItems:first-child {
-    display:flex;
-    flex-direction:column;
+    flex-direction:column !important;
 
-    gap:8px;
+    gap:8px !important;
 
-    margin-top:8px;
+    margin-top:8px !important;
 }
 
 .accordionItems .settingsItem {
