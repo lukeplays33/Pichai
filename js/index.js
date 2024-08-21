@@ -40,6 +40,7 @@ let quoteRefresh = document.getElementById('refresh');
 let scoreCheck = document.getElementById('scoreCheck');
 let inversedMode = document.getElementById('inversed');
 let textBorderWidth = document.getElementById('bw');
+let mainContrastColor = document.getElementById('mc');
 
 let similarColorHolder = document.getElementById('similarColorHolder');
 
@@ -100,6 +101,8 @@ async function setInnerHTMLs(code) { // updates all elements to match the select
     }
 
     contrastBg.style.backgroundColor = code;
+    mainContrastColor.value = code;
+    mainContrastColor.style.backgroundColor = code;
     randomQoute();
 
     pichai.optimizeTextColor(contrastBg);
