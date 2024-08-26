@@ -657,6 +657,7 @@ color-picker {
 
 .note {
     background-color:var(--note) !important;
+    flex-direction:column;
 }
 
 .note label {
@@ -674,4 +675,5 @@ color-picker {
 
 .noteHolder {
     flex-direction:row;
+    background-color:TRANSPARENT;
 }
