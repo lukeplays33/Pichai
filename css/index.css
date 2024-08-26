@@ -676,6 +676,7 @@ color-picker {
 .noteHolder {
     flex-direction:row !important;
     align-items:center;
-    justify-content: center;
     background-color:TRANSPARENT;
+
+    height:max-content;
 }
