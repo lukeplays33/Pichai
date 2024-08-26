@@ -22,6 +22,10 @@ main * {
     flex-direction: column;
 }
 
+main li {
+    display:list-item;
+}
+
 .mediumMain {
     width:calc(77% - 16px);
 }
@@ -464,6 +468,10 @@ accordion-dropdown h5 {
     text-align:center;
 }
 
+#inversed:checked {
+    margin-left:auto;
+}
+
 #add, .remove {
     margin-left:auto;
 
@@ -496,6 +504,8 @@ color-picker {
 
     margin-bottom:8px;
     margin-top:8px;
+
+    display:grid;
 }
 
 #donate {
@@ -650,10 +660,6 @@ color-picker {
 
 #tb, #tBG, #tc, #mc {
     margin-right:0px;
-}
-
-color-picker {
-    display:grid;
 }
 
 .note {
