@@ -638,9 +638,9 @@ color-picker {
 .accordionItems article {
     flex-direction:column ;
 
-    gap:8px !important;
+    gap:8px;
 
-    margin-top:8px !important;
+    margin-top:8px;
 }
 
 .accordionItems .settingsItem {
