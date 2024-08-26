@@ -674,6 +674,6 @@ color-picker {
 }
 
 .noteHolder {
-    flex-direction:row;
+    flex-direction:row !important;
     background-color:TRANSPARENT;
 }
