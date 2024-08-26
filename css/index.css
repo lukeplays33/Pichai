@@ -2,7 +2,7 @@ body {
     background-image: url('../assets/bg.jpeg'); 
     /* https://th.bing.com/th/id/R.e17c74c19bab2dbe88691d064a23212e?rik=R86lfIPRTr%2f1AQ&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fc%2fc%2f9%2f720218-amazing-google-wallpaper-backgrounds-1920x1080.jpg&ehk=3%2fh2bWs07859cGF6%2bivWtGiBZV3a1NIjgWE%2bjmMZIN8%3d&risl=&pid=ImgRaw&r=0 */
 
-    overflow-y: hidden !important;
+    overflow-y: hidden;
 }
 
 #colorPicker {
@@ -23,7 +23,7 @@ main * {
 }
 
 .mediumMain {
-    width:calc(77% - 16px) !important;
+    width:calc(77% - 16px);
 }
 
 #colorName,
@@ -35,7 +35,7 @@ main * {
 
     padding: 8px;
 
-    margin-top: 0px !important;
+    margin-top: 0px;
     margin-bottom: 8px;
 }
 
@@ -65,7 +65,7 @@ main * {
 }
 
 .tiles {
-    flex-direction: row !important;
+    flex-direction: row;
     height: max-content;
 }
 
@@ -94,7 +94,7 @@ main * {
 
 .row {
     display: flex;
-    flex-direction: row !important;
+    flex-direction: row;
 
     align-items:center;
 
@@ -105,19 +105,19 @@ main * {
 
 .row2 {
     display: flex;
-    flex-direction: row !important;
+    flex-direction: row;
 
     align-items: center;
     justify-content: flex-start;
 
     margin-bottom: 8px;
 
-    height:max-content !important;
+    height:max-content;
     width: 100%;
 }
 
 .card input {
-    margin-left: auto !important;
+    margin-left: auto;
 }
 
 .card  input[type="checkbox"]:checked {
@@ -135,7 +135,7 @@ main * {
 
 h3, h5, .information p {
     border-radius: 10px;
-    margin: 8px 0px 8px 0px !important;
+    margin: 8px 0px 8px 0px;
 
     width: calc(100% - 16px);
 }
@@ -145,8 +145,8 @@ h5, .information p {
 }
 
 .information p {
-    margin-top:0px !important;
-    padding-top:0px !important;
+    margin-top:0px;
+    padding-top:0px;
     padding-bottom:0px;
 }
 
@@ -279,7 +279,7 @@ view-pager article {
 }
 
 .verticalTabbar a {
-    height: 140px !important;
+    height: 140px;
 }
 
 .settingsItem {
@@ -322,23 +322,23 @@ view-pager article {
     display:flex;
     flex-direction:row;
 
-    margin-bottom:8px !important;
+    margin-bottom:8px;
 
-    padding:8px !important;
+    padding:8px;
 }
 
 .chip h4 {
-    background-color:TRANSPARENT !important;
+    background-color:TRANSPARENT;
 
-    margin:0px !important;
+    margin:0px;
 
-    text-align:left !important;
+    text-align:left;
 
     padding-left:8px;
 }
 
 .chip ul {
-    padding-left:24px !important;
+    padding-left:24px;
 }
 
 .chipIcon {
@@ -347,7 +347,7 @@ view-pager article {
     background-color:var(--primary);
 
     color:var(--priamryTextColor);
-    font-size:30px !important;
+    font-size:30px;
 
     padding:8px;
 }
@@ -433,36 +433,36 @@ nav {
 }
 
 accordion-dropdown {
-    width:calc(100% - 16px) !important;
+    width:calc(100% - 16px);
     height:30%;
 
     margin-bottom:8px;
 }
 
 accordion-dropdown article textarea {
-    width:calc(100% - 8px) !important;
+    width:calc(100% - 8px);
 }
 
 accordion-dropdown article input {
-    width:max-content !important;
-    height:max-content !important;
+    width:max-content;
+    height:max-content;
 
     margin:0px;
     margin-right:8px;
 }
 
 accordion-dropdown article label {
-    height:max-content !important;
-    width:max-content !important;
+    height:max-content;
+    width:max-content;
 }
 
 accordion-dropdown h5 {
-    margin-top:0px !important;
+    margin-top:0px;
 }
 
 #allowedColors, #colorChanger, #inversed {
-    width:28px !important;
-    height:28px !important;
+    width:28px;
+    height:28px;
 
     text-align:center;
 }
@@ -495,7 +495,7 @@ accordion-dropdown h5 {
 }
 
 color-picker {
-    width:100% !important;
+    width:100%;
 
     margin-bottom:8px;
     margin-top:8px;
@@ -522,7 +522,7 @@ color-picker {
 }
 
 #settingsSection h3 {
-    margin-top:0px !important;
+    margin-top:0px;
 }
 
 #images {
@@ -535,7 +535,7 @@ color-picker {
 }
 
 #images input {
-    margin:0px !important;
+    margin:0px;
 }
 
 #trainingData {
@@ -557,23 +557,23 @@ color-picker {
     flex-direction:column;
     align-items: center;
 
-    padding:8px !important;
+    padding:8px;
 }
 
 .w100 {
-    width:100% !important;
+    width:100%;
 
-    margin-top:0px !important;
-    margin-bottom:8px !important;
+    margin-top:0px;
+    margin-bottom:8px;
 }
 
 #contrastChecking {
     margin:auto;
     padding:8px;
 
-    display: unset !important;
+    display: unset;
     
-    width:calc(100% - 16px) !important;
+    width:calc(100% - 16px);
 
     -webkit-text-stroke-color: #008dcd;
 }
@@ -590,7 +590,7 @@ color-picker {
 }
 
 #contrastChecking b {
-    width:100% !important;
+    width:100%;
 
     font-size:25px;
 
@@ -614,25 +614,25 @@ color-picker {
 }
 
 #contrastColors {
-    padding-top:0px !important;
+    padding-top:0px;
 
-    margin: 0px !important;
+    margin: 0px;
 
-    height: 100% !important;
+    height: 100%;
 }
 
 #contrastColors h5 {
-    border-radius:10px !important;
+    border-radius:10px;
 
-    margin: 0px !important;
+    margin: 0px;
 
-    height: 100% !important;
+    height: 100%;
 }
 
 #contrastColors h5 i {
-    width:30px !important;
+    width:30px;
 
-    border-radius:10px !important;
+    border-radius:10px;
 }
 
 .accordionItems article {
@@ -644,20 +644,20 @@ color-picker {
 }
 
 .accordionItems .settingsItem {
-    flex-direction:row !important;
+    flex-direction:row;
 
-    margin-top:0px !important;
+    margin-top:0px;
 
-    width: calc(100% - 8px) !important;
+    width: calc(100% - 8px);
 }
 
 #tb, #tBG, #tc, #mc {
-    margin-right:0px !important;
+    margin-right:0px;
 }
 
 .note {
-    background-color:var(--note) !important;
-    flex-direction:column !important;
+    background-color:var(--note);
+    flex-direction:column;
 }
 
 .note label {
@@ -665,16 +665,16 @@ color-picker {
 }
 
 .note .title {
-    background-color:var(--note) !important;
+    background-color:var(--note);
 }
 
 .note .msg {
-    background-color:var(--note) !important;
+    background-color:var(--note);
     font-size:16px;
 }
 
 .accordionItems article .noteHolder {
-    flex-direction:row !important;
+    flex-direction:row;
     align-items:center;
     background-color:TRANSPARENT;
 
