@@ -662,3 +662,16 @@ color-picker {
 .note label {
     color:var(--noteTextColor);
 }
+
+.note .title {
+    background-color:var(--note) !important;
+}
+
+.note .msg {
+    background-color:var(--note) !important;
+    font-size:16px;
+}
+
+.noteHolder {
+    flex-direction:row;
+}
