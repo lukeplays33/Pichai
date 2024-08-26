@@ -673,7 +673,7 @@ color-picker {
     font-size:16px;
 }
 
-.noteHolder {
+.accordionItems article .noteHolder {
     flex-direction:row !important;
     align-items:center;
     background-color:TRANSPARENT;
