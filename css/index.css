@@ -662,22 +662,30 @@ color-picker {
     margin-right:0px;
 }
 
-.note {
+.settingsItem .note {
     background-color:var(--note);
     flex-direction:column;
 }
 
 .note label {
+    flex:0;
+
     color:var(--noteTextColor);
 }
 
 .note .title {
+    flex:1;
+
+    text-align:left;
+
     background-color:var(--note);
 }
 
 .note .msg {
     background-color:var(--note);
     font-size:16px;
+
+    text-align:left;
 }
 
 .accordionItems article .noteHolder {
