@@ -427,9 +427,6 @@ nav {
     flex-direction:column;
 
     height:100%;
-    width:60%;
-
-    margin-top:8px;
 }
 
 accordion-dropdown {
@@ -653,6 +650,10 @@ color-picker {
 
 #tb, #tBG, #tc, #mc {
     margin-right:0px;
+}
+
+color-picker {
+    display:grid;
 }
 
 .note {
