@@ -660,6 +660,7 @@ color-picker {
 
 #tb, #tBG, #tc, #mc {
     margin-right:0px;
+    width:max-content;
 }
 
 .accordionItems .settingsItem label {
