@@ -288,7 +288,6 @@ view-pager article {
 
 .settingsItem {
     width: calc(100% - 8px);
-    padding:4px;
 }
 
 #create {
@@ -513,6 +512,8 @@ color-picker {
     flex-direction:row;
     row-gap: 8px;
     align-items: center;
+
+    margin:4px;
 }
 
 #donate img {
