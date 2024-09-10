@@ -14,7 +14,7 @@ let pichai = new PichaiUX(options);
 pichai.initialize();
 console.log(pichai.getListOfElements());
 
-let i;
+let i, contrastButton;
 
 let colorPicker = document.getElementById('colorpicker');
 
@@ -187,16 +187,24 @@ textBorderWidth.addEventListener('change', function () {
 
 mainContrastColor.addEventListener('click',function () {
     colorPicker.showAsDialog();
+    contrastButton = this;
 });
 
 textBorderColor.addEventListener('click',function () {
     colorPicker.showAsDialog();
+    contrastButton = this;
 });
 
 textBackgroundColor.addEventListener('click',function () {
     colorPicker.showAsDialog();
+    contrastButton = this;
 });
 
 textColor.addEventListener('click',function () {
     colorPicker.showAsDialog();
+    contrastButton = this;
+});
+
+colorPicker.addEventListener('submit', function () {
+    console.log(picker.formData);
 });
