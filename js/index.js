@@ -213,5 +213,11 @@ colorPicker.addEventListener('submit', function () {
 
     if(contrastButton.id == 'tb') {
         contrastText.style.webkitTextStrokeColor = color;
+    } else if(contrastButton.id == 'tBG') {
+        contrastText.style.backgroundColor = color;
+    } else if(contrastButton.id == 'tc') {
+        contrastText.style.color = color;
+    } else {
+        contrastBg.style.backgroundColor = color;
     }
 });
