@@ -206,5 +206,8 @@ textColor.addEventListener('click',function () {
 });
 
 colorPicker.addEventListener('submit', function () {
-    console.log(picker.getAttribute('formData'));
+    let color = JSON.parse(picker.getAttribute('formData')).colorpickervalue;
+
+    contrastButton.innerHTML = color;
+    contrastButton.style.backgroundColor = color;
 });
