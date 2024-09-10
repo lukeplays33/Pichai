@@ -43,7 +43,7 @@ let textBorderWidth = document.getElementById('bw');
 
 let mainContrastColor = document.getElementById('mc');
 let textBorderColor = document.getElementById('tb');
-let textBackgroundColor = document.getElementById('tBc');
+let textBackgroundColor = document.getElementById('tBG');
 let textColor = document.getElementById('tc');
 
 let similarColorHolder = document.getElementById('similarColorHolder');
@@ -206,5 +206,5 @@ textColor.addEventListener('click',function () {
 });
 
 colorPicker.addEventListener('submit', function () {
-    console.log(picker.formData);
+    console.log(picker.getAttribute('formData'));
 });
