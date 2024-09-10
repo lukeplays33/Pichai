@@ -40,7 +40,11 @@ let quoteRefresh = document.getElementById('refresh');
 let scoreCheck = document.getElementById('scoreCheck');
 let inversedMode = document.getElementById('inversed');
 let textBorderWidth = document.getElementById('bw');
+
 let mainContrastColor = document.getElementById('mc');
+let textBorderColor = document.getElementById('tb');
+let textBackgroundColor = document.getElementById('tBc');
+let textColor = document.getElementById('tc');
 
 let similarColorHolder = document.getElementById('similarColorHolder');
 
@@ -179,4 +183,20 @@ inversedMode.addEventListener('change', function () {
 
 textBorderWidth.addEventListener('change', function () {
     contrastText.style.webkitTextStrokeWidth = `${this.value}px`;
+});
+
+mainContrastColor.addEventListener('click',function () {
+    colorPicker.showAsDialog();
+});
+
+textBorderColor.addEventListener('click',function () {
+    colorPicker.showAsDialog();
+});
+
+textBackgroundColor.addEventListener('click',function () {
+    colorPicker.showAsDialog();
+});
+
+textColor.addEventListener('click',function () {
+    colorPicker.showAsDialog();
 });
