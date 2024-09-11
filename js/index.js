@@ -174,13 +174,11 @@ quoteRefresh.addEventListener('click', function () {
 });
 
 inversedMode.addEventListener('change', function () {
-    let txtColor = contrastText.style.color;
-    let bgColor =  contrastBg.style.backgroundColor;
-
-    contrastText.style.color = bgColor;
-    quoteRefresh.style.color = bgColor;
-    scoreCheck.style.color = bgColor;
-    contrastBg.style.backgroundColor = txtColor;
+    if(inversedMode.checked) {
+        contrastBg.style.filter = 'invert(100%)';
+    } else {
+        contrastBg.style.filter = 'invert(0%)';
+    }
 });
 
 textBorderWidth.addEventListener('change', function () {
