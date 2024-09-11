@@ -46,6 +46,8 @@ let textBorderColor = document.getElementById('tb');
 let textBackgroundColor = document.getElementById('tBG');
 let textColor = document.getElementById('tc');
 
+let autoContrast = document.getElementById('autoC');
+
 let similarColorHolder = document.getElementById('similarColorHolder');
 
 function getColorAssociation(name) {

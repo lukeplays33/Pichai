@@ -460,14 +460,14 @@ accordion-dropdown h5 {
     margin-top:0px;
 }
 
-#allowedColors, #colorChanger, #inversed {
+#allowedColors, #colorChanger, #inversed, #autoC {
     width:28px;
     height:28px;
 
     text-align:center;
 }
 
-#inversed:checked {
+#inversed:checked, #autoC:checked {
     margin-left:auto;
 }
 
