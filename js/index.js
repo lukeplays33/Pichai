@@ -108,10 +108,8 @@ async function setInnerHTMLs(code) { // updates all elements to match the select
     mainContrastColor.value = code;
     mainContrastColor.style.backgroundColor = code;
     randomQoute();
+    updateContrast();
 
-    if (autoContrast.checked) {
-        pichai.optimizeTextColor(contrastBg);
-    }
     pichai.optimizeTextColor(similarColorHolder);
     pichai.optimizeTextColor(name);
 }
@@ -211,7 +209,13 @@ colorPicker.addEventListener('submit', function () {
         contrastBg.style.backgroundColor = color;
     }
 
+    updateContrast();
+});
+
+function updateContrast () {
     if (autoContrast.checked) {
         pichai.optimizeTextColor(contrastBg);
+
+        textColor..style.backgroundColor =  contrastText.style.color;
     }
-});
+}
