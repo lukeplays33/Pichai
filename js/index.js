@@ -219,3 +219,7 @@ function updateContrast () {
         textColor..style.backgroundColor =  contrastText.style.color;
     }
 }
+
+autoContrast.addEventListener('change', function () {
+    updateContrast();
+});
