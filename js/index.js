@@ -39,11 +39,9 @@ let contrastText = document.getElementById('contrastChecking');
 let quoteRefresh = document.getElementById('refresh');
 let scoreCheck = document.getElementById('scoreCheck');
 let inversedMode = document.getElementById('inversed');
-let textBorderWidth = document.getElementById('bw');
+let flip = document.getElementById('flip');
 
 let mainContrastColor = document.getElementById('mc');
-let textBorderColor = document.getElementById('tb');
-let textBackgroundColor = document.getElementById('tBG');
 let textColor = document.getElementById('tc');
 
 let autoContrast = document.getElementById('autoC');
@@ -103,7 +101,7 @@ async function setInnerHTMLs(code) { // updates all elements to match the select
 
     similarColorHolder.innerHTML = '';
     for (i of await getSimilarColors(code)) {
-            addTile(similarColorHolder, i);
+        addTile(similarColorHolder, i);
     }
 
     contrastBg.style.backgroundColor = code;
@@ -111,7 +109,9 @@ async function setInnerHTMLs(code) { // updates all elements to match the select
     mainContrastColor.style.backgroundColor = code;
     randomQoute();
 
-    pichai.optimizeTextColor(contrastBg);
+    if (autoContrast.checked) {
+        pichai.optimizeTextColor(contrastBg);
+    }
     pichai.optimizeTextColor(similarColorHolder);
     pichai.optimizeTextColor(name);
 }
@@ -124,17 +124,17 @@ async function setColorClass(r, g, b) {
     associated.innerHTML = await getColorAssociation(name.innerHTML);
 }
 
-function randomQoute () { // gives the contrast checker a random qoute.
+function randomQoute() { // gives the contrast checker a random qoute.
     fetch('https://quotes-api-self.vercel.app/quote')
-    .then(response => response.json())
-    .then(data => {
-      // Handle the retrieved quote
-      contrastText.innerHTML = '<b>' + data.quote + '</b> ~ ' + data.author+ ' ~ ';
-    })
-    .catch(error => {
-      // Handle any errors
-      console.error(error);
-    });
+        .then(response => response.json())
+        .then(data => {
+            // Handle the retrieved quote
+            contrastText.innerHTML = '<b>' + data.quote + '</b> ~ ' + data.author + ' ~ ';
+        })
+        .catch(error => {
+            // Handle any errors
+            console.error(error);
+        });
 
 }
 
@@ -174,35 +174,29 @@ quoteRefresh.addEventListener('click', function () {
 });
 
 inversedMode.addEventListener('change', function () {
-    if(inversedMode.checked) {
+    if (inversedMode.checked) {
         contrastBg.style.filter = 'invert(100%)';
     } else {
         contrastBg.style.filter = 'invert(0%)';
     }
 });
 
-textBorderWidth.addEventListener('change', function () {
-    contrastText.style.webkitTextStrokeWidth = `${this.value}px`;
-});
-
-mainContrastColor.addEventListener('click',function () {
+mainContrastColor.addEventListener('click', function () {
     colorPicker.showAsDialog();
     contrastButton = this;
 });
 
-textBorderColor.addEventListener('click',function () {
+textColor.addEventListener('click', function () {
     colorPicker.showAsDialog();
     contrastButton = this;
 });
 
-textBackgroundColor.addEventListener('click',function () {
-    colorPicker.showAsDialog();
-    contrastButton = this;
-});
+flip.addEventListener('change', function () {
+    let textColor = contrastText.style.color;
 
-textColor.addEventListener('click',function () {
-    colorPicker.showAsDialog();
-    contrastButton = this;
+    contrastText.style.color = contrastBg.style.backgroundColor;
+    contrastBg.style.backgroundColor = textColor;
+
 });
 
 colorPicker.addEventListener('submit', function () {
@@ -211,13 +205,13 @@ colorPicker.addEventListener('submit', function () {
     contrastButton.value = color;
     contrastButton.style.backgroundColor = color;
 
-    if(contrastButton.id == 'tb') {
-        contrastText.style.webkitTextStrokeColor = color;
-    } else if(contrastButton.id == 'tBG') {
-        contrastText.style.backgroundColor = color;
-    } else if(contrastButton.id == 'tc') {
+    if (contrastButton.id == 'tc') {
         contrastText.style.color = color;
     } else {
         contrastBg.style.backgroundColor = color;
+    }
+
+    if (autoContrast.checked) {
+        pichai.optimizeTextColor(contrastBg);
     }
 });
