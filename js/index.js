@@ -216,6 +216,13 @@ colorPicker.addEventListener('submit', function () {
 function updateContrast () {
     if (autoContrast.checked) {
         pichai.optimizeTextColor(contrastBg);
+
+        textColor.style.backgroundColor = contrastText.style.color;
+        textColor.value = contrastText.style.color;
+
+        mainContrastColor.style.backgroundColor =  contrastBg.style.backgroundColor;
+        mainContrastColor.value =  contrastBg.style.backgroundColor;
+
     }
 }
 
