@@ -204,7 +204,7 @@ colorPicker.addEventListener('submit', function () {
     contrastButton.style.backgroundColor = color;
 
     if (contrastButton.id == 'tc') {
-        contrastText.style.color = color;
+        contrastText.style.backgroundColor = color;
     } else {
         contrastBg.style.backgroundColor = color;
     }
