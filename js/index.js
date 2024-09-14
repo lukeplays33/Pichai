@@ -204,7 +204,7 @@ colorPicker.addEventListener('submit', function () {
     contrastButton.style.backgroundColor = color;
 
     if (contrastButton.id == 'tc') {
-        contrastText.style.backgroundColor = color;
+        contrastText.style.color = color;
     } else {
         contrastBg.style.backgroundColor = color;
     }
@@ -215,15 +215,7 @@ colorPicker.addEventListener('submit', function () {
 function updateContrast () {
     if (autoContrast.checked) {
         pichai.optimizeTextColor(contrastBg);
-
-        updateButtons();
     }
-}
-
-function updateButtons() {
-    textColor.style.backgroundColor =  contrastText.style.color;
-    textColor.value = contrastText.style.color;
-
 }
 
 autoContrast.addEventListener('change', function () {
