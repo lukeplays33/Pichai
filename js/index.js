@@ -216,7 +216,7 @@ function updateContrast () {
     if (autoContrast.checked) {
         pichai.optimizeTextColor(contrastBg);
 
-        textColor..style.backgroundColor =  contrastText.style.color;
+        textColor.style.backgroundColor =  contrastText.style.color;
     }
 }
 
