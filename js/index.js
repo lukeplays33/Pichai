@@ -223,6 +223,8 @@ function updateContrast () {
         mainContrastColor.style.backgroundColor =  contrastBg.style.backgroundColor;
         mainContrastColor.value =  contrastBg.style.backgroundColor;
 
+        pichai.optimizeTextColor(document.getElementsByClassName('accordionItems')[0]);
+
     }
 }
 
