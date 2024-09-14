@@ -137,7 +137,6 @@ function randomQoute() { // gives the contrast checker a random qoute.
 }
 
 localforage.getItem('lastColor').then(function (value) {
-    //setInnerHTMLs(value ?? '#008dcd');
     colorPicker.setAttribute('value', value ?? '#008dcd');
 }); //set value back to the one set 
 
