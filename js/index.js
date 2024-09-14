@@ -216,9 +216,14 @@ function updateContrast () {
     if (autoContrast.checked) {
         pichai.optimizeTextColor(contrastBg);
 
-        textColor.style.backgroundColor =  contrastText.style.color;
-        textColor.innerHTML = contrastText.style.color;
+        updateButtons();
     }
+}
+
+function updateButtons() {
+    textColor.style.backgroundColor =  contrastText.style.color;
+    textColor.value = contrastText.style.color;
+
 }
 
 autoContrast.addEventListener('change', function () {
