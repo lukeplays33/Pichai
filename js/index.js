@@ -217,6 +217,7 @@ function updateContrast () {
         pichai.optimizeTextColor(contrastBg);
 
         textColor.style.backgroundColor =  contrastText.style.color;
+        textColor.innerHTML = contrastText.style.color;
     }
 }
 
