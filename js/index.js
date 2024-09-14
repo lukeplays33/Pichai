@@ -202,6 +202,7 @@ colorPicker.addEventListener('submit', function () {
 
     contrastButton.value = color;
     contrastButton.style.backgroundColor = color;
+    pichai.optimizeTextColor(document.getElementsByClassName('accordionItems')[0]);
 
     if (contrastButton.id == 'tc') {
         contrastText.style.color = color;
