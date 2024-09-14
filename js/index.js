@@ -193,6 +193,7 @@ flip.addEventListener('change', function () {
     let textColor = contrastText.style.color;
 
     contrastText.style.color = contrastBg.style.backgroundColor;
+    contrastText.firstChild.style.color = contrastBg.style.backgroundColor;
     contrastBg.style.backgroundColor = textColor;
 
 });
