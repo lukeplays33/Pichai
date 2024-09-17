@@ -2,7 +2,7 @@ import { findColorClass } from 'https://lukeplays33.github.io/Pichai-UX/AI/color
 import { getTextColor } from 'https://lukeplays33.github.io/Pichai-UX/AI/textColorFInder.js';
 
 import { ntc } from './ntc.js';
-import { hexToRgb, RGBToHSL, rgbToCmyk, rgbToHex, hslToHex, cmykToHex, colorAssociations } from './colorUtils.js';
+import { hexToRgb, RGBToHSL, rgbToCmyk, rgbToHex, hslToHex, cmykToHex, colorAssociations, luminance } from './colorUtils.js';
 
 import { getSimilarColors, addTile, colourBlend } from './utils.js';
 
@@ -211,18 +211,19 @@ colorPicker.addEventListener('submit', function () {
         contrastBg.style.backgroundColor = color;
     }
 
+    checkAccesibillity(contrastBg.style.backgroundColor,  contrastText.style.color);
     updateContrast();
 });
 
-function updateContrast () {
+function updateContrast() {
     if (autoContrast.checked) {
         pichai.optimizeTextColor(contrastBg);
 
         textColor.style.backgroundColor = contrastText.style.color;
         textColor.value = contrastText.style.color;
 
-        mainContrastColor.style.backgroundColor =  contrastBg.style.backgroundColor;
-        mainContrastColor.value =  contrastBg.style.backgroundColor;
+        mainContrastColor.style.backgroundColor = contrastBg.style.backgroundColor;
+        mainContrastColor.value = contrastBg.style.backgroundColor;
 
         pichai.optimizeTextColor(document.getElementsByClassName('accordionItems')[0]);
 
@@ -232,3 +233,27 @@ function updateContrast () {
 autoContrast.addEventListener('change', function () {
     updateContrast();
 });
+
+function checkAccesibillity(color, textColor) {
+    color1rgb = hexToRgb(color);
+    color1rgb = color1rgb.substring(4, color1rgb.length - 1).split(',');
+
+    color2rgb = hexToRgb(textColor);
+    color2rgb = color2rgb.substring(4, color2rgb.length - 1).split(',');
+
+    const color1luminance = luminance(color1rgb[0], color1rgb[1], color1rgb[2]);
+    const color2luminance = luminance(color2rgb[0], color2rgb[1], color2rgb[2]);
+
+    const ratio = color1luminance > color2luminance 
+    ? ((color2luminance + 0.05) / (color1luminance + 0.05))
+    : ((color1luminance + 0.05) / (color2luminance + 0.05));
+
+    scoreCheck.title = `
+                AA-level large text: ${ratio < 1/3 ? 'PASS' : 'FAIL' }
+                AA-level small text: ${ratio < 1/4.5 ? 'PASS' : 'FAIL' }
+                AAA-level large text: ${ratio < 1/4.5 ? 'PASS' : 'FAIL' }
+                AAA-level small text: ${ratio < 1/7 ? 'PASS' : 'FAIL' }
+               `;
+               
+    return (ratio < 1/3 && ratio < 1/4.5 ) || (ratio < 1/3 && ratio < 1/7);
+}
