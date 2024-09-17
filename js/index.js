@@ -257,9 +257,9 @@ function checkAccesibillity(color, textColor) {
 
     if (ratio < 1 / 3 && ratio < 1 / 4.5 && ratio < 1 / 7) {
         scoreCheck.innerHTML = 'check_circle';
-    } else if (ratio < 1 / 3 && ratio < 1 / 4.5) {
+    } else if (ratio < 1 / 3 && ratio < 1 / 4.5 && !ratio < 1 / 7) {
         scoreCheck.innerHTML = 'adjust';
-    } else if (ratio < 1 / 3) {
+    } else if (ratio < 1 / 3 && !ratio < 1 / 4.5 && !ratio < 1 / 7) {
         scoreCheck.innerHTML = 'cancel';
     }
 }
