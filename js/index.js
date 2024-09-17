@@ -205,7 +205,7 @@ colorPicker.addEventListener('submit', function () {
     pichai.optimizeTextColor(document.getElementsByClassName('accordionItems')[0]);
 
     if (contrastButton.id == 'tc') {
-        refresh.style.color = color;
+        quoteRefresh.style.color = color;
         scoreCheck.style.color = color;
         contrastText.style.color = color;
         contrastText.firstChild.style.color = color;
