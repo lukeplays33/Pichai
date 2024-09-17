@@ -235,10 +235,10 @@ autoContrast.addEventListener('change', function () {
 });
 
 function checkAccesibillity(color, textColor) {
-    color1rgb = hexToRgb(color);
+    let color1rgb = hexToRgb(color);
     color1rgb = color1rgb.substring(4, color1rgb.length - 1).split(',');
 
-    color2rgb = hexToRgb(textColor);
+    let color2rgb = hexToRgb(textColor);
     color2rgb = color2rgb.substring(4, color2rgb.length - 1).split(',');
 
     const color1luminance = luminance(color1rgb[0], color1rgb[1], color1rgb[2]);
