@@ -255,11 +255,11 @@ function checkAccesibillity(color, textColor) {
                 AAA-level small text: ${ratio < 1 / 7 ? 'PASS' : 'FAIL'}
                `;
 
-    if (ratio < 1 / 7) {
-        scoreCheck.innerHTML = 'check_circle';
+    if (ratio < 1 / 3) {
+        scoreCheck.innerHTML = 'cancel';
     } else if (ratio < 1 / 4.5) {
         scoreCheck.innerHTML = 'adjust';
-    } else if (ratio < 1 / 3) {
-        scoreCheck.innerHTML = 'cancel';
+    } else if (ratio < 1 / 7) {
+        scoreCheck.innerHTML = 'check_circle';
     }
 }
