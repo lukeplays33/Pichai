@@ -205,13 +205,15 @@ colorPicker.addEventListener('submit', function () {
     pichai.optimizeTextColor(document.getElementsByClassName('accordionItems')[0]);
 
     if (contrastButton.id == 'tc') {
+        refresh.style.color = color;
+        scoreCheck.style.color = color;
         contrastText.style.color = color;
         contrastText.firstChild.style.color = color;
     } else {
         contrastBg.style.backgroundColor = color;
     }
 
-    checkAccesibillity(contrastBg.style.backgroundColor,  contrastText.style.color);
+    checkAccesibillity(contrastBg.style.backgroundColor, contrastText.style.color);
     updateContrast();
 });
 
@@ -244,22 +246,22 @@ function checkAccesibillity(color, textColor) {
     const color1luminance = luminance(color1rgb[0], color1rgb[1], color1rgb[2]);
     const color2luminance = luminance(color2rgb[0], color2rgb[1], color2rgb[2]);
 
-    const ratio = color1luminance > color2luminance 
-    ? ((color2luminance + 0.05) / (color1luminance + 0.05))
-    : ((color1luminance + 0.05) / (color2luminance + 0.05));
+    const ratio = color1luminance > color2luminance
+        ? ((color2luminance + 0.05) / (color1luminance + 0.05))
+        : ((color1luminance + 0.05) / (color2luminance + 0.05));
 
     scoreCheck.title = `
-                AA-level large text: ${ratio < 1/3 ? 'PASS' : 'FAIL' }
-                AA-level small text: ${ratio < 1/4.5 ? 'PASS' : 'FAIL' }
-                AAA-level large text: ${ratio < 1/4.5 ? 'PASS' : 'FAIL' }
-                AAA-level small text: ${ratio < 1/7 ? 'PASS' : 'FAIL' }
+                AA-level large text: ${ratio < 1 / 3 ? 'PASS' : 'FAIL'}
+                AA-level small text: ${ratio < 1 / 4.5 ? 'PASS' : 'FAIL'}
+                AAA-level large text: ${ratio < 1 / 4.5 ? 'PASS' : 'FAIL'}
+                AAA-level small text: ${ratio < 1 / 7 ? 'PASS' : 'FAIL'}
                `;
 
-               if(ratio < 1/3) {
-                scoreCheck.innerHTML = 'cancel';
-               } else if (ratio < 1/3 && ratio < 1/4.5) {
-                scoreCheck.innerHTML = 'adjust';
-               } else if (ratio < 1/3 && ratio < 1/4.5 && ratio < 1/7){
-                scoreCheck.innerHTML = 'check_circle';
-               }
+    if (ratio < 1 / 3) {
+        scoreCheck.innerHTML = 'cancel';
+    } else if (ratio < 1 / 3 && ratio < 1 / 4.5) {
+        scoreCheck.innerHTML = 'adjust';
+    } else if (ratio < 1 / 3 && ratio < 1 / 4.5 && ratio < 1 / 7) {
+        scoreCheck.innerHTML = 'check_circle';
+    }
 }
