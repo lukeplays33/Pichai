@@ -237,11 +237,9 @@ autoContrast.addEventListener('change', function () {
 });
 
 function checkAccesibillity(color, textColor) {
-    let color1rgb = hexToRgb(color);
-    color1rgb = color1rgb.substring(4, color1rgb.length - 1).split(',');
+    let color1rgb = color.substring(4, color.length - 1).split(',');
 
-    let color2rgb = hexToRgb(textColor);
-    color2rgb = color2rgb.substring(4, color2rgb.length - 1).split(',');
+    let color2rgb = textColor.substring(4, textColor.length - 1).split(',');
 
     const color1luminance = luminance(color1rgb[0], color1rgb[1], color1rgb[2]);
     const color2luminance = luminance(color2rgb[0], color2rgb[1], color2rgb[2]);
