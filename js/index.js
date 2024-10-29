@@ -255,7 +255,6 @@ function checkAccesibillity(color, textColor) {
                 AAA-level small text: ${ratio < 1 / 7 ? 'PASS' : 'FAIL'}
                `;
 
-               alert (ratio < 1/4.5)
     if (ratio < 1 / 3 && ratio < 1 / 4.5 && ratio < 1 / 7) {
         scoreCheck.innerHTML = 'check_circle';
         //scoreCheck.innerHTML = 'cancel';
