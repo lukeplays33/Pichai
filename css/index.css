@@ -74,7 +74,7 @@ main li {
 }
 
 .tabBarHolder {
-    position: absolute;
+    position: fixed;
     top: 8px;
 
     left: 0;
@@ -84,7 +84,7 @@ main li {
 }
 
 .verticlaTabbar {
-    position: absolute;
+    position: fixed;
 
     top: 0;
     bottom: 0;
