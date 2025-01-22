@@ -1,4 +1,4 @@
-import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
+import { PichaiUX } from 'https://dreamforge-forging-our-dreams-in-tech.github.io/Pichai-UX/imports.js';
 
 let viewPager = document.getElementById('palletePager');
 let docs = document.getElementById('docs');

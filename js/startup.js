@@ -1,4 +1,4 @@
-import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
+import { PichaiUX } from 'https://dreamforge-forging-our-dreams-in-tech.github.io/Pichai-UX/imports.js';
 
 localforage.getItem('allowedColors').then(function(value) {
     if (value == null || value == '') {

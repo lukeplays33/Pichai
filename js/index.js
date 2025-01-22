@@ -1,12 +1,12 @@
-import { findColorClass } from 'https://lukeplays33.github.io/Pichai-UX/AI/colorClassFinder.js';
-import { getTextColor } from 'https://lukeplays33.github.io/Pichai-UX/AI/textColorFInder.js';
+import { findColorClass } from 'https://dreamforge-forging-our-dreams-in-tech.github.io/Pichai-UX/AI/colorClassFinder.js';
+import { getTextColor } from 'https://dreamforge-forging-our-dreams-in-tech.github.io/Pichai-UX/AI/textColorFInder.js';
 
 import { ntc } from './ntc.js';
 import { hexToRgb, RGBToHSL, rgbToCmyk, rgbToHex, hslToHex, cmykToHex, colorAssociations, luminance } from './colorUtils.js';
 
 import { getSimilarColors, addTile, colourBlend } from './utils.js';
 
-import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
+import { PichaiUX } from 'https://dreamforge-forging-our-dreams-in-tech.github.io/Pichai-UX/imports.js';
 
 let options = { homeLink: 'https://lukeplays33.github.io/Pichai/index.html' }
 
