@@ -670,11 +670,11 @@ color-picker {
 text-align:left;
 }
 
-#quickSettingsPanel, template-customization {
+#quickSettingsPanel, template-customization section {
     padding: 0px;
 }
 
-template-customization  list-viewer li , #quickSettingsPanel list-viewer li {
+template-customization section list-viewer li , #quickSettingsPanel list-viewer li {
     color: var(--primaryContainerTextColor);
     margin-bottom: 0px;
     align-items: center;
