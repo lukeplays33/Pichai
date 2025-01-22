@@ -95,7 +95,7 @@ main li {
     margin-top: auto;
     margin-bottom: auto;
 
-    max-height:(100% - 66px);
+    max-height: calc(100% - 66px);
 }
 
 .row {
