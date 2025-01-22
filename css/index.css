@@ -86,7 +86,7 @@ main li {
 .verticlaTabbar {
     position: fixed;
 
-    top: 0;
+    top: 66px;
     bottom: 0;
     right: 8px ;
     left: initial ;
@@ -668,4 +668,15 @@ color-picker {
 
 .accordionItems .settingsItem label {
 text-align:left;
+}
+
+#quickSettingsPanel {
+    padding: 0px;
+}
+
+#quickSettingsPanel list-viewer li {
+    margin-bottom: 0px;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 16px);
 }
