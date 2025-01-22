@@ -275,7 +275,7 @@ h5, .information p {
     bottom: 52px;
 }
 
-section {
+section :not(#quickSettingsPanel) {
     width: 100%;
     height: 100%;
 }
