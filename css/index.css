@@ -94,6 +94,8 @@ main li {
     margin: 0px;
     margin-top: auto;
     margin-bottom: auto;
+
+    max-height:(100% - 66px);
 }
 
 .row {
