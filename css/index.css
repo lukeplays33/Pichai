@@ -681,3 +681,11 @@ text-align:left;
     justify-content: center;
     width: calc(100% - 16px);
 }
+
+#quickSettingsPanel list-viewer {
+    display: grid
+;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    width: calc(100% - 16px);
+}
