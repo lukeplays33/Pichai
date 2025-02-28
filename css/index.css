@@ -683,8 +683,8 @@ text-align:left;
 }
 
 #quickSettingsPanel list-viewer {
-    display: grid
-;
+    display: grid;
+    
     grid-template-columns: 1fr 1fr;
     gap: 8px;
     width: calc(100% - 16px);
